@@ -1,0 +1,51 @@
+#!/bin/python3
+##############################################################################
+# job manager
+##############################################################################
+
+import json
+
+# TODO: use ./jobm_report.json if no command line are, else use the file and path provided
+with open('jobm_report.json') as file_object:
+     tests = json.load(file_object)
+
+# Example entry
+#    {
+#        "Phase": "0",
+#        "JobId": 46,
+#        "JobName": "vcs_sim.spc.spc_tb_rtl_fake_mem+regr+spc_sdma_normal_performance_test+cov:1064373218",
+#        "Status": "FAIL",
+#        "ErrorSignature": "UVM_ERROR /nfs/shares/asic/regression/opa400/nightly-ci-2022-12-09/cn_asic_lib/stl1/verif/dev/pw_svf_scoreboard_uvm/sv/pw_scoreboard.sv(428) @ 8933.53005ns: uvm_test_top.tb_env.tx_data_sbd [tx_data_sbd] Stream[0->719375]: Data MisMatch!",
+#        "StartTime": "12/09/2022 00:48:35",
+#        "EndTime": "12/09/2022 01:29:15"
+#    }
+
+print("The variable tests is of type: ", type(tests))
+
+#print(tests[0])
+
+#print(tests)
+
+# Example printing for python 3
+# Python3 program introducing f-string
+#val = 'Geeks'
+#print(f"{val}for{val} is a portal for {val}.")
+# 
+#name = 'Tushar'
+#age = 23
+#print(f"Hello, My name is {name} and I'm {age} years old.")
+
+# TODO: create table of regex for error signatures
+# TODO: apply regex filtering/replacement prior to error bining
+# TODO: print regression summary
+
+# From jobm.log
+#[01:29] (jobm.py):INFO  ----------------------------------------------------------------------------------------------------
+#[01:29] (jobm.py):INFO  - Summary:   TOTAL:47   PASS:11   FAIL:36   PENDING:0   RUNNING:0
+#[01:29] (jobm.py):INFO  ----------------------------------------------------------------------------------------------------
+#[01:29] (jobm.py):INFO  - (0)	    5:04 FAIL : vcs_comp.spc.spc_tb_rtl_fake_mem - *Warning-[IDTFE] Implicit data type for enum type is used*
+#[01:29] (jobm.py):INFO  - (1)	    6:30 FAIL : vcs_comp.spc.spc_tb_rtl_fake_mem+cov - *Warning-[IDTFE] Implicit data type for enum type is used*
+#[01:29] (jobm.py):INFO  - (2)	    9:06 FAIL : vcs_sim.spc.spc_tb_rtl_fake_mem+regr+spc_sdma_normal_mode_base_test_sdma_cov_rgrs_551+cov:666692750 - *UVM_FATAL /nfs/shares/asic/regression/opa400/nightly-ci-2022-12-09/jkr_a0/verif/envs/spc/sv/spc_sdma_sequence_lib.sv(944) @ 2441.90417ns: uvm_test_top.tb_env.host_drv.sdma_ag.q_seqr@@layer_seq_15 [uvm_test_top.tb_env.host_drv.sdma_ag.q_seqr.layer_seq_15] Randomization Failed*
+#[01:29] (jobm.py):INFO  - (3)	   12:08 FAIL : vcs_sim.spc.spc_tb_rtl_fake_mem+regr+spc_sdma_multi_eng_normal_mode_random_test_sdma_cov_rgrs_801+cov:2188406393 - *UVM_ERROR /nfs/shares/asic/regression/opa400/nightly-ci-2022-12-09/cn_asic_lib/stl1/verif/dev/pw_svf_scoreboard_uvm/sv/pw_scoreboard.sv(428) @ 4382.95549ns: uvm_test_top.tb_env.tx_data_sbd [tx_data_sbd] Stream[0->866899]: Data MisMatch!*
+#[01:29] (jobm.py):INFO  - (4)	   12:54 PASS  : vcs_sim.spc.spc_tb_rtl_fake_mem+regr+spc_sdma_normal_mode_base_test_sdma_cov_rgrs_495+cov:1312588294
+#[01:29] (jobm.py):INFO  - (5)	   12:55 PASS  : vcs_sim.spc.spc_tb_rtl_fake_mem+regr+spc_sdma_normal_mode_base_test_sdma_cov_rgrs_492+cov:240333343

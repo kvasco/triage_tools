@@ -1,0 +1,1112 @@
+#!/bin/python3
+##############################################################################
+# testinfo - an improved regression reporting script
+##############################################################################
+
+##############################################################################
+# 10
+
+##############################################################################
+# v9
+import re
+import argparse
+import json
+import os
+import sys
+
+# Function to add ShortErrorSig to dictionary
+def process_list(list_data):
+    print(f'\n--------------------------------------------------\n')
+    for object in list_data:
+#        add_short_error(object)
+        add_testname(object)
+    print(f'\n--------------------------------------------------\n')
+
+# Function to add ShortErrorSig to dictionary
+def add_short_error(object): # object is a dictionary
+    if "ErrorSignature" in object:
+        long_err = object["ErrorSignature"]
+        # Check if the value for the "ErrorSignature" key is an empty string
+        if long_err == "":
+            #continue  # Skip this for loop iteration if the value is an empty string
+            return  # Exit the function if the value is an empty string
+     
+        ##long_err = object.get("ErrorSignature", '') # grabbed above in a different way
+        print(f'Long Error Signature: {long_err}')
+        short_err = re.sub(r'UVM_ERROR[\w\d\s\/\(\)\.@-]*:', '', long_err)
+        print(f'Short Error Signature: {short_err}')
+     
+        # Add the short error signature to the dictionary object
+        object["ShortErrorSig"] = short_err
+
+# Function to add TestName to dictionary for simulation runs
+def add_testname(object): # object is a dictionary
+    if "CompleteJobName" in object:
+        job_name = object.get('CompleteJobName', '')
+
+        if 'vcs_sim' in job_name:
+
+            # Define the regular expression pattern
+            pattern = r'\+(.*?)_test\+'
+
+            # Find all matches in the text
+            matches = re.findall(pattern, job_name)
+
+            # Print the matches
+            for match in matches:
+                print(f'>>> {match}')
+
+        else:
+            print(f'No match in {job_name[:15]}')
+
+#        print(f'TestName: {short_err}')
+#     
+#        # Add the short error signature to the dictionary object
+#        object["TestName"] = short_err
+
+# Function to apply a list of regular expressions to text
+def apply_regex_list(text, regex_list):
+    for regex_pattern, replacement in regex_list:
+        text = re.sub(regex_pattern, replacement, text)
+    return text
+
+# Function to save regex list as JSON file
+def save_as_json(regex_list, json_filename):
+    with open(json_filename, 'w') as json_file:
+        json.dump(regex_list, json_file)
+
+# Function to load regex list from JSON file
+def load_from_json(json_filename):
+    if os.path.isfile(json_filename) and os.path.getsize(json_filename) > 0:
+        with open(json_filename, 'r') as json_file:
+            return json.load(json_file)
+    else:
+        return None
+
+# Command line argument parser
+parser = argparse.ArgumentParser(description='Process a file and apply regex patterns.')
+parser.add_argument('filename', type=str, help='Name of the JSON file to process')
+parser.add_argument('--json', type=str, help='JSON file with regex patterns')
+args = parser.parse_args()
+
+# Check if a JSON file is specified and load regex list from it
+if args.json:
+    regex_list = load_from_json(args.json)
+
+# If neither JSON regex file exists or is empty, use the internal regex list
+if regex_list is None:
+    # Define a list of regular expressions and replacements
+    regex_list = [
+        (r'the', 'thee'),      # Example: Replace "the" with "thee"
+        (r'mass', 'volume'),   # Replace "mass" with "volume"
+        # Add more regex patterns and replacements as needed
+    ]
+    
+    # If the input file exists and is not empty, save the regex list to a file
+    if os.path.isfile(args.filename) and os.path.getsize(args.filename) > 0:
+        with open(args.filename, 'r') as file:
+            try:
+                # Read the JSON content from the file
+                json_data = json.load(file)
+                # Assuming that the JSON content is a list of regex patterns and replacements
+                if isinstance(json_data, list):
+                    regex_list = json_data
+                else:
+                    print("Invalid JSON content in the input file. Using the internal regex list.")
+            except json.JSONDecodeError:
+                print("Failed to parse JSON content in the input file. Using the internal regex list.")
+
+# Prompt the user for the file name
+file_name = args.filename
+
+try:
+    # Open the file for reading
+    with open(file_name, 'r') as file:
+        # Read the content of the file
+        file_content = file.read()
+
+        # Apply the regular expressions to the content
+        modified_content = apply_regex_list(file_content, regex_list)
+
+    # Create a new file with a .new extension and write the modified content
+    new_file_name = f"{file_name}.new"
+    with open(new_file_name, 'w') as new_file:
+        new_file.write(modified_content)
+
+    print(f"Regular expressions applied successfully. Modified content saved to '{new_file_name}'!")
+
+    # Get model build pass/fail counts
+    # Get test pass/fail counts
+    # Parse the JSON content and print the type of each JSON object
+    try:
+        json_data = json.loads(file_content)
+        #print(f"Type of json_data: {type(json_data)}")
+
+        process_list(json_data)
+
+        # Exit the script without error
+        sys.exit()
+
+        if isinstance(json_data, list) and len(json_data) >= 5:
+            print("First five JSON objects:")
+            for i in range(5):
+                #print(f"Type of json_data[{i}]: {type(json_data[i])}")
+                print(json.dumps(json_data[i], indent=2))
+
+                #print(f"\nINFO:\njson_data[{i}]:\n{json_data[i]}\n")
+        else:
+            print("JSON content does not contain at least five objects.")
+    except json.JSONDecodeError:
+        print("Failed to parse JSON content in the input file.")
+
+except FileNotFoundError:
+    print(f"The file '{file_name}' was not found.")
+except Exception as e:
+    print(f"An error occurred: {str(e)}")
+
+# Input string
+input_string = "+ignore_warnings+no_pcie_phy+no_vc_phy+A383+A2103+A2157+A2557+A2590+A2616+A2913"
+# # Regular expression pattern
+# pattern  = r'(\+A\d+)+\b'
+# pattern2 = r'\+no_pcie_phy\+no_vc_phy'
+# pattern3 = r'\+ignore_warnings'
+
+# # Replace the pattern with "+fc_workarounds"
+# output_string  = re.sub(pattern, '+fc_workarounds', input_string)
+# output_string2 = re.sub(pattern, '+fc_workarounds', input_string2)
+
+# print(output_string)
+# print(f"#1: f({input_string2}) = {output_string2}")
+
+# output_string3 = re.sub(pattern2, '+fc_speedups', output_string2)
+# print(f"#2: f({input_string2}) = {output_string3}")
+
+# output_string4 = re.sub(pattern3, '', output_string3)
+# print(f"#3: f({input_string2}) = {output_string4}")
+
+# #short_cmd_list = [["(\+A\d+)+\b", "+fc_workarounds"], ["\+no_pcie_phy\+no_vc_phy", "+fc_speedups"], ["\+no_pcie_phy\+no_vc_phy",""]]
+short_cmd_re_list = [
+    (r'(\+A\d+)+\b', '+fc_workarounds'),
+    (r'\+no_pcie_phy\+no_vc_phy', '+fc_speedups'),
+    (r'\+ignore_warnings',''),
+    (r'\+cov',''),
+    # Add more command compresseion regex patterns here
+]
+
+print(f"short cmd = {apply_regex_list(input_string, short_cmd_re_list)}")
+
+# Sample list of dictionaries
+data_list = [
+    {'JobName': 'vcs_comp', 'Status': 'PASS'},
+    {'JobName': 'vcs_comp', 'Status': 'FAIL'},
+    {'JobName': 'vcs_sim', 'Status': 'PASS'},
+    {'JobName': 'vcs_sim', 'Status': 'FAIL'},
+    {'JobName': 'post_script.hfi_fc', 'Status': 'PASS'},
+    {'JobName': 'post_script.spc', 'Status': 'FAIL'},
+    {'JobName': 'vcs_comp', 'Status': 'PASS'},
+]
+
+# Initialize counters for 'PASS' and 'FAIL' for vcs_comp and vcs_sim
+comp_pass_count = 0
+comp_fail_count = 0
+sim_pass_count = 0
+sim_fail_count = 0
+post_script_pass_count = 0
+post_script_fail_count = 0
+
+# Iterate over the list of dictionaries
+for entry in data_list:
+    job_name = entry.get('JobName', '')
+    status = entry.get('Status', '')
+
+    if 'vcs_comp' in job_name:
+        if status == 'PASS':
+            comp_pass_count += 1
+        elif status == 'FAIL':
+            comp_fail_count += 1
+    elif 'vcs_sim' in job_name:
+        if status == 'PASS':
+            sim_pass_count += 1
+        elif status == 'FAIL':
+            sim_fail_count += 1
+    elif 'post_script' in job_name:
+        if status == 'PASS':
+            post_script_pass_count += 1
+        elif status == 'FAIL':
+            post_script_fail_count += 1
+
+# Calculate total counts for vcs_comp and vcs_sim
+total_comp_matches = comp_pass_count + comp_fail_count
+total_sim_matches = sim_pass_count + sim_fail_count
+
+# Print the counts for vcs_comp and vcs_sim, including the totals
+print(f'vcs_comp - Total: {total_comp_matches: >5}, PASS: {comp_pass_count: >5}, FAIL: {comp_fail_count: >5}')
+print(f'vcs_sim  - Total: {total_sim_matches: >5}, PASS: {sim_pass_count: >5}, FAIL: {sim_fail_count: >5}')
+print(f'post_script -            PASS: {post_script_pass_count: >5}, FAIL: {post_script_fail_count: >5}')
+
+print(f'\n--------------------------------------------------\n')
+
+# Define regular expressions for different categories
+regex_patterns = {
+    'email': [
+        r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,7}\b',
+        r'\b[\w.-]+@[\w.-]+\.\w+\b'
+    ],
+    'phone_number': [
+        r'\(\d{3}\)\s?\d{3}-\d{4}', # fixed re via debug by cg
+        r'\b\d{3}-\d{3}-\d{4}\b',
+        r'\b\(\d{3}\)\s?\d{3}-\d{4}\b'
+    ],
+    'date': [
+        r'\b\d{2}/\d{2}/\d{4}\b',
+        r'\b\d{4}-\d{2}-\d{2}\b'
+    ]
+}
+
+# Sample text to search for matches
+text = "Contact us at test@example.com or call (123) 456-7890. The date is 2023-10-07."
+print(text)
+print()
+
+# Iterate through the regular expressions and search for matches
+for category, patterns in regex_patterns.items():
+    print(f"Category: {category}")
+    for pattern in patterns:
+        matches = re.findall(pattern, text)
+        if matches:
+            print(f"Matches for '{pattern}': {matches}")
+    print()
+
+print(f'\n--------------------------------------------------\n')
+
+# Sample string
+my_string = "This is a sample string."
+
+# Debug verbosity level (change as needed)
+debug_verbosity = "low"
+
+# Check if debug verbosity is high
+if debug_verbosity == "high":
+    # Print the first 10 characters
+    print(my_string[:10])
+
+print(f'\n--------------------------------------------------\n')
+
+from enum import Enum
+
+class Verbosity(Enum):
+    LOW = "low"
+    MEDIUM = "medium"
+    HIGH = "high"
+
+# Usage examples
+current_verbosity = Verbosity.MEDIUM
+
+if current_verbosity == Verbosity.HIGH:
+    print("Debug verbosity is set to high.")
+elif current_verbosity == Verbosity.MEDIUM:
+    print("Debug verbosity is set to medium.")
+elif current_verbosity == Verbosity.LOW:
+    print("Debug verbosity is set to low.")
+
+##############################################################################
+# v8
+# import re
+# import argparse
+# import json
+# import os
+
+# # Function to apply a list of regular expressions to text
+# def apply_regex_list(text, regex_list):
+#     for regex_pattern, replacement in regex_list:
+#         text = re.sub(regex_pattern, replacement, text)
+#     return text
+
+# # Function to save regex list as JSON file
+# def save_as_json(regex_list, json_filename):
+#     with open(json_filename, 'w') as json_file:
+#         json.dump(regex_list, json_file)
+
+# # Function to load regex list from JSON file
+# def load_from_json(json_filename):
+#     if os.path.isfile(json_filename) and os.path.getsize(json_filename) > 0:
+#         with open(json_filename, 'r') as json_file:
+#             return json.load(json_file)
+#     else:
+#         return None
+
+# # Command line argument parser
+# parser = argparse.ArgumentParser(description='Process a file and apply regex patterns.')
+# parser.add_argument('filename', type=str, help='Name of the JSON file to process')
+# parser.add_argument('--json', type=str, help='JSON file with regex patterns')
+# args = parser.parse_args()
+
+# # Check if a JSON file is specified and load regex list from it
+# if args.json:
+#     regex_list = load_from_json(args.json)
+
+# # If neither JSON regex file exists or is empty, use the internal regex list
+# if regex_list is None:
+#     # Define a list of regular expressions and replacements
+#     regex_list = [
+#         (r'the', 'thee'),      # Example: Replace "the" with "thee"
+#         (r'mass', 'volume'),   # Replace "mass" with "volume"
+#         # Add more regex patterns and replacements as needed
+#     ]
+    
+#     # If the input file exists and is not empty, save the regex list to a file
+#     if os.path.isfile(args.filename) and os.path.getsize(args.filename) > 0:
+#         with open(args.filename, 'r') as file:
+#             try:
+#                 # Read the JSON content from the file
+#                 json_data = json.load(file)
+#                 # Assuming that the JSON content is a list of regex patterns and replacements
+#                 if isinstance(json_data, list):
+#                     regex_list = json_data
+#                 else:
+#                     print("Invalid JSON content in the input file. Using the internal regex list.")
+#             except json.JSONDecodeError:
+#                 print("Failed to parse JSON content in the input file. Using the internal regex list.")
+
+# # Prompt the user for the file name
+# file_name = args.filename
+
+# try:
+#     # Open the file for reading
+#     with open(file_name, 'r') as file:
+#         # Read the content of the file
+#         file_content = file.read()
+
+#         # Apply the regular expressions to the content
+#         modified_content = apply_regex_list(file_content, regex_list)
+
+#     # Create a new file with a .new extension and write the modified content
+#     new_file_name = f"{file_name}.new"
+#     with open(new_file_name, 'w') as new_file:
+#         new_file.write(modified_content)
+
+#     print(f"Regular expressions applied successfully. Modified content saved to '{new_file_name}'!")
+
+#     # Parse the JSON content
+#     try:
+#         json_data = json.loads(file_content)
+#         print(f"Type of json_data: {type(json_data)}")
+#         if isinstance(json_data, list) and len(json_data) >= 5:
+#             print("First five JSON objects:")
+#             for i in range(5):
+#                 print(json.dumps(json_data[i], indent=2))
+#                 if isinstance(json_data[i], list):
+#                     for item in json_data[i]:
+#                         print(f"Type of item: {type(item)}")
+#         else:
+#             print("JSON content does not contain at least five objects.")
+#     except json.JSONDecodeError:
+#         print("Failed to parse JSON content in the input file.")
+
+# except FileNotFoundError:
+#     print(f"The file '{file_name}' was not found.")
+# except Exception as e:
+#     print(f"An error occurred: {str(e)}")
+
+##############################################################################
+# v7
+# import re
+# import argparse
+# import json
+# import os
+
+# # Function to apply a list of regular expressions to text
+# def apply_regex_list(text, regex_list):
+#     for regex_pattern, replacement in regex_list:
+#         text = re.sub(regex_pattern, replacement, text)
+#     return text
+
+# # Function to save regex list as JSON file
+# def save_as_json(regex_list, json_filename):
+#     with open(json_filename, 'w') as json_file:
+#         json.dump(regex_list, json_file)
+
+# # Function to load regex list from JSON file
+# def load_from_json(json_filename):
+#     if os.path.isfile(json_filename) and os.path.getsize(json_filename) > 0:
+#         with open(json_filename, 'r') as json_file:
+#             return json.load(json_file)
+#     else:
+#         return None
+
+# # Command line argument parser
+# parser = argparse.ArgumentParser(description='Process a file and apply regex patterns.')
+# parser.add_argument('filename', type=str, help='Name of the JSON file to process')
+# parser.add_argument('--json', type=str, help='JSON file with regex patterns')
+# args = parser.parse_args()
+
+# # Check if a JSON file is specified and load regex list from it
+# if args.json:
+#     regex_list = load_from_json(args.json)
+
+# # If neither JSON regex file exists or is empty, use the internal regex list
+# if regex_list is None:
+#     # Define a list of regular expressions and replacements
+#     regex_list = [
+#         (r'the', 'thee'),      # Example: Replace "the" with "thee"
+#         (r'mass', 'volume'),   # Replace "mass" with "volume"
+#         # Add more regex patterns and replacements as needed
+#     ]
+    
+#     # If the input file exists and is not empty, save the regex list to a file
+#     if os.path.isfile(args.filename) and os.path.getsize(args.filename) > 0:
+#         with open(args.filename, 'r') as file:
+#             try:
+#                 # Read the JSON content from the file
+#                 json_data = json.load(file)
+#                 # Assuming that the JSON content is a list of regex patterns and replacements
+#                 if isinstance(json_data, list):
+#                     regex_list = json_data
+#                 else:
+#                     print("Invalid JSON content in the input file. Using the internal regex list.")
+#             except json.JSONDecodeError:
+#                 print("Failed to parse JSON content in the input file. Using the internal regex list.")
+
+# # Prompt the user for the file name
+# file_name = args.filename
+
+# try:
+#     # Open the file for reading
+#     with open(file_name, 'r') as file:
+#         # Read the content of the file
+#         file_content = file.read()
+
+#         # Apply the regular expressions to the content
+#         modified_content = apply_regex_list(file_content, regex_list)
+
+#     # Create a new file with a .new extension and write the modified content
+#     new_file_name = f"{file_name}.new"
+#     with open(new_file_name, 'w') as new_file:
+#         new_file.write(modified_content)
+
+#     print(f"Regular expressions applied successfully. Modified content saved to '{new_file_name}'!")
+
+#     # Parse the JSON content and print the first five objects
+#     try:
+#         json_data = json.loads(file_content)
+#         print(f"Type of json_data: {type(json_data)}")
+#         if isinstance(json_data, list) and len(json_data) >= 5:
+#             print("First five JSON objects:")
+#             for i in range(5):
+#                 print(json.dumps(json_data[i], indent=2))
+#         else:
+#             print("JSON content does not contain at least five objects.")
+#     except json.JSONDecodeError:
+#         print("Failed to parse JSON content in the input file.")
+
+# except FileNotFoundError:
+#     print(f"The file '{file_name}' was not found.")
+# except Exception as e:
+#     print(f"An error occurred: {str(e)}")
+
+##############################################################################
+# v6
+# import re
+# import argparse
+# import json
+# import os
+
+# # Function to apply a list of regular expressions to text
+# def apply_regex_list(text, regex_list):
+#     for regex_pattern, replacement in regex_list:
+#         text = re.sub(regex_pattern, replacement, text)
+#     return text
+
+# # Function to save regex list as JSON file
+# def save_as_json(regex_list, json_filename):
+#     with open(json_filename, 'w') as json_file:
+#         json.dump(regex_list, json_file)
+
+# # Function to load regex list from JSON file
+# def load_from_json(json_filename):
+#     if os.path.isfile(json_filename) and os.path.getsize(json_filename) > 0:
+#         with open(json_filename, 'r') as json_file:
+#             return json.load(json_file)
+#     else:
+#         return None
+
+# # Command line argument parser
+# parser = argparse.ArgumentParser(description='Process a file and apply regex patterns.')
+# parser.add_argument('filename', type=str, help='Name of the JSON file to process')
+# parser.add_argument('--json', type=str, help='JSON file with regex patterns')
+# args = parser.parse_args()
+
+# # Check if a JSON file is specified and load regex list from it
+# if args.json:
+#     regex_list = load_from_json(args.json)
+
+# # If neither JSON regex file exists or is empty, use the internal regex list
+# if regex_list is None:
+#     # Define a list of regular expressions and replacements
+#     regex_list = [
+#         (r'the', 'thee'),      # Example: Replace "the" with "thee"
+#         (r'mass', 'volume'),   # Replace "mass" with "volume"
+#         # Add more regex patterns and replacements as needed
+#     ]
+    
+#     # If the input file exists and is not empty, save the regex list to a file
+#     if os.path.isfile(args.filename) and os.path.getsize(args.filename) > 0:
+#         with open(args.filename, 'r') as file:
+#             try:
+#                 # Read the JSON content from the file
+#                 json_data = json.load(file)
+#                 # Assuming that the JSON content is a list of regex patterns and replacements
+#                 if isinstance(json_data, list):
+#                     regex_list = json_data
+#                 else:
+#                     print("Invalid JSON content in the input file. Using the internal regex list.")
+#             except json.JSONDecodeError:
+#                 print("Failed to parse JSON content in the input file. Using the internal regex list.")
+
+# # Prompt the user for the file name
+# file_name = args.filename
+
+# try:
+#     # Open the file for reading
+#     with open(file_name, 'r') as file:
+#         # Read the content of the file
+#         file_content = file.read()
+
+#         # Apply the regular expressions to the content
+#         modified_content = apply_regex_list(file_content, regex_list)
+
+#     # Create a new file with a .new extension and write the modified content
+#     new_file_name = f"{file_name}.new"
+#     with open(new_file_name, 'w') as new_file:
+#         new_file.write(modified_content)
+
+#     print(f"Regular expressions applied successfully. Modified content saved to '{new_file_name}'!")
+
+# except FileNotFoundError:
+#     print(f"The file '{file_name}' was not found.")
+# except Exception as e:
+#     print(f"An error occurred: {str(e)}")
+
+##############################################################################
+# v5
+# import re
+# import argparse
+# import json
+# import os
+
+# # Function to apply a list of regular expressions to text
+# def apply_regex_list(text, regex_list):
+#     for regex_pattern, replacement in regex_list:
+#         text = re.sub(regex_pattern, replacement, text)
+#     return text
+
+# # Function to save regex list as JSON file
+# def save_as_json(regex_list, json_filename):
+#     with open(json_filename, 'w') as json_file:
+#         json.dump(regex_list, json_file)
+
+# # Function to load regex list from JSON file
+# def load_from_json(json_filename):
+#     if os.path.isfile(json_filename) and os.path.getsize(json_filename) > 0:
+#         with open(json_filename, 'r') as json_file:
+#             return json.load(json_file)
+#     else:
+#         return None
+
+# # Command line argument parser
+# parser = argparse.ArgumentParser(description='Process a file and apply regex patterns.')
+# parser.add_argument('filename', type=str, help='Name of the JSON file to process')
+# parser.add_argument('--json', type=str, help='JSON file with regex patterns')
+# args = parser.parse_args()
+
+# # Check if a JSON file is specified and load regex list from it
+# if args.json:
+#     regex_list = load_from_json(args.json)
+
+# # If neither JSON regex file exists or is empty, use the internal regex list
+# if regex_list is None:
+#     # Define a list of regular expressions and replacements
+#     regex_list = [
+#         (r'the', 'thee'),      # Example: Replace "the" with "thee"
+#         (r'mass', 'volume'),   # Replace "mass" with "volume"
+#         # Add more regex patterns and replacements as needed
+#     ]
+    
+#     # If the input file exists and is not empty, save the regex list to a file
+#     if os.path.isfile(args.filename) and os.path.getsize(args.filename) > 0:
+#         with open(args.filename, 'r') as file:
+#             try:
+#                 # Read the JSON content from the file
+#                 json_data = json.load(file)
+#                 # Assuming that the JSON content is a list of regex patterns and replacements
+#                 if isinstance(json_data, list):
+#                     regex_list = json_data
+#                 else:
+#                     print("Invalid JSON content in the input file. Using the internal regex list.")
+#             except json.JSONDecodeError:
+#                 print("Failed to parse JSON content in the input file. Using the internal regex list.")
+
+# # Prompt the user for the file name
+# file_name = args.filename
+
+# try:
+#     # Open the file for reading
+#     with open(file_name, 'r') as file:
+#         # Read the content of the file
+#         file_content = file.read()
+
+#         # Parse the JSON content into a dictionary
+#         try:
+#             file_data = json.loads(file_content)
+#             if not isinstance(file_data, dict):
+#                 print("JSON content in the input file is not a dictionary.")
+#         except json.JSONDecodeError:
+#             print("Failed to parse JSON content in the input file as a dictionary.")
+
+#         # Apply the regular expressions to the content
+#         modified_content = apply_regex_list(file_content, regex_list)
+
+#     # Create a new file with a .new extension and write the modified content
+#     new_file_name = f"{file_name}.new"
+#     with open(new_file_name, 'w') as new_file:
+#         new_file.write(modified_content)
+
+#     print(f"Regular expressions applied successfully. Modified content saved to '{new_file_name}'!")
+
+#     # Print the first five JSON objects
+#     try:
+#         if isinstance(file_data, dict):
+#             print("File data as a dictionary:")
+#             print(json.dumps(file_data, indent=2))
+#         else:
+#             print("File data is not a dictionary.")
+#     except Exception as e:
+#         print(f"An error occurred while printing file data: {str(e)}")
+
+# except FileNotFoundError:
+#     print(f"The file '{file_name}' was not found.")
+# except Exception as e:
+#     print(f"An error occurred: {str(e)}")
+
+##############################################################################
+# v4 - ignore v5, v6 is supposed to be this but isn't
+# import re
+# import argparse
+# import json
+# import os
+
+# # Function to apply a list of regular expressions to text
+# def apply_regex_list(text, regex_list):
+#     for regex_pattern, replacement in regex_list:
+#         text = re.sub(regex_pattern, replacement, text)
+#     return text
+
+# # Function to save regex list as JSON file
+# def save_as_json(regex_list, json_filename):
+#     with open(json_filename, 'w') as json_file:
+#         json.dump(regex_list, json_file)
+
+# # Function to load regex list from JSON file
+# def load_from_json(json_filename):
+#     if os.path.isfile(json_filename) and os.path.getsize(json_filename) > 0:
+#         with open(json_filename, 'r') as json_file:
+#             return json.load(json_file)
+#     else:
+#         return None
+
+# # Command line argument parser
+# parser = argparse.ArgumentParser(description='Process a file and apply regex patterns.')
+# parser.add_argument('filename', type=str, help='Name of the JSON file to process')
+# parser.add_argument('--json', type=str, help='JSON file with regex patterns')
+# args = parser.parse_args()
+
+# # Check if a JSON file is specified and load regex list from it
+# if args.json:
+#     regex_list = load_from_json(args.json)
+
+# # If neither JSON regex file exists or is empty, use the internal regex list
+# if regex_list is None:
+#     # Define a list of regular expressions and replacements
+#     regex_list = [
+#         (r'the', 'thee'),      # Example: Replace "the" with "thee"
+#         (r'mass', 'volume'),   # Replace "mass" with "volume"
+#         # Add more regex patterns and replacements as needed
+#     ]
+    
+#     # If the input file exists and is not empty, save the regex list to a file
+#     if os.path.isfile(args.filename) and os.path.getsize(args.filename) > 0:
+#         with open(args.filename, 'r') as file:
+#             try:
+#                 # Read the JSON content from the file
+#                 json_data = json.load(file)
+#                 # Assuming that the JSON content is a list of regex patterns and replacements
+#                 if isinstance(json_data, list):
+#                     regex_list = json_data
+#                 else:
+#                     print("Invalid JSON content in the input file. Using the internal regex list.")
+#             except json.JSONDecodeError:
+#                 print("Failed to parse JSON content in the input file. Using the internal regex list.")
+
+# # Prompt the user for the file name
+# file_name = args.filename
+
+# try:
+#     # Open the file for reading
+#     with open(file_name, 'r') as file:
+#         # Read the content of the file
+#         file_content = file.read()
+
+#         # Apply the regular expressions to the content
+#         modified_content = apply_regex_list(file_content, regex_list)
+
+#     # Create a new file with a .new extension and write the modified content
+#     new_file_name = f"{file_name}.new"
+#     with open(new_file_name, 'w') as new_file:
+#         new_file.write(modified_content)
+
+#     print(f"Regular expressions applied successfully. Modified content saved to '{new_file_name}'!")
+
+#     # Parse the JSON content and print the first five objects
+#     try:
+#         json_data = json.loads(file_content)
+#         if isinstance(json_data, list) and len(json_data) >= 5:
+#             print("First five JSON objects:")
+#             for i in range(5):
+#                 print(json.dumps(json_data[i], indent=2))
+#         else:
+#             print("JSON content does not contain at least five objects.")
+#     except json.JSONDecodeError:
+#         print("Failed to parse JSON content in the input file.")
+
+# except FileNotFoundError:
+#     print(f"The file '{file_name}' was not found.")
+# except Exception as e:
+#     print(f"An error occurred: {str(e)}")
+
+##############################################################################
+# v3
+#import re
+#import argparse
+#import json
+#import os
+# 
+## Function to apply a list of regular expressions to text
+#def apply_regex_list(text, regex_list):
+#    for regex_pattern, replacement in regex_list:
+#        text = re.sub(regex_pattern, replacement, text)
+#    return text
+# 
+## Function to save regex list as JSON file
+#def save_as_json(regex_list, json_filename):
+#    with open(json_filename, 'w') as json_file:
+#        json.dump(regex_list, json_file)
+# 
+## Function to load regex list from JSON file
+#def load_from_json(json_filename):
+#    if os.path.isfile(json_filename) and os.path.getsize(json_filename) > 0:
+#        with open(json_filename, 'r') as json_file:
+#            return json.load(json_file)
+#    else:
+#        return None
+# 
+## Command line argument parser
+#parser = argparse.ArgumentParser(description='Process a file and apply regex patterns.')
+#parser.add_argument('filename', type=str, help='Name of the JSON file to process')
+#parser.add_argument('--json', type=str, help='JSON file with regex patterns')
+#args = parser.parse_args()
+# 
+## Check if a JSON file is specified and load regex list from it
+#if args.json:
+#    regex_list = load_from_json(args.json)
+# 
+## If neither JSON regex file exists or is empty, use the internal regex list
+#if regex_list is None:
+#    # Define a list of regular expressions and replacements
+#    regex_list = [
+#        (r'the', 'thee'),      # Example: Replace "the" with "thee"
+#        (r'mass', 'volume'),   # Replace "mass" with "volume"
+#        # Add more regex patterns and replacements as needed
+#    ]
+#    
+#    # If the input file exists and is not empty, save the regex list to a file
+#    if os.path.isfile(args.filename) and os.path.getsize(args.filename) > 0:
+#        with open(args.filename, 'r') as file:
+#            try:
+#                # Read the JSON content from the file
+#                json_data = json.load(file)
+#                # Assuming that the JSON content is a list of regex patterns and replacements
+#                if isinstance(json_data, list):
+#                    regex_list = json_data
+#                else:
+#                    print("Invalid JSON content in the input file. Using the internal regex list.")
+#            except json.JSONDecodeError:
+#                print("Failed to parse JSON content in the input file. Using the internal regex list.")
+# 
+## Prompt the user for the file name
+#file_name = args.filename
+# 
+#try:
+#    # Open the file for reading
+#    with open(file_name, 'r') as file:
+#        # Read the content of the file
+#        file_content = file.read()
+# 
+#        # Apply the regular expressions to the content
+#        modified_content = apply_regex_list(file_content, regex_list)
+# 
+#    # Create a new file with a .new extension and write the modified content
+#    new_file_name = f"{file_name}.new"
+#    with open(new_file_name, 'w') as new_file:
+#        new_file.write(modified_content)
+# 
+#    print(f"Regular expressions applied successfully. Modified content saved to '{new_file_name}'!")
+# 
+#    # Parse the JSON content and print the first two objects
+#    try:
+#        json_data = json.loads(file_content)
+#        if isinstance(json_data, list) and len(json_data) >= 2:
+#            print("First two JSON objects:")
+#            print(json.dumps(json_data[0], indent=2))
+#            print(json.dumps(json_data[1], indent=2))
+#        else:
+#            print("JSON content does not contain at least two objects.")
+#    except json.JSONDecodeError:
+#        print("Failed to parse JSON content in the input file.")
+# 
+#except FileNotFoundError:
+#    print(f"The file '{file_name}' was not found.")
+#except Exception as e:
+#    print(f"An error occurred: {str(e)}")
+
+##############################################################################
+# v2
+#import re
+#import argparse
+## import yaml  # Comment out the import statement for yaml
+#import json
+#import os
+# 
+## Function to apply a list of regular expressions to text
+#def apply_regex_list(text, regex_list):
+#    for regex_pattern, replacement in regex_list:
+#        text = re.sub(regex_pattern, replacement, text)
+#    return text
+# 
+## Function to save regex list as YAML file
+## def save_as_yaml(regex_list, yaml_filename):
+##     with open(yaml_filename, 'w') as yaml_file:
+##         yaml.dump(regex_list, yaml_file)
+# 
+## Function to load regex list from YAML file
+## def load_from_yaml(yaml_filename):
+##     if os.path.isfile(yaml_filename) and os.path.getsize(yaml_filename) > 0:
+##         with open(yaml_filename, 'r') as yaml_file:
+##             return yaml.load(yaml_file, Loader=yaml.FullLoader)
+##     else:
+##         return None
+# 
+## Function to save regex list as JSON file
+#def save_as_json(regex_list, json_filename):
+#    with open(json_filename, 'w') as json_file:
+#        json.dump(regex_list, json_file)
+# 
+## Function to load regex list from JSON file
+#def load_from_json(json_filename):
+#    if os.path.isfile(json_filename) and os.path.getsize(json_filename) > 0:
+#        with open(json_filename, 'r') as json_file:
+#            return json.load(json_file)
+#    else:
+#        return None
+# 
+## Command line argument parser
+#parser = argparse.ArgumentParser(description='Process a file and apply regex patterns.')
+#parser.add_argument('filename', type=str, help='Name of the file to process')
+## parser.add_argument('--yaml', type=str, help='YAML file with regex patterns')
+#parser.add_argument('--json', type=str, help='JSON file with regex patterns')
+#args = parser.parse_args()
+# 
+## Check if a JSON file is specified and load regex list from it
+#if args.json:
+#    regex_list = load_from_json(args.json)
+# 
+## If neither JSON regex file exists or is empty, use the internal regex list
+#if regex_list is None:
+#    # Define a list of regular expressions and replacements
+#    regex_list = [
+#        (r'thebes', 'thee'),   # Example: Replace "the" with "thee"
+#        (r'mass', 'volume'),   # Replace "mass" with "volume"
+#        # Add more regex patterns and replacements as needed
+#    ]
+#    
+#    # If the input file exists and is not empty, save the regex list to a file
+#    if not (os.path.isfile(args.filename) and os.path.getsize(args.filename) > 0):
+#        if args.json:
+#            save_as_json(regex_list, args.json)
+# 
+## Prompt the user for the file name
+#file_name = args.filename
+# 
+#try:
+#    # Open the file for reading
+#    with open(file_name, 'r') as file:
+#        # Read the content of the file
+#        file_content = file.read()
+# 
+#        # Apply the regular expressions to the content
+#        modified_content = apply_regex_list(file_content, regex_list)
+# 
+#    # Create a new file with a .new extension and write the modified content
+#    new_file_name = f"{file_name}.new"
+#    with open(new_file_name, 'w') as new_file:
+#        new_file.write(modified_content)
+# 
+#    print(f"Regular expressions applied successfully. Modified content saved to '{new_file_name}'!")
+# 
+#except FileNotFoundError:
+#    print(f"The file '{file_name}' was not found.")
+#except Exception as e:
+#    print(f"An error occurred: {str(e)}")
+
+##############################################################################
+# v1
+#import re
+#import argparse
+##import yaml
+#import json
+# 
+## Function to apply a list of regular expressions to text
+#def apply_regex_list(text, regex_list):
+#    for regex_pattern, replacement in regex_list:
+#        text = re.sub(regex_pattern, replacement, text)
+#    return text
+# 
+### Function to save regex list as YAML file
+##def save_as_yaml(regex_list, yaml_filename):
+##    with open(yaml_filename, 'w') as yaml_file:
+##        yaml.dump(regex_list, yaml_file)
+# 
+### Function to load regex list from YAML file
+##def load_from_yaml(yaml_filename):
+##    with open(yaml_filename, 'r') as yaml_file:
+##        return yaml.load(yaml_file, Loader=yaml.FullLoader)
+# 
+## Function to save regex list as JSON file
+#def save_as_json(regex_list, json_filename):
+#    with open(json_filename, 'w') as json_file:
+#        json.dump(regex_list, json_file)
+# 
+## Function to load regex list from JSON file
+#def load_from_json(json_filename):
+#    with open(json_filename, 'r') as json_file:
+#        return json.load(json_file)
+# 
+## Command line argument parser
+#parser = argparse.ArgumentParser(description='Process a file and apply regex patterns.')
+#parser.add_argument('filename', type=str, help='Name of the file to process')
+##parser.add_argument('--yaml', type=str, help='YAML file with regex patterns')
+#parser.add_argument('--json', type=str, help='JSON file with regex patterns')
+#args = parser.parse_args()
+# 
+## Check if a YAML file is specified and load regex list from it
+##if args.yaml:
+##    regex_list = load_from_yaml(args.yaml)
+##elif args.json:
+#if args.json:
+#    regex_list = load_from_json(args.json)
+##else:
+##    # Define a list of regular expressions and replacements
+##    regex_list = [
+##        (r'the', 'thee'),      # Example: Replace "thebes" with "thee"
+##        (r'mass', 'volume'),   # Replace "mass" with "volume"
+##        # Add more regex patterns and replacements as needed
+##    ]
+## Define a list of regular expressions and replacements
+#regex_list = [
+#    (r'thebes', 'thee'),      # Example: Replace "thebes" with "thee"
+#    (r'mass', 'volume'),   # Replace "mass" with "volume"
+#    # Add more regex patterns and replacements as needed
+#]
+# 
+## Prompt the user for the file name
+#file_name = args.filename
+# 
+#try:
+#    # Open the file for reading
+#    with open(file_name, 'r') as file:
+#        # Read the content of the file
+#        file_content = file.read()
+# 
+#        # Apply the regular expressions to the content
+#        modified_content = apply_regex_list(file_content, regex_list)
+# 
+##    # Open the file for writing and save the modified content
+##    with open(file_name, 'w') as file:
+##        file.write(modified_content)
+# 
+#    # Create a new file with a .new extension and write the modified content
+#    new_file_name = f"{file_name}.new"
+#    with open(new_file_name, 'w') as new_file:
+#        new_file.write(modified_content)
+# 
+#    print("Regular expressions applied successfully!")
+# 
+#except FileNotFoundError:
+#    print(f"The file '{file_name}' was not found.")
+#except Exception as e:
+#    print(f"An error occurred: {str(e)}")
+# 
+## Check if a YAML file or JSON file is specified for saving
+##if args.yaml:
+##    save_as_yaml(regex_list, args.yaml)
+##elif args.json:
+#if args.json:
+#    save_as_json(regex_list, args.json)
+
+##############################################################################
+#***** Legacy *****#
+##import json
+## 
+### TODO: use ./jobm_report.json if no command line are, else use the file and path provided
+##with open('jobm_report.json') as file_object:
+##     tests = json.load(file_object)
+
+# Example entry
+#    {
+#        "Phase": "0",
+#        "JobId": 46,
+#        "JobName": "vcs_sim.spc.spc_tb_rtl_fake_mem+regr+spc_sdma_normal_performance_test+cov:1064373218",
+#        "Status": "FAIL",
+#        "ErrorSignature": "UVM_ERROR /nfs/shares/asic/regression/opa400/nightly-ci-2022-12-09/cn_asic_lib/stl1/verif/dev/pw_svf_scoreboard_uvm/sv/pw_scoreboard.sv(428) @ 8933.53005ns: uvm_test_top.tb_env.tx_data_sbd [tx_data_sbd] Stream[0->719375]: Data MisMatch!",
+#        "StartTime": "12/09/2022 00:48:35",
+#        "EndTime": "12/09/2022 01:29:15"
+#    }
+
+#print("The variable tests is of type: ", type(tests))
+
+#print(tests[0])
+
+#print(tests)
+
+# Example printing for python 3
+# Python3 program introducing f-string
+#val = 'Geeks'
+#print(f"{val}for{val} is a portal for {val}.")
+# 
+#name = 'Tushar'
+#age = 23
+#print(f"Hello, My name is {name} and I'm {age} years old.")
+
+# TODO: create table of regex for error signatures
+# TODO: apply regex filtering/replacement prior to error bining
+# TODO: print regression summary
+
+# From jobm.log
+#[01:29] (jobm.py):INFO  ----------------------------------------------------------------------------------------------------
+#[01:29] (jobm.py):INFO  - Summary:   TOTAL:47   PASS:11   FAIL:36   PENDING:0   RUNNING:0
+#[01:29] (jobm.py):INFO  ----------------------------------------------------------------------------------------------------
+#[01:29] (jobm.py):INFO  - (0)	    5:04 FAIL : vcs_comp.spc.spc_tb_rtl_fake_mem - *Warning-[IDTFE] Implicit data type for enum type is used*
+#[01:29] (jobm.py):INFO  - (1)	    6:30 FAIL : vcs_comp.spc.spc_tb_rtl_fake_mem+cov - *Warning-[IDTFE] Implicit data type for enum type is used*
+#[01:29] (jobm.py):INFO  - (2)	    9:06 FAIL : vcs_sim.spc.spc_tb_rtl_fake_mem+regr+spc_sdma_normal_mode_base_test_sdma_cov_rgrs_551+cov:666692750 - *UVM_FATAL /nfs/shares/asic/regression/opa400/nightly-ci-2022-12-09/jkr_a0/verif/envs/spc/sv/spc_sdma_sequence_lib.sv(944) @ 2441.90417ns: uvm_test_top.tb_env.host_drv.sdma_ag.q_seqr@@layer_seq_15 [uvm_test_top.tb_env.host_drv.sdma_ag.q_seqr.layer_seq_15] Randomization Failed*
+#[01:29] (jobm.py):INFO  - (3)	   12:08 FAIL : vcs_sim.spc.spc_tb_rtl_fake_mem+regr+spc_sdma_multi_eng_normal_mode_random_test_sdma_cov_rgrs_801+cov:2188406393 - *UVM_ERROR /nfs/shares/asic/regression/opa400/nightly-ci-2022-12-09/cn_asic_lib/stl1/verif/dev/pw_svf_scoreboard_uvm/sv/pw_scoreboard.sv(428) @ 4382.95549ns: uvm_test_top.tb_env.tx_data_sbd [tx_data_sbd] Stream[0->866899]: Data MisMatch!*
+#[01:29] (jobm.py):INFO  - (4)	   12:54 PASS  : vcs_sim.spc.spc_tb_rtl_fake_mem+regr+spc_sdma_normal_mode_base_test_sdma_cov_rgrs_495+cov:1312588294
+#[01:29] (jobm.py):INFO  - (5)	   12:55 PASS  : vcs_sim.spc.spc_tb_rtl_fake_mem+regr+spc_sdma_normal_mode_base_test_sdma_cov_rgrs_492+cov:240333343

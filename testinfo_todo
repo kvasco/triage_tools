@@ -1,0 +1,50 @@
+
+
+[o] Add ShortCommand not ShortJobName to dict
+    # list[index][key] = value
+    ## Code
+    #list of dictionary
+    ls = [{'name':'Mary','age':12,'class':5},{'name':'John','age':13,}]
+    #added a new value to our dictionary at index 1
+    ls[1]['class'] = 6
+    #printing the list
+    print(ls)
+    #####
+    ## Output
+    [{'name': 'Mary', 'age': 12, 'class': 5}, {'name': 'John', 'age': 13, 'class': 6}]
+[X] Add ShortErrorSig to dict
+[X] Add TestName to dict
+[ ] Create list of list of test \_ dict?
+[ ] Create list of list of esig /
+[ ] Create new report
+[ ] Email new report
+
+[o] Report - model build p/f
+[o] Report - test p/f
+[ ] Report - fails by test
+[ ] Report - fails by esig
+[ ] Report - passing tests
+[ ] Report - test_id-ShortJobName ref
+[o] Report - post_scipt p/f
+
+[ ] Report - reuse regr title
+[ ] Report - reuse regr first 1/2 summary
+[ ] Report - reuse regr Git commits
+[ ] Report - reuse regr "Log file"?
+[ ] Report - reuse regr 
+[ ] Report - reuse regr 
+[ ] Report - reuse regr 
+[ ] Report - reuse regr 
+[ ] What other data can be harvested?
+
+[ ] 
+
+##############################
+########################################
+##################################################
+[['external', 're_file'], ['thusly', 'thee'], ['mass', 'volume']]
+#################### 20
+[['external', 're_file'],
+                    ###### 26
+
+

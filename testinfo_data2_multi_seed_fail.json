@@ -1,0 +1,173 @@
+[
+    {
+        "Phase": "0",
+        "JobId": 0,
+        "JobName": "vcs_comp.spc.spc_tb_rtl_fake_mem",
+        "Status": "FAIL",
+        "ErrorSignature": "Warning-[TMR] Text macro redefined",
+        "StartTime": "01/23/2023 21:22:26",
+        "EndTime": "01/23/2023 21:28:08"
+    },
+    {
+        "Phase": "0",
+        "JobId": 1,
+        "JobName": "vcs_sim.spc.spc_tb_rtl_fake_mem+regr+spc_sdma_ahg_pbc_lrh_test:1933107275",
+        "Status": "FAIL",
+        "ErrorSignature": "exit=1",
+        "StartTime": "01/23/2023 21:28:08",
+        "EndTime": "01/23/2023 21:35:17"
+    },
+    {
+        "Phase": "0",
+        "JobId": 2,
+        "JobName": "vcs_sim.spc.spc_tb_rtl_fake_mem+regr+spc_sdma_eng_err_int_test:762313152",
+        "Status": "FAIL",
+        "ErrorSignature": "exit=1",
+        "StartTime": "01/23/2023 21:28:08",
+        "EndTime": "01/23/2023 21:35:23"
+    },
+    {
+        "Phase": "0",
+        "JobId": 3,
+        "JobName": "vcs_sim.spc.spc_tb_rtl_fake_mem+regr+spc_sdma_normal_performance_test:2556186688",
+        "Status": "FAIL",
+        "ErrorSignature": "exit=1",
+        "StartTime": "01/23/2023 21:28:08",
+        "EndTime": "01/23/2023 21:35:31"
+    },
+    {
+        "Phase": "0",
+        "JobId": 4,
+        "JobName": "vcs_sim.spc.spc_tb_rtl_fake_mem+regr+spc_sdma_err_int_test:2212397270",
+        "Status": "FAIL",
+        "ErrorSignature": "exit=1",
+        "StartTime": "01/23/2023 21:28:08",
+        "EndTime": "01/23/2023 21:35:49"
+    },
+    {
+        "Phase": "0",
+        "JobId": 5,
+        "JobName": "vcs_sim.spc.spc_tb_rtl_fake_mem+regr+csr_sdma_dbg_read_test:1779504982",
+        "Status": "FAIL",
+        "ErrorSignature": "UVM_FATAL @ 0.00000ns: reporter [INVTST] Requested test from command line +UVM_TESTNAME=csr_sdma_dbg_read_test not found.",
+        "StartTime": "01/23/2023 21:35:18",
+        "EndTime": "01/23/2023 21:35:53"
+    },
+    {
+        "Phase": "0",
+        "JobId": 6,
+        "JobName": "vcs_sim.spc.spc_tb_rtl_fake_mem+regr+spc_sdma_multi_eng_normal_mode_random_test:309726574",
+        "Status": "FAIL",
+        "ErrorSignature": "exit=1",
+        "StartTime": "01/23/2023 21:28:08",
+        "EndTime": "01/23/2023 21:36:34"
+    },
+    {
+        "Phase": "0",
+        "JobId": 7,
+        "JobName": "vcs_sim.spc.spc_tb_rtl_fake_mem+regr+spc_sdma_normal_mode_base_test:1032641838",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "01/23/2023 21:28:08",
+        "EndTime": "01/23/2023 21:37:54"
+    },
+    {
+        "Phase": "0",
+        "JobId": 8,
+        "JobName": "vcs_sim.spc.spc_tb_rtl_fake_mem+regr+sdma_csr_test:1711754871",
+        "Status": "FAIL",
+        "ErrorSignature": "UVM_ERROR /home/kvasconcellos/proj/foxtrot/jkr_a0/verif/envs/spc/sv/spc_csr_sequence_lib.sv(526) @ 15937.41667ns: uvm_test_top.tb_env.vseqr@@csr_seq [spc_csr_base_seq] SendDmaEngErrStatus_0 Register Expected Value:0, Actual Value:48",
+        "StartTime": "01/23/2023 21:28:08",
+        "EndTime": "01/23/2023 21:43:00"
+    },
+    {
+        "Phase": "0",
+        "JobId": 9,
+        "JobName": "vcs_sim.spc.spc_tb_rtl_fake_mem+regr+spc_sdma_ahg_random_test:2946316192",
+        "Status": "FAIL",
+        "ErrorSignature": "exit=1",
+        "StartTime": "01/23/2023 21:35:23",
+        "EndTime": "01/23/2023 21:43:03"
+    },
+    {
+        "Phase": "0",
+        "JobId": 10,
+        "JobName": "vcs_sim.spc.spc_tb_rtl_fake_mem+regr+spc_sdma_multi_eng_normal_mode_base_test:1142326120",
+        "Status": "FAIL",
+        "ErrorSignature": "exit=1",
+        "StartTime": "01/23/2023 21:35:32",
+        "EndTime": "01/23/2023 21:43:52"
+    },
+    {
+        "Phase": "0",
+        "JobId": 11,
+        "JobName": "vcs_sim.spc.spc_tb_rtl_fake_mem+regr+spc_sdma_int_test:862069312",
+        "Status": "FAIL",
+        "ErrorSignature": "exit=1",
+        "StartTime": "01/23/2023 21:35:50",
+        "EndTime": "01/23/2023 21:44:28"
+    },
+    {
+        "Phase": "0",
+        "JobId": 12,
+        "JobName": "vcs_sim.spc.spc_tb_rtl_fake_mem+regr+ahg_hdr_mem_interlock_test:3779703575",
+        "Status": "FAIL",
+        "ErrorSignature": "exit=1",
+        "StartTime": "01/23/2023 21:35:54",
+        "EndTime": "01/23/2023 21:45:18"
+    },
+    {
+        "Phase": "0",
+        "JobId": 13,
+        "JobName": "vcs_sim.spc.spc_tb_rtl_fake_mem+regr+spc_sdma_ahg_performance_test:2853910385",
+        "Status": "FAIL",
+        "ErrorSignature": "exit=1",
+        "StartTime": "01/23/2023 21:36:35",
+        "EndTime": "01/23/2023 21:48:55"
+    },
+    {
+        "Phase": "0",
+        "JobId": 14,
+        "JobName": "vcs_sim.spc.spc_tb_rtl_fake_mem+regr+spc_sdma_soft_reset_test:1067203665",
+        "Status": "FAIL",
+        "ErrorSignature": "exit=1",
+        "StartTime": "01/23/2023 21:37:54",
+        "EndTime": "01/23/2023 21:50:08"
+    },
+    {
+        "Phase": "0",
+        "JobId": 15,
+        "JobName": "vcs_sim.spc.spc_tb_rtl_fake_mem+regr+spc_sdma_pause_test:3399113410",
+        "Status": "FAIL",
+        "ErrorSignature": "exit=1",
+        "StartTime": "01/23/2023 21:43:00",
+        "EndTime": "01/23/2023 21:50:42"
+    },
+    {
+        "Phase": "0",
+        "JobId": 16,
+        "JobName": "vcs_sim.spc.spc_tb_rtl_fake_mem+regr+spc_sdma_intr_cntr_test:110517612",
+        "Status": "FAIL",
+        "ErrorSignature": "*** JOB 190106 ON cn-asic-n3 CANCELLED AT 2023-01-24T03:28:10 DUE TO TIME LIMIT ***",
+        "StartTime": "01/23/2023 21:28:08",
+        "EndTime": "01/24/2023 03:28:13"
+    },
+    {
+        "Phase": "0",
+        "JobId": 17,
+        "JobName": "vcs_sim.spc.spc_tb_rtl_fake_mem+regr+spc_sdma_dyn_sb_cnfg_test:340646540",
+        "Status": "FAIL",
+        "ErrorSignature": "UVM_ERROR /home/kvasconcellos/proj/foxtrot/jkr_a0/verif/shared/uvc/pcie_lite/sv/target/target_driver.sv(155) @ 2418.57222ns: uvm_test_top.tb_env.pcie_lite.target.driver [target_driver] Unexpected read response(RAL read response) with tag:0 is received on client0 interface...",
+        "StartTime": "01/23/2023 21:28:08",
+        "EndTime": "01/24/2023 03:35:44"
+    },
+    {
+        "Phase": "0",
+        "JobId": 18,
+        "JobName": "vcs_sim.spc.spc_tb_rtl_fake_mem+regr+spc_sdma_normal_mode_random_test:1529192286",
+        "Status": "FAIL",
+        "ErrorSignature": "*** JOB 190112 ON cn-asic-n2 CANCELLED AT 2023-01-24T03:35:40 DUE TO TIME LIMIT ***",
+        "StartTime": "01/23/2023 21:28:08",
+        "EndTime": "01/24/2023 03:35:45"
+    }
+]

@@ -1,0 +1,22 @@
+[
+    {
+        "Phase": "0",
+        "JobId": 0,
+        "CompleteJobName": "vcs_comp.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+cport_proc_stub+no_pcie_phy+no_vc_phy+cov",
+        "JobName": "vcs_comp.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+cport_proc_stub+no_pcie_phy+no_vc_phy+cov",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 03:16:27",
+        "EndTime": "10/03/2023 03:42:25"
+    },
+    {
+        "Phase": "0",
+        "JobId": 3,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_pcie_option_rom_test+has_pcie+has_vc+no_pcie_phy+cport_pcie_init_speedup+has_spi+no_vc_phy+cov:965995075",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_pcie_option_rom_test...WsufdbSS6pfU0EachNOIDrS2A7R:965995075",
+        "Status": "FAIL",
+        "ErrorSignature": "UVM_ERROR /nfs/shares/asic/regression/opa400/nightly-ci-2023-10-03/jkr_a0/verif/envs/hfi_misc/hfi_misc_harness.sv(98) @ 5001.00000ns: reporter [HFI_EFUSE_MISC_CHECKS] Deliverable : EFUSE_COMPLETE and/or HFI_HW_INIT_COMPLETE not de-asserted when HFI_HRESET_EFUSE asserted",
+        "StartTime": "10/03/2023 03:42:26",
+        "EndTime": "10/03/2023 04:16:47"
+    }
+]

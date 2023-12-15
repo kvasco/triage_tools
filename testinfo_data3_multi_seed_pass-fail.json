@@ -1,0 +1,173 @@
+[
+    {
+        "Phase": "0",
+        "JobId": 0,
+        "JobName": "vcs_comp.spc.spc_tb_rtl_fake_mem",
+        "Status": "FAIL",
+        "ErrorSignature": "Warning-[TMR] Text macro redefined",
+        "StartTime": "01/26/2023 17:07:18",
+        "EndTime": "01/26/2023 17:13:33"
+    },
+    {
+        "Phase": "0",
+        "JobId": 1,
+        "JobName": "vcs_sim.spc.spc_tb_rtl_fake_mem+regr+csr_sdma_dbg_read_test:1779504982",
+        "Status": "FAIL",
+        "ErrorSignature": "UVM_FATAL @ 0.00000ns: reporter [INVTST] Requested test from command line +UVM_TESTNAME=csr_sdma_dbg_read_test not found.",
+        "StartTime": "01/26/2023 17:13:33",
+        "EndTime": "01/26/2023 17:13:47"
+    },
+    {
+        "Phase": "0",
+        "JobId": 2,
+        "JobName": "vcs_sim.spc.spc_tb_rtl_fake_mem+regr+spc_sdma_normal_performance_test:2556186688",
+        "Status": "FAIL",
+        "ErrorSignature": "UVM_ERROR /nfs/shares/asic/ip/cn_asic_lib/opa400/verif/fab_lite/fab_item/sv/fab_stl_pkt.sv(1113) @ 8517.93856ns: reporter@@egressed_tx_pkt_tmp_[0] [fab_tx_pkt__MISCMP] fab_pkt: Packet[1023] Exp=0 Act=102878001788fe39 Mismatch!",
+        "StartTime": "01/26/2023 17:13:33",
+        "EndTime": "01/26/2023 17:20:02"
+    },
+    {
+        "Phase": "0",
+        "JobId": 3,
+        "JobName": "vcs_sim.spc.spc_tb_rtl_fake_mem+regr+spc_sdma_multi_eng_normal_mode_base_test:4068691938",
+        "Status": "FAIL",
+        "ErrorSignature": "UVM_ERROR /home/kvasconcellos/proj/foxtrot/jkr_a0/verif/shared/uvc/pcie_lite/sv/target/target_driver.sv(155) @ 2767.81250ns: uvm_test_top.tb_env.pcie_lite.target.driver [target_driver] Unexpected read response(RAL read response) with tag:0 is received on client0 interface...",
+        "StartTime": "01/26/2023 17:13:33",
+        "EndTime": "01/26/2023 17:21:12"
+    },
+    {
+        "Phase": "0",
+        "JobId": 4,
+        "JobName": "vcs_sim.spc.spc_tb_rtl_fake_mem+regr+sdma_csr_test:1711754871",
+        "Status": "FAIL",
+        "ErrorSignature": "UVM_ERROR /home/kvasconcellos/proj/foxtrot/jkr_a0/verif/envs/spc/sv/spc_csr_sequence_lib.sv(526) @ 16131.41667ns: uvm_test_top.tb_env.vseqr@@csr_seq [spc_csr_base_seq] SendDmaEngErrStatus_0 Register Expected Value:0, Actual Value:48",
+        "StartTime": "01/26/2023 17:13:33",
+        "EndTime": "01/26/2023 17:21:26"
+    },
+    {
+        "Phase": "0",
+        "JobId": 5,
+        "JobName": "vcs_sim.spc.spc_tb_rtl_fake_mem+regr+spc_sdma_normal_mode_base_test:2830764033",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "01/26/2023 17:13:33",
+        "EndTime": "01/26/2023 17:22:29"
+    },
+    {
+        "Phase": "0",
+        "JobId": 6,
+        "JobName": "vcs_sim.spc.spc_tb_rtl_fake_mem+regr+spc_sdma_ahg_performance_test:2853910385",
+        "Status": "FAIL",
+        "ErrorSignature": "UVM_FATAL /home/kvasconcellos/proj/foxtrot/jkr_a0/verif/envs/spc/sv/spc_txe_sdma_ahg_per_eng_seq_lib.sv(153) @ 2484793.35737ns: uvm_test_top.tb_env.vseqr@@sdma_ahg_performance_virtual_seq.ahg_random_seq [sdma_ahg_per_eng_performance_seq] TIMEOUT_ERR:SDMA Head and Tail Values are not matching",
+        "StartTime": "01/26/2023 17:13:33",
+        "EndTime": "01/26/2023 17:47:05"
+    },
+    {
+        "Phase": "0",
+        "JobId": 7,
+        "JobName": "vcs_sim.spc.spc_tb_rtl_fake_mem+regr+spc_sdma_eng_err_int_test:762313152",
+        "Status": "FAIL",
+        "ErrorSignature": "UVM_ERROR /home/kvasconcellos/proj/foxtrot/jkr_a0/verif/shared/uvc/pcie_lite/sv/target/target_driver.sv(155) @ 3035.08056ns: uvm_test_top.tb_env.pcie_lite.target.driver [target_driver] Unexpected read response(RAL read response) with tag:0 is received on client0 interface...",
+        "StartTime": "01/26/2023 17:13:33",
+        "EndTime": "01/26/2023 17:47:16"
+    },
+    {
+        "Phase": "0",
+        "JobId": 8,
+        "JobName": "vcs_sim.spc.spc_tb_rtl_fake_mem+regr+ahg_hdr_mem_interlock_test:3779703575",
+        "Status": "FAIL",
+        "ErrorSignature": "UVM_FATAL /home/kvasconcellos/proj/foxtrot/jkr_a0/verif/envs/spc/sv/spc_txe_sdma_ahg_per_eng_seq_lib.sv(153) @ 2484886.17304ns: uvm_test_top.tb_env.vseqr@@sdma_ahg_hdr_mem_interlock_virtual_seq.ahg_random_seq [sdma_ahg_per_eng_hdr_mem_interlock_seq] TIMEOUT_ERR:SDMA Head and Tail Values are not matching",
+        "StartTime": "01/26/2023 17:13:33",
+        "EndTime": "01/26/2023 18:05:35"
+    },
+    {
+        "Phase": "0",
+        "JobId": 9,
+        "JobName": "vcs_sim.spc.spc_tb_rtl_fake_mem+regr+spc_sdma_pause_test:3399113410",
+        "Status": "FAIL",
+        "ErrorSignature": "UVM_FATAL /home/kvasconcellos/proj/foxtrot/jkr_a0/verif/envs/spc/sv/spc_txe_sdma_ahg_per_eng_seq_lib.sv(153) @ 2484774.19431ns: uvm_test_top.tb_env.vseqr@@sdma_pause_mode_virtual_seq.ahg_random_seq [sdma_ahg_per_eng_random_seq] TIMEOUT_ERR:SDMA Head and Tail Values are not matching",
+        "StartTime": "01/26/2023 17:13:33",
+        "EndTime": "01/26/2023 18:09:07"
+    },
+    {
+        "Phase": "0",
+        "JobId": 10,
+        "JobName": "vcs_sim.spc.spc_tb_rtl_fake_mem+regr+spc_sdma_ahg_random_test:2946316192",
+        "Status": "FAIL",
+        "ErrorSignature": "UVM_FATAL /home/kvasconcellos/proj/foxtrot/jkr_a0/verif/envs/spc/sv/spc_txe_sdma_ahg_per_eng_seq_lib.sv(153) @ 2484804.95588ns: uvm_test_top.tb_env.vseqr@@sdma_ahg_random_virtual_seq.ahg_random_seq [sdma_ahg_per_eng_random_seq] TIMEOUT_ERR:SDMA Head and Tail Values are not matching",
+        "StartTime": "01/26/2023 17:13:33",
+        "EndTime": "01/26/2023 18:12:08"
+    },
+    {
+        "Phase": "0",
+        "JobId": 11,
+        "JobName": "vcs_sim.spc.spc_tb_rtl_fake_mem+regr+spc_sdma_err_int_test:2212397270",
+        "Status": "FAIL",
+        "ErrorSignature": "UVM_FATAL /home/kvasconcellos/proj/foxtrot/jkr_a0/verif/envs/spc/sv/spc_txe_sdma_ahg_per_eng_seq_lib.sv(153) @ 2504919.56383ns: uvm_test_top.tb_env.vseqr@@sdma_err_int_virtual_seq.ahg_random_seq [sdma_ahg_per_eng_random_seq] TIMEOUT_ERR:SDMA Head and Tail Values are not matching",
+        "StartTime": "01/26/2023 17:13:33",
+        "EndTime": "01/26/2023 18:12:08"
+    },
+    {
+        "Phase": "0",
+        "JobId": 12,
+        "JobName": "vcs_sim.spc.spc_tb_rtl_fake_mem+regr+spc_sdma_ahg_pbc_lrh_test:1933107275",
+        "Status": "FAIL",
+        "ErrorSignature": "UVM_FATAL /home/kvasconcellos/proj/foxtrot/jkr_a0/verif/envs/spc/sv/spc_txe_sdma_ahg_per_eng_seq_lib.sv(153) @ 2484811.47573ns: uvm_test_top.tb_env.vseqr@@sdma_ahg_pbc_lrh_virtual_seq.ahg_random_seq [sdma_ahg_per_eng_pbc_lrh_seq] TIMEOUT_ERR:SDMA Head and Tail Values are not matching",
+        "StartTime": "01/26/2023 17:13:33",
+        "EndTime": "01/26/2023 18:12:42"
+    },
+    {
+        "Phase": "0",
+        "JobId": 13,
+        "JobName": "vcs_sim.spc.spc_tb_rtl_fake_mem+regr+spc_sdma_intr_cntr_test:110517612",
+        "Status": "FAIL",
+        "ErrorSignature": "*** STEP 202341.0 ON cn-asic-02 CANCELLED AT 2023-01-26T23:13:47 DUE TO TIME LIMIT ***",
+        "StartTime": "01/26/2023 17:13:33",
+        "EndTime": "01/26/2023 23:13:52"
+    },
+    {
+        "Phase": "0",
+        "JobId": 14,
+        "JobName": "vcs_sim.spc.spc_tb_rtl_fake_mem+regr+spc_sdma_normal_mode_random_test:267683834",
+        "Status": "FAIL",
+        "ErrorSignature": "*** JOB 202351 ON cn-asic-hn CANCELLED AT 2023-01-26T23:13:47 DUE TO TIME LIMIT ***",
+        "StartTime": "01/26/2023 17:13:33",
+        "EndTime": "01/26/2023 23:13:52"
+    },
+    {
+        "Phase": "0",
+        "JobId": 15,
+        "JobName": "vcs_sim.spc.spc_tb_rtl_fake_mem+regr+spc_sdma_dyn_sb_cnfg_test:1556311853",
+        "Status": "FAIL",
+        "ErrorSignature": "UVM_ERROR /home/kvasconcellos/proj/foxtrot/jkr_a0/verif/shared/uvc/pcie_lite/sv/target/target_driver.sv(155) @ 2423.44444ns: uvm_test_top.tb_env.pcie_lite.target.driver [target_driver] Unexpected read response(RAL read response) with tag:0 is received on client0 interface...",
+        "StartTime": "01/26/2023 17:13:33",
+        "EndTime": "01/26/2023 23:13:55"
+    },
+    {
+        "Phase": "0",
+        "JobId": 16,
+        "JobName": "vcs_sim.spc.spc_tb_rtl_fake_mem+regr+spc_sdma_multi_eng_normal_mode_random_test:1125688660",
+        "Status": "FAIL",
+        "ErrorSignature": "UVM_ERROR /home/kvasconcellos/proj/foxtrot/jkr_a0/verif/shared/uvc/pcie_lite/sv/target/target_driver.sv(155) @ 2541.10417ns: uvm_test_top.tb_env.pcie_lite.target.driver [target_driver] Unexpected read response(RAL read response) with tag:0 is received on client0 interface...",
+        "StartTime": "01/26/2023 17:13:33",
+        "EndTime": "01/26/2023 23:13:55"
+    },
+    {
+        "Phase": "0",
+        "JobId": 17,
+        "JobName": "vcs_sim.spc.spc_tb_rtl_fake_mem+regr+spc_sdma_int_test:862069312",
+        "Status": "FAIL",
+        "ErrorSignature": "*** JOB 202345 ON cn-asic-01 CANCELLED AT 2023-01-26T23:13:47 DUE TO TIME LIMIT ***",
+        "StartTime": "01/26/2023 17:13:33",
+        "EndTime": "01/26/2023 23:13:55"
+    },
+    {
+        "Phase": "0",
+        "JobId": 18,
+        "JobName": "vcs_sim.spc.spc_tb_rtl_fake_mem+regr+spc_sdma_soft_reset_test:1067203665",
+        "Status": "FAIL",
+        "ErrorSignature": "*** STEP 202356.0 ON cn-asic-n3 CANCELLED AT 2023-01-26T23:13:47 DUE TO TIME LIMIT ***",
+        "StartTime": "01/26/2023 17:13:33",
+        "EndTime": "01/26/2023 23:13:52"
+    }
+]

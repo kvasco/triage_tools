@@ -1,0 +1,2502 @@
+[
+    {
+        "Phase": "0",
+        "JobId": 0,
+        "CompleteJobName": "vcs_comp.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+cport_proc_stub+no_pcie_phy+no_vc_phy+cov",
+        "JobName": "vcs_comp.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+cport_proc_stub+no_pcie_phy+no_vc_phy+cov",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 03:16:27",
+        "EndTime": "10/03/2023 03:42:25"
+    },
+    {
+        "Phase": "0",
+        "JobId": 1,
+        "CompleteJobName": "vcs_comp.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+no_pcie_phy+no_vc_phy+cov",
+        "JobName": "vcs_comp.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+no_pcie_phy+no_vc_phy+cov",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 03:16:27",
+        "EndTime": "10/03/2023 03:43:05"
+    },
+    {
+        "Phase": "0",
+        "JobId": 2,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+cport_proc_stub+hfi_fc_null_test+no_pcie_phy+no_vc_phy+A383+A2103+A2157+A2557+A2590+A2616+A2913+cov:0",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+cport_proc_stub+hfi_fc_null_test+no_pcie_phy+no_vc_phy+A383+A2103+A2157+A2557+A2590+A2616+A2913+cov:0",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 03:42:25",
+        "EndTime": "10/03/2023 04:16:10"
+    },
+    {
+        "Phase": "0",
+        "JobId": 3,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_pcie_option_rom_test+has_pcie+has_vc+no_pcie_phy+cport_pcie_init_speedup+has_spi+no_vc_phy+cov:965995075",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_pcie_option_rom_test...WsufdbSS6pfU0EachNOIDrS2A7R:965995075",
+        "Status": "FAIL",
+        "ErrorSignature": "UVM_ERROR /nfs/shares/asic/regression/opa400/nightly-ci-2023-10-03/jkr_a0/verif/envs/hfi_misc/hfi_misc_harness.sv(98) @ 5001.00000ns: reporter [HFI_EFUSE_MISC_CHECKS] Deliverable : EFUSE_COMPLETE and/or HFI_HW_INIT_COMPLETE not de-asserted when HFI_HRESET_EFUSE asserted",
+        "StartTime": "10/03/2023 03:42:26",
+        "EndTime": "10/03/2023 04:16:47"
+    },
+    {
+        "Phase": "0",
+        "JobId": 4,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_bringup_pipe_gen2_test+has_pcie+no_pcie_phy+time6h+no_vc_phy+cov:3579727613",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_bringup_pipe_gen2_test...LPBu2wuczaWXJvlP37SzBUq45KJ:3579727613",
+        "Status": "FAIL",
+        "ErrorSignature": "UVM_ERROR /nfs/shares/asic/regression/opa400/nightly-ci-2023-10-03/jkr_a0/verif/envs/hfi_misc/hfi_misc_harness.sv(98) @ 5001.00000ns: reporter [HFI_EFUSE_MISC_CHECKS] Deliverable : EFUSE_COMPLETE and/or HFI_HW_INIT_COMPLETE not de-asserted when HFI_HRESET_EFUSE asserted",
+        "StartTime": "10/03/2023 03:42:25",
+        "EndTime": "10/03/2023 04:17:06"
+    },
+    {
+        "Phase": "0",
+        "JobId": 5,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_smbus_master_test+has_smbus+slave_vip_cfg+time3h+no_pcie_phy+no_vc_phy+time6h+cov:870708213",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_smbus_master_test...CZKayL7ADovztwluYaDfCSdZeUE:870708213",
+        "Status": "FAIL",
+        "ErrorSignature": "UVM_ERROR /nfs/shares/asic/regression/opa400/nightly-ci-2023-10-03/jkr_a0/verif/envs/hfi_misc/hfi_misc_harness.sv(98) @ 5001.00000ns: reporter [HFI_EFUSE_MISC_CHECKS] Deliverable : EFUSE_COMPLETE and/or HFI_HW_INIT_COMPLETE not de-asserted when HFI_HRESET_EFUSE asserted",
+        "StartTime": "10/03/2023 03:42:25",
+        "EndTime": "10/03/2023 04:17:07"
+    },
+    {
+        "Phase": "0",
+        "JobId": 6,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_i2c_master_read_test+has_i2c+slave_vip_cfg+time3h+no_pcie_phy+no_vc_phy+time6h+cov:2316017960",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_i2c_master_read_test...8MBLq1Rg2dKjyt9vZl8wqgutq77:2316017960",
+        "Status": "FAIL",
+        "ErrorSignature": "UVM_ERROR /nfs/shares/asic/regression/opa400/nightly-ci-2023-10-03/jkr_a0/verif/envs/hfi_misc/hfi_misc_harness.sv(98) @ 5001.00000ns: reporter [HFI_EFUSE_MISC_CHECKS] Deliverable : EFUSE_COMPLETE and/or HFI_HW_INIT_COMPLETE not de-asserted when HFI_HRESET_EFUSE asserted",
+        "StartTime": "10/03/2023 03:42:25",
+        "EndTime": "10/03/2023 04:17:16"
+    },
+    {
+        "Phase": "0",
+        "JobId": 7,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_efuse_reg_access_host_pcie_test+has_pcie+no_pcie_phy+no_vc_phy+cov:1769027765",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_efuse_reg_access_host_pcie_test...2mT2ON5dEubE39XkSOuWV5mLlBm:1769027765",
+        "Status": "FAIL",
+        "ErrorSignature": "UVM_ERROR /nfs/shares/asic/regression/opa400/nightly-ci-2023-10-03/jkr_a0/verif/envs/hfi_misc/hfi_misc_harness.sv(98) @ 5001.00000ns: reporter [HFI_EFUSE_MISC_CHECKS] Deliverable : EFUSE_COMPLETE and/or HFI_HW_INIT_COMPLETE not de-asserted when HFI_HRESET_EFUSE asserted",
+        "StartTime": "10/03/2023 03:42:26",
+        "EndTime": "10/03/2023 04:18:11"
+    },
+    {
+        "Phase": "0",
+        "JobId": 8,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_dinit_disable_rei_timeout_test+no_pcie_phy+no_vc_phy+cov:2213595851",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_dinit_disable_rei_timeout_test...1iKW9FCBcCF0mRuM9hRyQhpca8b:2213595851",
+        "Status": "FAIL",
+        "ErrorSignature": "UVM_ERROR /nfs/shares/asic/regression/opa400/nightly-ci-2023-10-03/jkr_a0/verif/envs/hfi_misc/hfi_misc_harness.sv(98) @ 5001.00000ns: reporter [HFI_EFUSE_MISC_CHECKS] Deliverable : EFUSE_COMPLETE and/or HFI_HW_INIT_COMPLETE not de-asserted when HFI_HRESET_EFUSE asserted",
+        "StartTime": "10/03/2023 03:42:26",
+        "EndTime": "10/03/2023 04:19:11"
+    },
+    {
+        "Phase": "0",
+        "JobId": 9,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_bringup_pipe_gen5_test+has_pcie+no_pcie_phy+no_vc_phy+cov:4124575345",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_bringup_pipe_gen5_test...2lXBipInf8E3zwfPon6csMNT9I4:4124575345",
+        "Status": "FAIL",
+        "ErrorSignature": "UVM_ERROR /nfs/shares/asic/regression/opa400/nightly-ci-2023-10-03/jkr_a0/verif/envs/hfi_misc/hfi_misc_harness.sv(98) @ 5001.00000ns: reporter [HFI_EFUSE_MISC_CHECKS] Deliverable : EFUSE_COMPLETE and/or HFI_HW_INIT_COMPLETE not de-asserted when HFI_HRESET_EFUSE asserted",
+        "StartTime": "10/03/2023 03:42:25",
+        "EndTime": "10/03/2023 04:20:16"
+    },
+    {
+        "Phase": "0",
+        "JobId": 10,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_hfi_gpio_test+no_pcie_phy+no_vc_phy+cov:0",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_hfi_gpio_test+no_pcie_phy+no_vc_phy+cov:0",
+        "Status": "FAIL",
+        "ErrorSignature": "UVM_ERROR /nfs/shares/asic/regression/opa400/nightly-ci-2023-10-03/jkr_a0/verif/envs/hfi_misc/hfi_misc_harness.sv(98) @ 5001.00000ns: reporter [HFI_EFUSE_MISC_CHECKS] Deliverable : EFUSE_COMPLETE and/or HFI_HW_INIT_COMPLETE not de-asserted when HFI_HRESET_EFUSE asserted",
+        "StartTime": "10/03/2023 03:42:25",
+        "EndTime": "10/03/2023 04:20:48"
+    },
+    {
+        "Phase": "0",
+        "JobId": 11,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_clk_config_check_board_test+no_pcie_phy+no_vc_phy+cov:1898703233",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_clk_config_check_board_test...JjhgmwO9PluIkQ9fU7sSRgHY17H:1898703233",
+        "Status": "FAIL",
+        "ErrorSignature": "UVM_ERROR /nfs/shares/asic/regression/opa400/nightly-ci-2023-10-03/jkr_a0/verif/envs/hfi_misc/hfi_misc_harness.sv(98) @ 5001.00000ns: reporter [HFI_EFUSE_MISC_CHECKS] Deliverable : EFUSE_COMPLETE and/or HFI_HW_INIT_COMPLETE not de-asserted when HFI_HRESET_EFUSE asserted",
+        "StartTime": "10/03/2023 03:42:26",
+        "EndTime": "10/03/2023 04:21:01"
+    },
+    {
+        "Phase": "0",
+        "JobId": 12,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+cport_proc_stub+hfi_fc_null_test+no_pcie_phy+no_vc_phy+A383+A2103+A2157+A2557+A2590+A2616+A2913+cov:3345222983",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+cport_proc_stub+hfi_fc_null_test+no_pcie_phy+no_vc_phy+A383+A2103+A2157+A2557+A2590+A2616+A2913+cov:3345222983",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 03:42:26",
+        "EndTime": "10/03/2023 04:22:19"
+    },
+    {
+        "Phase": "0",
+        "JobId": 13,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_spi_arb_contention_test+has_spi+no_pcie_phy+no_vc_phy+cov:352357569",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_spi_arb_contention_test...XCP1jb8OOjowm8USMV0cpWTyHuQ:352357569",
+        "Status": "FAIL",
+        "ErrorSignature": "UVM_ERROR /nfs/shares/asic/regression/opa400/nightly-ci-2023-10-03/jkr_a0/verif/envs/hfi_misc/hfi_misc_harness.sv(98) @ 5001.00000ns: reporter [HFI_EFUSE_MISC_CHECKS] Deliverable : EFUSE_COMPLETE and/or HFI_HW_INIT_COMPLETE not de-asserted when HFI_HRESET_EFUSE asserted",
+        "StartTime": "10/03/2023 03:42:25",
+        "EndTime": "10/03/2023 04:23:17"
+    },
+    {
+        "Phase": "0",
+        "JobId": 14,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_dinit_rei_timeout_test+no_pcie_phy+no_vc_phy+cov:2478499769",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_dinit_rei_timeout_test...1GhpTyYNv4nzM4YuRxO9HlYs0ke:2478499769",
+        "Status": "FAIL",
+        "ErrorSignature": "UVM_ERROR /nfs/shares/asic/regression/opa400/nightly-ci-2023-10-03/jkr_a0/verif/envs/hfi_misc/hfi_misc_harness.sv(98) @ 5001.00000ns: reporter [HFI_EFUSE_MISC_CHECKS] Deliverable : EFUSE_COMPLETE and/or HFI_HW_INIT_COMPLETE not de-asserted when HFI_HRESET_EFUSE asserted",
+        "StartTime": "10/03/2023 03:42:25",
+        "EndTime": "10/03/2023 04:23:19"
+    },
+    {
+        "Phase": "0",
+        "JobId": 15,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_hfi_gpio_test+no_pcie_phy+no_vc_phy+cov:2569524631",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_hfi_gpio_test+no_pcie_phy+no_vc_phy+cov:2569524631",
+        "Status": "FAIL",
+        "ErrorSignature": "UVM_ERROR /nfs/shares/asic/regression/opa400/nightly-ci-2023-10-03/jkr_a0/verif/envs/hfi_top/seq/hfi_top_hfi_gpio_vseq.sv(54) @ 63861.44289ns: uvm_test_top.jkr_top.vseqr@@hfi_gpio_vseq [hfi_top_hfi_gpio_vseq] Unexpected value in GPIO_IN field of MISC_GPIO_IN register. Expected = 0x4f9d, Observed = 0x0",
+        "StartTime": "10/03/2023 03:42:26",
+        "EndTime": "10/03/2023 04:23:28"
+    },
+    {
+        "Phase": "0",
+        "JobId": 16,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_i2c_master_read_test+has_i2c+slave_vip_cfg+time3h+no_pcie_phy+no_vc_phy+time6h+cov:403777142",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_i2c_master_read_test...8MBLq1Rg2dKjyt9vZl8wqgutq77:403777142",
+        "Status": "FAIL",
+        "ErrorSignature": "UVM_ERROR /nfs/shares/asic/regression/opa400/nightly-ci-2023-10-03/jkr_a0/verif/envs/hfi_misc/hfi_misc_harness.sv(98) @ 5001.00000ns: reporter [HFI_EFUSE_MISC_CHECKS] Deliverable : EFUSE_COMPLETE and/or HFI_HW_INIT_COMPLETE not de-asserted when HFI_HRESET_EFUSE asserted",
+        "StartTime": "10/03/2023 03:42:26",
+        "EndTime": "10/03/2023 04:24:22"
+    },
+    {
+        "Phase": "0",
+        "JobId": 17,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_dinit_cport_rom_ready_timeout_test+no_pcie_phy+no_vc_phy+cov:2851588071",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_dinit_cport_rom_ready_timeout_test...KMS8LX8ulY8o5CLY6MwbKHHHKkM:2851588071",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 03:42:26",
+        "EndTime": "10/03/2023 04:24:39"
+    },
+    {
+        "Phase": "0",
+        "JobId": 18,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_efuse_reg_access_cport_test+no_pcie_phy+no_vc_phy+cov:228523564",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_efuse_reg_access_cport_test...O4MyYRiBZ8oWMFWn31eXA1VRTSD:228523564",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 03:42:26",
+        "EndTime": "10/03/2023 04:24:48"
+    },
+    {
+        "Phase": "0",
+        "JobId": 19,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_spi_pif_elbi_rom_read_test+has_spi+no_pcie_phy+no_vc_phy+cov:1620112584",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_spi_pif_elbi_rom_read_test...HvV1ODqg3Tkhdy2CUoPsS5Cn4LI:1620112584",
+        "Status": "FAIL",
+        "ErrorSignature": "UVM_ERROR /nfs/shares/asic/regression/opa400/nightly-ci-2023-10-03/cport_a0_full_chip_release/verif/op4/tb/env/spi/cp_spi_scoreboard_base.svh(147) @ 76191.01222ns: uvm_test_top.jkr_top.spi_pif_scoreboard [spi_pif_scoreboard] Comparator SPI Type transaction (Tx or Rx) mismatch",
+        "StartTime": "10/03/2023 03:42:25",
+        "EndTime": "10/03/2023 04:24:48"
+    },
+    {
+        "Phase": "0",
+        "JobId": 20,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_basic_ral_test+no_pcie_phy+no_vc_phy+cov:1798863941",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_basic_ral_test+no_pcie_phy+no_vc_phy+cov:1798863941",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 03:42:25",
+        "EndTime": "10/03/2023 04:25:09"
+    },
+    {
+        "Phase": "0",
+        "JobId": 21,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_pvt_rmwv_test+no_pcie_phy+no_vc_phy+cov:2302049107",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_pvt_rmwv_test+no_pcie_phy+no_vc_phy+cov:2302049107",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 03:42:25",
+        "EndTime": "10/03/2023 04:25:20"
+    },
+    {
+        "Phase": "0",
+        "JobId": 22,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_efuse_reg_access_cport_test+no_pcie_phy+no_vc_phy+cov:1590787061",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_efuse_reg_access_cport_test...O4MyYRiBZ8oWMFWn31eXA1VRTSD:1590787061",
+        "Status": "FAIL",
+        "ErrorSignature": "UVM_ERROR /nfs/shares/asic/regression/opa400/nightly-ci-2023-10-03/jkr_a0/verif/envs/hfi_misc/hfi_misc_harness.sv(98) @ 5001.00000ns: reporter [HFI_EFUSE_MISC_CHECKS] Deliverable : EFUSE_COMPLETE and/or HFI_HW_INIT_COMPLETE not de-asserted when HFI_HRESET_EFUSE asserted",
+        "StartTime": "10/03/2023 03:42:26",
+        "EndTime": "10/03/2023 04:25:26"
+    },
+    {
+        "Phase": "0",
+        "JobId": 23,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_spi_pif_elbi_rom_read_test+has_spi+no_pcie_phy+no_vc_phy+cov:3324122888",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_spi_pif_elbi_rom_read_test...HvV1ODqg3Tkhdy2CUoPsS5Cn4LI:3324122888",
+        "Status": "FAIL",
+        "ErrorSignature": "UVM_ERROR /nfs/shares/asic/regression/opa400/nightly-ci-2023-10-03/cport_a0_full_chip_release/verif/op4/tb/env/spi/cp_spi_scoreboard_base.svh(147) @ 74733.19116ns: uvm_test_top.jkr_top.spi_pif_scoreboard [spi_pif_scoreboard] Comparator SPI Type transaction (Tx or Rx) mismatch",
+        "StartTime": "10/03/2023 03:42:25",
+        "EndTime": "10/03/2023 04:25:36"
+    },
+    {
+        "Phase": "0",
+        "JobId": 24,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_i2c_master_read_test+has_i2c+slave_vip_cfg+time3h+no_pcie_phy+no_vc_phy+time6h+cov:3780418328",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_i2c_master_read_test...8MBLq1Rg2dKjyt9vZl8wqgutq77:3780418328",
+        "Status": "FAIL",
+        "ErrorSignature": "UVM_ERROR /nfs/shares/asic/regression/opa400/nightly-ci-2023-10-03/jkr_a0/verif/envs/hfi_misc/hfi_misc_harness.sv(98) @ 5001.00000ns: reporter [HFI_EFUSE_MISC_CHECKS] Deliverable : EFUSE_COMPLETE and/or HFI_HW_INIT_COMPLETE not de-asserted when HFI_HRESET_EFUSE asserted",
+        "StartTime": "10/03/2023 03:42:26",
+        "EndTime": "10/03/2023 04:25:55"
+    },
+    {
+        "Phase": "0",
+        "JobId": 25,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_spi_pif_elbi_rom_read_test+has_spi+no_pcie_phy+no_vc_phy+cov:2765254554",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_spi_pif_elbi_rom_read_test...HvV1ODqg3Tkhdy2CUoPsS5Cn4LI:2765254554",
+        "Status": "FAIL",
+        "ErrorSignature": "UVM_ERROR /nfs/shares/asic/regression/opa400/nightly-ci-2023-10-03/cport_a0_full_chip_release/verif/op4/tb/env/spi/cp_spi_scoreboard_base.svh(147) @ 71364.60463ns: uvm_test_top.jkr_top.spi_pif_scoreboard [spi_pif_scoreboard] Comparator SPI Type transaction (Tx or Rx) mismatch",
+        "StartTime": "10/03/2023 03:42:25",
+        "EndTime": "10/03/2023 04:26:21"
+    },
+    {
+        "Phase": "0",
+        "JobId": 26,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_boot_strap_test+no_pcie_phy+no_vc_phy+cov:1851355941",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_boot_strap_test+no_pcie_phy+no_vc_phy+cov:1851355941",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 03:42:25",
+        "EndTime": "10/03/2023 04:26:32"
+    },
+    {
+        "Phase": "0",
+        "JobId": 27,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+cport_proc_stub+hfi_fc_bringup_test+no_pcie_phy+no_vc_phy+A383+A2103+A2157+A2557+A2590+A2616+A2913+cov:3385187805",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+cport_proc_stub+hfi_fc_bringup_test+no_pcie_phy+no_vc_phy+A383+A2103+A2157+A2557+A2590+A2616+A2913+cov:3385187805",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 03:42:25",
+        "EndTime": "10/03/2023 04:26:32"
+    },
+    {
+        "Phase": "0",
+        "JobId": 28,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_dinit_disable_rei_timeout_test+no_pcie_phy+no_vc_phy+cov:984910566",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_dinit_disable_rei_timeout_test...1iKW9FCBcCF0mRuM9hRyQhpca8b:984910566",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 03:42:25",
+        "EndTime": "10/03/2023 04:26:48"
+    },
+    {
+        "Phase": "0",
+        "JobId": 29,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_dinit_breakpoints_test+no_pcie_phy+no_vc_phy+cov:3716075814",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_dinit_breakpoints_test...TLllgMTYEX7tqVPvkWIWXu6rAsj:3716075814",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 03:42:25",
+        "EndTime": "10/03/2023 04:26:48"
+    },
+    {
+        "Phase": "0",
+        "JobId": 30,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_dinit_disable_rei_timeout_test+no_pcie_phy+no_vc_phy+cov:0",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_dinit_disable_rei_timeout_test...1iKW9FCBcCF0mRuM9hRyQhpca8b:0",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 03:42:25",
+        "EndTime": "10/03/2023 04:27:01"
+    },
+    {
+        "Phase": "0",
+        "JobId": 31,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_csr_chain_endpoint_test+no_pcie_phy+no_vc_phy+cov:1660605900",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_csr_chain_endpoint_test...Ej5qKrjZpl7556HcV4v1m7pY3OG:1660605900",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 03:42:26",
+        "EndTime": "10/03/2023 04:27:22"
+    },
+    {
+        "Phase": "0",
+        "JobId": 32,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_cport_gpio_test+no_pcie_phy+no_vc_phy+cov:3121471419",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_cport_gpio_test+no_pcie_phy+no_vc_phy+cov:3121471419",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 03:42:25",
+        "EndTime": "10/03/2023 04:28:37"
+    },
+    {
+        "Phase": "0",
+        "JobId": 33,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_hfi_gpio_test+no_pcie_phy+no_vc_phy+cov:3570450263",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_hfi_gpio_test+no_pcie_phy+no_vc_phy+cov:3570450263",
+        "Status": "FAIL",
+        "ErrorSignature": "UVM_ERROR /nfs/shares/asic/regression/opa400/nightly-ci-2023-10-03/jkr_a0/verif/envs/hfi_top/seq/hfi_top_hfi_gpio_vseq.sv(54) @ 65371.84636ns: uvm_test_top.jkr_top.vseqr@@hfi_gpio_vseq [hfi_top_hfi_gpio_vseq] Unexpected value in GPIO_IN field of MISC_GPIO_IN register. Expected = 0x1525, Observed = 0x0",
+        "StartTime": "10/03/2023 03:42:25",
+        "EndTime": "10/03/2023 04:28:42"
+    },
+    {
+        "Phase": "0",
+        "JobId": 34,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_clk_config_check_serdes_refclk_test+no_pcie_phy+no_vc_phy+cov:4037195129",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_clk_config_check_serdes_refclk_test...BkJPmRXywsY4YRpxkvKOsYAr8i3:4037195129",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 03:42:26",
+        "EndTime": "10/03/2023 04:28:57"
+    },
+    {
+        "Phase": "0",
+        "JobId": 35,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_clk_config_check_board_test+no_pcie_phy+no_vc_phy+cov:1063745827",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_clk_config_check_board_test...JjhgmwO9PluIkQ9fU7sSRgHY17H:1063745827",
+        "Status": "FAIL",
+        "ErrorSignature": "UVM_ERROR /nfs/shares/asic/regression/opa400/nightly-ci-2023-10-03/jkr_a0/verif/envs/hfi_misc/hfi_misc_harness.sv(98) @ 5001.00000ns: reporter [HFI_EFUSE_MISC_CHECKS] Deliverable : EFUSE_COMPLETE and/or HFI_HW_INIT_COMPLETE not de-asserted when HFI_HRESET_EFUSE asserted",
+        "StartTime": "10/03/2023 03:42:26",
+        "EndTime": "10/03/2023 04:28:57"
+    },
+    {
+        "Phase": "0",
+        "JobId": 36,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_efuse_reg_access_cport_test+no_pcie_phy+no_vc_phy+cov:0",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_efuse_reg_access_cport_test...O4MyYRiBZ8oWMFWn31eXA1VRTSD:0",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 03:42:25",
+        "EndTime": "10/03/2023 04:29:01"
+    },
+    {
+        "Phase": "0",
+        "JobId": 37,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_basic_ral_test+no_pcie_phy+no_vc_phy+cov:83809115",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_basic_ral_test+no_pcie_phy+no_vc_phy+cov:83809115",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 03:42:25",
+        "EndTime": "10/03/2023 04:29:33"
+    },
+    {
+        "Phase": "0",
+        "JobId": 38,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_pvt_rmwv_test+no_pcie_phy+no_vc_phy+cov:3415736064",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_pvt_rmwv_test+no_pcie_phy+no_vc_phy+cov:3415736064",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 03:42:25",
+        "EndTime": "10/03/2023 04:29:33"
+    },
+    {
+        "Phase": "0",
+        "JobId": 39,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_smbus_slave_test+has_smbus+master_vip_cfg+time3h+no_pcie_phy+no_vc_phy+time6h+cov:564640801",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_smbus_slave_test...8ciygy8POIkmaz4d7hWVmcNRO3C:564640801",
+        "Status": "FAIL",
+        "ErrorSignature": "UVM_ERROR /nfs/shares/asic/regression/opa400/nightly-ci-2023-10-03/jkr_a0/verif/envs/hfi_misc/hfi_misc_harness.sv(98) @ 5001.00000ns: reporter [HFI_EFUSE_MISC_CHECKS] Deliverable : EFUSE_COMPLETE and/or HFI_HW_INIT_COMPLETE not de-asserted when HFI_HRESET_EFUSE asserted",
+        "StartTime": "10/03/2023 03:42:26",
+        "EndTime": "10/03/2023 04:29:47"
+    },
+    {
+        "Phase": "0",
+        "JobId": 40,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+cport_proc_stub+hfi_fc_null_test+no_pcie_phy+no_vc_phy+A383+A2103+A2157+A2557+A2590+A2616+A2913+cov:3215617513",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+cport_proc_stub+hfi_fc_null_test+no_pcie_phy+no_vc_phy+A383+A2103+A2157+A2557+A2590+A2616+A2913+cov:3215617513",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 03:42:25",
+        "EndTime": "10/03/2023 04:29:53"
+    },
+    {
+        "Phase": "0",
+        "JobId": 41,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_serdes_ingress_pkts_no_phy_test+has_vc+no_pcie_phy+no_vc_phy+time3h+cov:2501810417",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_serdes_ingress_pkts_no_phy_test...H2jeSkO4EoSZuauadkaVbcmh5Aq:2501810417",
+        "Status": "FAIL",
+        "ErrorSignature": "UVM_FATAL /nfs/shares/asic/regression/opa400/nightly-ci-2023-10-03/vcrk_a0_branch_20230925_vc_final/verif/dev/vc_core/seq/vc_core_start_lni_seq.sv(155) @ 89166.75798ns: reporter@@m_cores_drive_external_vc_pwrup_vseq[0].drive_pwrup_seq[0].start_lni [STARTUP] ",
+        "StartTime": "10/03/2023 03:42:26",
+        "EndTime": "10/03/2023 04:29:53"
+    },
+    {
+        "Phase": "0",
+        "JobId": 42,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_dinit_efuse_timeout_test+no_pcie_phy+no_vc_phy+cov:2421105386",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_dinit_efuse_timeout_test...QsLfiaQ14zlZ5S2gmofwCNHMhLm:2421105386",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 03:42:26",
+        "EndTime": "10/03/2023 04:29:53"
+    },
+    {
+        "Phase": "0",
+        "JobId": 43,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_efuse_reg_access_cport_test+no_pcie_phy+no_vc_phy+cov:2710005884",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_efuse_reg_access_cport_test...O4MyYRiBZ8oWMFWn31eXA1VRTSD:2710005884",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 03:42:25",
+        "EndTime": "10/03/2023 04:30:23"
+    },
+    {
+        "Phase": "0",
+        "JobId": 44,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_pcie_option_rom_test+has_pcie+has_vc+no_pcie_phy+cport_pcie_init_speedup+has_spi+no_vc_phy+cov:3596857829",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_pcie_option_rom_test...WsufdbSS6pfU0EachNOIDrS2A7R:3596857829",
+        "Status": "FAIL",
+        "ErrorSignature": "UVM_FATAL /nfs/shares/asic/regression/opa400/nightly-ci-2023-10-03/vcrk_a0_branch_20230925_vc_final/verif/dev/vc_core/seq/vc_core_start_lni_seq.sv(155) @ 89370.94856ns: reporter@@m_cores_drive_external_vc_pwrup_vseq[0].drive_pwrup_seq[0].start_lni [STARTUP] ",
+        "StartTime": "10/03/2023 03:42:25",
+        "EndTime": "10/03/2023 04:30:44"
+    },
+    {
+        "Phase": "0",
+        "JobId": 45,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_dinit_cport_rom_ready_timeout_test+no_pcie_phy+no_vc_phy+cov:353395437",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_dinit_cport_rom_ready_timeout_test...KMS8LX8ulY8o5CLY6MwbKHHHKkM:353395437",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 03:42:25",
+        "EndTime": "10/03/2023 04:30:49"
+    },
+    {
+        "Phase": "0",
+        "JobId": 46,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_dinit_efuse_timeout_test+no_pcie_phy+no_vc_phy+cov:3136932886",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_dinit_efuse_timeout_test...QsLfiaQ14zlZ5S2gmofwCNHMhLm:3136932886",
+        "Status": "FAIL",
+        "ErrorSignature": "UVM_ERROR /nfs/shares/asic/regression/opa400/nightly-ci-2023-10-03/jkr_a0/verif/envs/hfi_top/hfi_top_harness.sv(349) @ 7089.60000ns: reporter [hfi_top_harness] Deliverable 6.1.2. jkr_top.pcip_phy_por_n should be 0 when jkr_top.w_dinit_hreset_pcie is set. Current value= x",
+        "StartTime": "10/03/2023 03:42:25",
+        "EndTime": "10/03/2023 04:30:54"
+    },
+    {
+        "Phase": "0",
+        "JobId": 47,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_dinit_efuse_timeout_test+no_pcie_phy+no_vc_phy+cov:62982944",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_dinit_efuse_timeout_test...QsLfiaQ14zlZ5S2gmofwCNHMhLm:62982944",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 03:42:25",
+        "EndTime": "10/03/2023 04:30:59"
+    },
+    {
+        "Phase": "0",
+        "JobId": 48,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_csr_chain_target_chain_reset_test+no_pcie_phy+no_vc_phy+cov:2839784541",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_csr_chain_target_chain_reset_test...HIFklFswvU9fn79w351wcx7c4nq:2839784541",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 03:42:25",
+        "EndTime": "10/03/2023 04:31:29"
+    },
+    {
+        "Phase": "0",
+        "JobId": 49,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_csr_chain_endpoint_test+no_pcie_phy+no_vc_phy+cov:3015017685",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_csr_chain_endpoint_test...Ej5qKrjZpl7556HcV4v1m7pY3OG:3015017685",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 03:42:25",
+        "EndTime": "10/03/2023 04:31:44"
+    },
+    {
+        "Phase": "0",
+        "JobId": 50,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_board_id_test+no_pcie_phy+no_vc_phy+cov:4063064672",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_board_id_test+no_pcie_phy+no_vc_phy+cov:4063064672",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 03:42:26",
+        "EndTime": "10/03/2023 04:32:19"
+    },
+    {
+        "Phase": "0",
+        "JobId": 51,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_serdes_bringup_no_phy_test+has_vc+no_pcie_phy+no_vc_phy+time3h+cov:1361355168",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_serdes_bringup_no_phy_test...RHmHKB8HnNBysfjSX3ZBcCmChqX:1361355168",
+        "Status": "FAIL",
+        "ErrorSignature": "UVM_FATAL /nfs/shares/asic/regression/opa400/nightly-ci-2023-10-03/vcrk_a0_branch_20230925_vc_final/verif/dev/vc_core/seq/vc_core_start_lni_seq.sv(155) @ 88520.22395ns: reporter@@m_cores_drive_external_vc_pwrup_vseq[0].drive_pwrup_seq[0].start_lni [STARTUP] ",
+        "StartTime": "10/03/2023 03:42:25",
+        "EndTime": "10/03/2023 04:32:34"
+    },
+    {
+        "Phase": "0",
+        "JobId": 52,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_serdes_bringup_no_phy_test+has_vc+no_pcie_phy+no_vc_phy+time3h+cov:0",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_serdes_bringup_no_phy_test...RHmHKB8HnNBysfjSX3ZBcCmChqX:0",
+        "Status": "FAIL",
+        "ErrorSignature": "UVM_FATAL /nfs/shares/asic/regression/opa400/nightly-ci-2023-10-03/vcrk_a0_branch_20230925_vc_final/verif/dev/vc_core/seq/vc_core_start_lni_seq.sv(155) @ 88965.14385ns: reporter@@m_cores_drive_external_vc_pwrup_vseq[0].drive_pwrup_seq[0].start_lni [STARTUP] ",
+        "StartTime": "10/03/2023 03:42:25",
+        "EndTime": "10/03/2023 04:32:42"
+    },
+    {
+        "Phase": "0",
+        "JobId": 53,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_dinit_disable_rei_timeout_test+no_pcie_phy+no_vc_phy+cov:2799018021",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_dinit_disable_rei_timeout_test...1iKW9FCBcCF0mRuM9hRyQhpca8b:2799018021",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 03:42:25",
+        "EndTime": "10/03/2023 04:32:49"
+    },
+    {
+        "Phase": "0",
+        "JobId": 54,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_clk_config_check_serdes_refclk_test+no_pcie_phy+no_vc_phy+cov:3545596950",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_clk_config_check_serdes_refclk_test...BkJPmRXywsY4YRpxkvKOsYAr8i3:3545596950",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 03:42:25",
+        "EndTime": "10/03/2023 04:33:05"
+    },
+    {
+        "Phase": "0",
+        "JobId": 55,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_dinit_cport_rom_ready_timeout_test+no_pcie_phy+no_vc_phy+cov:0",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_dinit_cport_rom_ready_timeout_test...KMS8LX8ulY8o5CLY6MwbKHHHKkM:0",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 03:42:25",
+        "EndTime": "10/03/2023 04:33:05"
+    },
+    {
+        "Phase": "0",
+        "JobId": 56,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_csr_chain_target_chain_reset_test+no_pcie_phy+no_vc_phy+cov:1166109876",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_csr_chain_target_chain_reset_test...HIFklFswvU9fn79w351wcx7c4nq:1166109876",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 03:42:26",
+        "EndTime": "10/03/2023 04:33:08"
+    },
+    {
+        "Phase": "0",
+        "JobId": 57,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_dinit_disable_pll_timeout_test+no_pcie_phy+no_vc_phy+cov:1057453860",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_dinit_disable_pll_timeout_test...MqV86aJgHAYXFjmrxH0vVQtuR9T:1057453860",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 03:42:26",
+        "EndTime": "10/03/2023 04:33:39"
+    },
+    {
+        "Phase": "0",
+        "JobId": 58,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_serdes_bringup_no_phy_test+has_vc+no_pcie_phy+no_vc_phy+time3h+cov:1520465607",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_serdes_bringup_no_phy_test...RHmHKB8HnNBysfjSX3ZBcCmChqX:1520465607",
+        "Status": "FAIL",
+        "ErrorSignature": "UVM_FATAL /nfs/shares/asic/regression/opa400/nightly-ci-2023-10-03/vcrk_a0_branch_20230925_vc_final/verif/dev/vc_core/seq/vc_core_start_lni_seq.sv(155) @ 88786.74856ns: reporter@@m_cores_drive_external_vc_pwrup_vseq[0].drive_pwrup_seq[0].start_lni [STARTUP] ",
+        "StartTime": "10/03/2023 03:42:25",
+        "EndTime": "10/03/2023 04:34:30"
+    },
+    {
+        "Phase": "0",
+        "JobId": 59,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_pvt_access_test+no_pcie_phy+no_vc_phy+cov:2286959828",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_pvt_access_test+no_pcie_phy+no_vc_phy+cov:2286959828",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 03:42:25",
+        "EndTime": "10/03/2023 04:34:55"
+    },
+    {
+        "Phase": "0",
+        "JobId": 60,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_pvt_access_test+no_pcie_phy+no_vc_phy+cov:2586837336",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_pvt_access_test+no_pcie_phy+no_vc_phy+cov:2586837336",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 03:42:26",
+        "EndTime": "10/03/2023 04:34:56"
+    },
+    {
+        "Phase": "0",
+        "JobId": 61,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_dinit_breakpoints_test+no_pcie_phy+no_vc_phy+cov:1116039886",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_dinit_breakpoints_test...TLllgMTYEX7tqVPvkWIWXu6rAsj:1116039886",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 03:42:25",
+        "EndTime": "10/03/2023 04:35:23"
+    },
+    {
+        "Phase": "0",
+        "JobId": 62,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_csr_chain_endpoint_test+no_pcie_phy+no_vc_phy+cov:860734268",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_csr_chain_endpoint_test...Ej5qKrjZpl7556HcV4v1m7pY3OG:860734268",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 03:42:26",
+        "EndTime": "10/03/2023 04:35:26"
+    },
+    {
+        "Phase": "0",
+        "JobId": 63,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_efuse_reg_access_cport_test+no_pcie_phy+no_vc_phy+cov:2457714768",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_efuse_reg_access_cport_test...O4MyYRiBZ8oWMFWn31eXA1VRTSD:2457714768",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 03:42:25",
+        "EndTime": "10/03/2023 04:35:35"
+    },
+    {
+        "Phase": "0",
+        "JobId": 64,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_spi_arb_contention_test+has_spi+no_pcie_phy+no_vc_phy+cov:3701821001",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_spi_arb_contention_test...XCP1jb8OOjowm8USMV0cpWTyHuQ:3701821001",
+        "Status": "FAIL",
+        "ErrorSignature": "UVM_ERROR /nfs/shares/asic/regression/opa400/nightly-ci-2023-10-03/cport_a0_full_chip_release/verif/op4/tb/env/spi/cp_spi_scoreboard_base.svh(147) @ 72384.08714ns: uvm_test_top.jkr_top.spi_pif_scoreboard [spi_pif_scoreboard] Comparator SPI Type transaction (Tx or Rx) mismatch",
+        "StartTime": "10/03/2023 03:42:26",
+        "EndTime": "10/03/2023 04:35:58"
+    },
+    {
+        "Phase": "0",
+        "JobId": 65,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_i2c_master_read_test+has_i2c+slave_vip_cfg+time3h+no_pcie_phy+no_vc_phy+time6h+cov:4049071342",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_i2c_master_read_test...8MBLq1Rg2dKjyt9vZl8wqgutq77:4049071342",
+        "Status": "FAIL",
+        "ErrorSignature": "UVM_ERROR /nfs/shares/asic/tools/cadence/vipcat_11.30.088-28_Feb_2023_10_04_54/tools.lnx86/denali_64bit/ddvapi/sv/uvm/i3c/cdnI3cUvmMonitor.sv(681) @ 151711.71992ns: uvm_test_top.jkr_top.inst_jkr_misc.inst_jkr_cport_top.i2c_sve.env.i2c_passive_master[2].monitor [DENALI_I3C_ERR_1000_TRANSMISSION_TO_UNKNOWN_DEVICE] Detected[uvm_test_top.jkr_top.inst_jkr_misc.inst_jkr_cport_top.i2c_sve.env.i2c_passive_master[2]] [I3CNone] ERR_1000_TRANSMISSION_TO_UNKNOWN_DEVICE  Transmission to unknown Device ID detected. Device ID = 0x30",
+        "StartTime": "10/03/2023 03:42:26",
+        "EndTime": "10/03/2023 04:36:26"
+    },
+    {
+        "Phase": "0",
+        "JobId": 66,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_pcie_option_rom_test+has_pcie+has_vc+no_pcie_phy+cport_pcie_init_speedup+has_spi+no_vc_phy+cov:315098571",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_pcie_option_rom_test...WsufdbSS6pfU0EachNOIDrS2A7R:315098571",
+        "Status": "FAIL",
+        "ErrorSignature": "UVM_FATAL /nfs/shares/asic/regression/opa400/nightly-ci-2023-10-03/vcrk_a0_branch_20230925_vc_final/verif/dev/vc_core/seq/vc_core_start_lni_seq.sv(155) @ 90088.19097ns: reporter@@m_cores_drive_external_vc_pwrup_vseq[0].drive_pwrup_seq[0].start_lni [STARTUP] ",
+        "StartTime": "10/03/2023 03:42:26",
+        "EndTime": "10/03/2023 04:36:36"
+    },
+    {
+        "Phase": "0",
+        "JobId": 67,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_uart_test+has_uart+no_pcie_phy+no_vc_phy+cov:3175988394",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_uart_test+has_uart+no_pcie_phy+no_vc_phy+cov:3175988394",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 03:42:25",
+        "EndTime": "10/03/2023 04:36:46"
+    },
+    {
+        "Phase": "0",
+        "JobId": 68,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_dinit_rei_timeout_test+no_pcie_phy+no_vc_phy+cov:693996023",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_dinit_rei_timeout_test...1GhpTyYNv4nzM4YuRxO9HlYs0ke:693996023",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 03:42:26",
+        "EndTime": "10/03/2023 04:36:49"
+    },
+    {
+        "Phase": "0",
+        "JobId": 69,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_bringup_pipe_gen1_test+has_pcie+no_pcie_phy+time6h+no_vc_phy+cov:1767452189",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_bringup_pipe_gen1_test...JsbmSUo0Zh30fUWVTmaimrE8Mci:1767452189",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 03:42:25",
+        "EndTime": "10/03/2023 04:36:56"
+    },
+    {
+        "Phase": "0",
+        "JobId": 70,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_hfi_gpio_test+no_pcie_phy+no_vc_phy+cov:816916951",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_hfi_gpio_test+no_pcie_phy+no_vc_phy+cov:816916951",
+        "Status": "FAIL",
+        "ErrorSignature": "UVM_ERROR /nfs/shares/asic/regression/opa400/nightly-ci-2023-10-03/jkr_a0/verif/envs/hfi_top/seq/hfi_top_hfi_gpio_vseq.sv(54) @ 65064.83251ns: uvm_test_top.jkr_top.vseqr@@hfi_gpio_vseq [hfi_top_hfi_gpio_vseq] Unexpected value in GPIO_IN field of MISC_GPIO_IN register. Expected = 0xf408, Observed = 0x0",
+        "StartTime": "10/03/2023 03:42:25",
+        "EndTime": "10/03/2023 04:37:09"
+    },
+    {
+        "Phase": "0",
+        "JobId": 71,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_cport_gpio_test+no_pcie_phy+no_vc_phy+cov:3971023888",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_cport_gpio_test+no_pcie_phy+no_vc_phy+cov:3971023888",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 03:42:26",
+        "EndTime": "10/03/2023 04:37:27"
+    },
+    {
+        "Phase": "0",
+        "JobId": 72,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_i2c_master_read_test+has_i2c+slave_vip_cfg+time3h+no_pcie_phy+no_vc_phy+time6h+cov:0",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_i2c_master_read_test...8MBLq1Rg2dKjyt9vZl8wqgutq77:0",
+        "Status": "FAIL",
+        "ErrorSignature": "UVM_ERROR /nfs/shares/asic/tools/cadence/vipcat_11.30.088-28_Feb_2023_10_04_54/tools.lnx86/denali_64bit/ddvapi/sv/uvm/i3c/cdnI3cUvmMonitor.sv(681) @ 152163.36112ns: uvm_test_top.jkr_top.inst_jkr_misc.inst_jkr_cport_top.i2c_sve.env.i2c_passive_master[0].monitor [DENALI_I3C_ERR_1000_TRANSMISSION_TO_UNKNOWN_DEVICE] Detected[uvm_test_top.jkr_top.inst_jkr_misc.inst_jkr_cport_top.i2c_sve.env.i2c_passive_master[0]] [I3CNone] ERR_1000_TRANSMISSION_TO_UNKNOWN_DEVICE  Transmission to unknown Device ID detected. Device ID = 0x1C",
+        "StartTime": "10/03/2023 03:42:26",
+        "EndTime": "10/03/2023 04:37:30"
+    },
+    {
+        "Phase": "0",
+        "JobId": 73,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_dinit_rei_timeout_test+no_pcie_phy+no_vc_phy+cov:425062746",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_dinit_rei_timeout_test...1GhpTyYNv4nzM4YuRxO9HlYs0ke:425062746",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 03:42:25",
+        "EndTime": "10/03/2023 04:37:30"
+    },
+    {
+        "Phase": "0",
+        "JobId": 74,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_board_id_test+no_pcie_phy+no_vc_phy+cov:3553744277",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_board_id_test+no_pcie_phy+no_vc_phy+cov:3553744277",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 03:42:26",
+        "EndTime": "10/03/2023 04:37:40"
+    },
+    {
+        "Phase": "0",
+        "JobId": 75,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_bringup_pipe_gen2_test+has_pcie+no_pcie_phy+time6h+no_vc_phy+cov:3690313743",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_bringup_pipe_gen2_test...LPBu2wuczaWXJvlP37SzBUq45KJ:3690313743",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 03:42:25",
+        "EndTime": "10/03/2023 04:37:51"
+    },
+    {
+        "Phase": "0",
+        "JobId": 76,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_hfi_gpio_test+no_pcie_phy+no_vc_phy+cov:436955284",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_hfi_gpio_test+no_pcie_phy+no_vc_phy+cov:436955284",
+        "Status": "FAIL",
+        "ErrorSignature": "UVM_ERROR /nfs/shares/asic/regression/opa400/nightly-ci-2023-10-03/jkr_a0/verif/envs/hfi_top/seq/hfi_top_hfi_gpio_vseq.sv(54) @ 64334.24589ns: uvm_test_top.jkr_top.vseqr@@hfi_gpio_vseq [hfi_top_hfi_gpio_vseq] Unexpected value in GPIO_IN field of MISC_GPIO_IN register. Expected = 0xdc0e, Observed = 0x0",
+        "StartTime": "10/03/2023 03:42:26",
+        "EndTime": "10/03/2023 04:38:00"
+    },
+    {
+        "Phase": "0",
+        "JobId": 77,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+hfi_fc_jtag_idcode_test+has_jtag+no_pcie_phy+no_vc_phy+cov:1713678778",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+hfi_fc_jtag_idcode_test+has_jtag+no_pcie_phy+no_vc_phy+cov:1713678778",
+        "Status": "FAIL",
+        "ErrorSignature": "\tOffending '(this.error_cnt == 0)'",
+        "StartTime": "10/03/2023 03:43:06",
+        "EndTime": "10/03/2023 04:38:06"
+    },
+    {
+        "Phase": "0",
+        "JobId": 78,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_dinit_pll_timeout_test+no_pcie_phy+no_vc_phy+cov:295507205",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_dinit_pll_timeout_test...FuTaxjfe3AxrBZBelrmlWS4d0kg:295507205",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 03:42:25",
+        "EndTime": "10/03/2023 04:40:37"
+    },
+    {
+        "Phase": "0",
+        "JobId": 79,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_bringup_pipe_gen3_test+has_pcie+no_pcie_phy+time6h+no_vc_phy+cov:719195964",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_bringup_pipe_gen3_test...7G7ME18yVqggMxTYn60teEuvvim:719195964",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 03:42:25",
+        "EndTime": "10/03/2023 04:41:37"
+    },
+    {
+        "Phase": "0",
+        "JobId": 80,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_dinit_pll_timeout_test+no_pcie_phy+no_vc_phy+cov:0",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_dinit_pll_timeout_test...FuTaxjfe3AxrBZBelrmlWS4d0kg:0",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 03:42:25",
+        "EndTime": "10/03/2023 04:41:45"
+    },
+    {
+        "Phase": "0",
+        "JobId": 81,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_bringup_pipe_gen5_test+has_pcie+no_pcie_phy+no_vc_phy+cov:0",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_bringup_pipe_gen5_test...2lXBipInf8E3zwfPon6csMNT9I4:0",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 03:42:25",
+        "EndTime": "10/03/2023 04:44:21"
+    },
+    {
+        "Phase": "0",
+        "JobId": 82,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_bringup_pipe_gen4_test+has_pcie+no_pcie_phy+time6h+no_vc_phy+cov:3746123798",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_bringup_pipe_gen4_test...FeKPVI4X5hS051XCRnpjLWLpuYS:3746123798",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 03:42:25",
+        "EndTime": "10/03/2023 04:46:36"
+    },
+    {
+        "Phase": "0",
+        "JobId": 83,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_bringup_pipe_gen1_test+has_pcie+no_pcie_phy+time6h+no_vc_phy+cov:1004590591",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_bringup_pipe_gen1_test...JsbmSUo0Zh30fUWVTmaimrE8Mci:1004590591",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 03:42:25",
+        "EndTime": "10/03/2023 04:46:59"
+    },
+    {
+        "Phase": "0",
+        "JobId": 84,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_i2c_master_write_test+has_i2c+slave_vip_cfg+time3h+no_pcie_phy+no_vc_phy+time6h+cov:1167339209",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_i2c_master_write_test...aKcaxmSm4T8V7c8pNun5csoUYtE:1167339209",
+        "Status": "FAIL",
+        "ErrorSignature": "UVM_ERROR /nfs/shares/asic/tools/cadence/vipcat_11.30.088-28_Feb_2023_10_04_54/tools.lnx86/denali_64bit/ddvapi/sv/uvm/i3c/cdnI3cUvmMonitor.sv(681) @ 152272.33851ns: uvm_test_top.jkr_top.inst_jkr_misc.inst_jkr_cport_top.i2c_sve.env.i2c_passive_master[1].monitor [DENALI_I3C_ERR_1000_TRANSMISSION_TO_UNKNOWN_DEVICE] Detected[uvm_test_top.jkr_top.inst_jkr_misc.inst_jkr_cport_top.i2c_sve.env.i2c_passive_master[1]] [I3CNone] ERR_1000_TRANSMISSION_TO_UNKNOWN_DEVICE  Transmission to unknown Device ID detected. Device ID = 0x18",
+        "StartTime": "10/03/2023 03:42:25",
+        "EndTime": "10/03/2023 04:47:46"
+    },
+    {
+        "Phase": "0",
+        "JobId": 85,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_i2c_master_write_test+has_i2c+slave_vip_cfg+time3h+no_pcie_phy+no_vc_phy+time6h+cov:129804812",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_i2c_master_write_test...aKcaxmSm4T8V7c8pNun5csoUYtE:129804812",
+        "Status": "FAIL",
+        "ErrorSignature": "UVM_ERROR /nfs/shares/asic/tools/cadence/vipcat_11.30.088-28_Feb_2023_10_04_54/tools.lnx86/denali_64bit/ddvapi/sv/uvm/i3c/cdnI3cUvmMonitor.sv(681) @ 152007.31994ns: uvm_test_top.jkr_top.inst_jkr_misc.inst_jkr_cport_top.i2c_sve.env.i2c_passive_master[1].monitor [DENALI_I3C_ERR_1000_TRANSMISSION_TO_UNKNOWN_DEVICE] Detected[uvm_test_top.jkr_top.inst_jkr_misc.inst_jkr_cport_top.i2c_sve.env.i2c_passive_master[1]] [I3CNone] ERR_1000_TRANSMISSION_TO_UNKNOWN_DEVICE  Transmission to unknown Device ID detected. Device ID = 0x3A",
+        "StartTime": "10/03/2023 03:42:25",
+        "EndTime": "10/03/2023 04:47:52"
+    },
+    {
+        "Phase": "0",
+        "JobId": 86,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_i2c_master_write_test+has_i2c+slave_vip_cfg+time3h+no_pcie_phy+no_vc_phy+time6h+cov:2684438559",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_i2c_master_write_test...aKcaxmSm4T8V7c8pNun5csoUYtE:2684438559",
+        "Status": "FAIL",
+        "ErrorSignature": "UVM_ERROR /nfs/shares/asic/tools/cadence/vipcat_11.30.088-28_Feb_2023_10_04_54/tools.lnx86/denali_64bit/ddvapi/sv/uvm/i3c/cdnI3cUvmMonitor.sv(681) @ 151566.96113ns: uvm_test_top.jkr_top.inst_jkr_misc.inst_jkr_cport_top.i2c_sve.env.i2c_passive_master[2].monitor [DENALI_I3C_ERR_1000_TRANSMISSION_TO_UNKNOWN_DEVICE] Detected[uvm_test_top.jkr_top.inst_jkr_misc.inst_jkr_cport_top.i2c_sve.env.i2c_passive_master[2]] [I3CNone] ERR_1000_TRANSMISSION_TO_UNKNOWN_DEVICE  Transmission to unknown Device ID detected. Device ID = 0x59",
+        "StartTime": "10/03/2023 03:42:25",
+        "EndTime": "10/03/2023 04:49:09"
+    },
+    {
+        "Phase": "0",
+        "JobId": 87,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_bringup_pipe_gen5_test+has_pcie+no_pcie_phy+no_vc_phy+cov:444514249",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_bringup_pipe_gen5_test...2lXBipInf8E3zwfPon6csMNT9I4:444514249",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 03:42:25",
+        "EndTime": "10/03/2023 04:50:03"
+    },
+    {
+        "Phase": "0",
+        "JobId": 88,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_bringup_pipe_gen4_test+has_pcie+no_pcie_phy+time6h+no_vc_phy+cov:1377909960",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_bringup_pipe_gen4_test...FeKPVI4X5hS051XCRnpjLWLpuYS:1377909960",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 03:42:26",
+        "EndTime": "10/03/2023 04:50:40"
+    },
+    {
+        "Phase": "0",
+        "JobId": 89,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_pcie_option_rom_test+has_pcie+has_vc+no_pcie_phy+cport_pcie_init_speedup+has_spi+no_vc_phy+cov:3313608178",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_pcie_option_rom_test...WsufdbSS6pfU0EachNOIDrS2A7R:3313608178",
+        "Status": "FAIL",
+        "ErrorSignature": "UVM_FATAL /nfs/shares/asic/regression/opa400/nightly-ci-2023-10-03/vcrk_a0_branch_20230925_vc_final/verif/dev/vc_core/seq/vc_core_start_lni_seq.sv(155) @ 88977.64515ns: reporter@@m_cores_drive_external_vc_pwrup_vseq[0].drive_pwrup_seq[0].start_lni [STARTUP] ",
+        "StartTime": "10/03/2023 03:42:25",
+        "EndTime": "10/03/2023 04:52:11"
+    },
+    {
+        "Phase": "0",
+        "JobId": 90,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_pcie_option_rom_test+has_pcie+has_vc+no_pcie_phy+cport_pcie_init_speedup+has_spi+no_vc_phy+cov:0",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_pcie_option_rom_test...WsufdbSS6pfU0EachNOIDrS2A7R:0",
+        "Status": "FAIL",
+        "ErrorSignature": "UVM_FATAL /nfs/shares/asic/regression/opa400/nightly-ci-2023-10-03/vcrk_a0_branch_20230925_vc_final/verif/dev/vc_core/seq/vc_core_start_lni_seq.sv(155) @ 88513.94385ns: reporter@@m_cores_drive_external_vc_pwrup_vseq[0].drive_pwrup_seq[0].start_lni [STARTUP] ",
+        "StartTime": "10/03/2023 03:42:26",
+        "EndTime": "10/03/2023 04:52:14"
+    },
+    {
+        "Phase": "0",
+        "JobId": 91,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_i2c_master_write_test+has_i2c+slave_vip_cfg+time3h+no_pcie_phy+no_vc_phy+time6h+cov:4196982630",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_i2c_master_write_test...aKcaxmSm4T8V7c8pNun5csoUYtE:4196982630",
+        "Status": "FAIL",
+        "ErrorSignature": "UVM_ERROR /nfs/shares/asic/tools/cadence/vipcat_11.30.088-28_Feb_2023_10_04_54/tools.lnx86/denali_64bit/ddvapi/sv/uvm/i3c/cdnI3cUvmMonitor.sv(681) @ 236636.29550ns: uvm_test_top.jkr_top.inst_jkr_misc.inst_jkr_cport_top.i2c_sve.env.i2c_passive_master[1].monitor [DENALI_I3C_ERR_1000_TRANSMISSION_TO_UNKNOWN_DEVICE] Detected[uvm_test_top.jkr_top.inst_jkr_misc.inst_jkr_cport_top.i2c_sve.env.i2c_passive_master[1]] [I3CNone] ERR_1000_TRANSMISSION_TO_UNKNOWN_DEVICE  Transmission to unknown Device ID detected. Device ID = 0x35",
+        "StartTime": "10/03/2023 03:42:25",
+        "EndTime": "10/03/2023 04:58:21"
+    },
+    {
+        "Phase": "0",
+        "JobId": 92,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_bringup_pipe_gen1_test+has_pcie+no_pcie_phy+time6h+no_vc_phy+cov:1867466980",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_bringup_pipe_gen1_test...JsbmSUo0Zh30fUWVTmaimrE8Mci:1867466980",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 03:42:26",
+        "EndTime": "10/03/2023 04:59:56"
+    },
+    {
+        "Phase": "0",
+        "JobId": 93,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_bringup_pipe_gen5_test+has_pcie+no_pcie_phy+no_vc_phy+cov:3528838683",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_bringup_pipe_gen5_test...2lXBipInf8E3zwfPon6csMNT9I4:3528838683",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 03:42:26",
+        "EndTime": "10/03/2023 05:03:36"
+    },
+    {
+        "Phase": "0",
+        "JobId": 94,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_ral_access_test+has_pcie+no_pcie_phy+no_vc_phy+cov:0",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_ral_access_test...JAAFkyKGtmjO1SysrCHiXOq519D:0",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 03:42:26",
+        "EndTime": "10/03/2023 05:03:57"
+    },
+    {
+        "Phase": "0",
+        "JobId": 95,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_bringup_pipe_gen5_test+has_pcie+no_pcie_phy+no_vc_phy+cov:2270180402",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_bringup_pipe_gen5_test...2lXBipInf8E3zwfPon6csMNT9I4:2270180402",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 03:42:26",
+        "EndTime": "10/03/2023 05:07:12"
+    },
+    {
+        "Phase": "0",
+        "JobId": 96,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_efuse_reg_access_host_pcie_test+has_pcie+no_pcie_phy+no_vc_phy+cov:345251526",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_efuse_reg_access_host_pcie_test...2mT2ON5dEubE39XkSOuWV5mLlBm:345251526",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 03:42:26",
+        "EndTime": "10/03/2023 05:09:06"
+    },
+    {
+        "Phase": "0",
+        "JobId": 97,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_ral_access_test+has_pcie+no_pcie_phy+no_vc_phy+cov:3315112001",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_ral_access_test...JAAFkyKGtmjO1SysrCHiXOq519D:3315112001",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 03:42:25",
+        "EndTime": "10/03/2023 05:11:55"
+    },
+    {
+        "Phase": "0",
+        "JobId": 98,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_clk_config_check_board_test+no_pcie_phy+no_vc_phy+cov:385403709",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_clk_config_check_board_test...JjhgmwO9PluIkQ9fU7sSRgHY17H:385403709",
+        "Status": "FAIL",
+        "ErrorSignature": "UVM_ERROR /nfs/shares/asic/regression/opa400/nightly-ci-2023-10-03/jkr_a0/verif/envs/hfi_misc/hfi_misc_harness.sv(98) @ 5001.00000ns: reporter [HFI_EFUSE_MISC_CHECKS] Deliverable : EFUSE_COMPLETE and/or HFI_HW_INIT_COMPLETE not de-asserted when HFI_HRESET_EFUSE asserted",
+        "StartTime": "10/03/2023 04:18:12",
+        "EndTime": "10/03/2023 05:19:00"
+    },
+    {
+        "Phase": "0",
+        "JobId": 99,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_csr_chain_target_chain_reset_test+no_pcie_phy+no_vc_phy+cov:0",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_csr_chain_target_chain_reset_test...HIFklFswvU9fn79w351wcx7c4nq:0",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 04:16:10",
+        "EndTime": "10/03/2023 05:23:22"
+    },
+    {
+        "Phase": "0",
+        "JobId": 100,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_board_id_test+no_pcie_phy+no_vc_phy+cov:3222626199",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_board_id_test+no_pcie_phy+no_vc_phy+cov:3222626199",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 04:17:06",
+        "EndTime": "10/03/2023 05:24:39"
+    },
+    {
+        "Phase": "0",
+        "JobId": 101,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_dinit_disable_pll_timeout_test+no_pcie_phy+no_vc_phy+cov:0",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_dinit_disable_pll_timeout_test...MqV86aJgHAYXFjmrxH0vVQtuR9T:0",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 04:17:17",
+        "EndTime": "10/03/2023 05:25:48"
+    },
+    {
+        "Phase": "0",
+        "JobId": 102,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_spi_arb_contention_test+has_spi+no_pcie_phy+no_vc_phy+cov:3760519824",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_spi_arb_contention_test...XCP1jb8OOjowm8USMV0cpWTyHuQ:3760519824",
+        "Status": "FAIL",
+        "ErrorSignature": "UVM_ERROR /nfs/shares/asic/regression/opa400/nightly-ci-2023-10-03/cport_a0_full_chip_release/verif/op4/tb/env/spi/cp_spi_scoreboard_base.svh(147) @ 76231.54160ns: uvm_test_top.jkr_top.spi_pif_scoreboard [spi_pif_scoreboard] Comparator SPI Type transaction (Tx or Rx) mismatch",
+        "StartTime": "10/03/2023 04:16:48",
+        "EndTime": "10/03/2023 05:26:24"
+    },
+    {
+        "Phase": "0",
+        "JobId": 103,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_uart_test+has_uart+no_pcie_phy+no_vc_phy+cov:548664",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_uart_test+has_uart+no_pcie_phy+no_vc_phy+cov:548664",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 04:17:07",
+        "EndTime": "10/03/2023 05:26:38"
+    },
+    {
+        "Phase": "0",
+        "JobId": 104,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_dinit_disable_rei_timeout_test+no_pcie_phy+no_vc_phy+cov:3139352890",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_dinit_disable_rei_timeout_test...1iKW9FCBcCF0mRuM9hRyQhpca8b:3139352890",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 04:20:17",
+        "EndTime": "10/03/2023 05:27:15"
+    },
+    {
+        "Phase": "0",
+        "JobId": 105,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_pvt_access_test+no_pcie_phy+no_vc_phy+cov:2475187109",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_pvt_access_test+no_pcie_phy+no_vc_phy+cov:2475187109",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 04:19:12",
+        "EndTime": "10/03/2023 05:28:13"
+    },
+    {
+        "Phase": "0",
+        "JobId": 106,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_dinit_disable_rei_timeout_test+no_pcie_phy+no_vc_phy+cov:373419765",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_dinit_disable_rei_timeout_test...1iKW9FCBcCF0mRuM9hRyQhpca8b:373419765",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 04:23:19",
+        "EndTime": "10/03/2023 05:37:05"
+    },
+    {
+        "Phase": "0",
+        "JobId": 107,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_clk_config_check_board_test+no_pcie_phy+no_vc_phy+cov:2129810026",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_clk_config_check_board_test...JjhgmwO9PluIkQ9fU7sSRgHY17H:2129810026",
+        "Status": "FAIL",
+        "ErrorSignature": "UVM_ERROR /nfs/shares/asic/regression/opa400/nightly-ci-2023-10-03/jkr_a0/verif/envs/hfi_misc/hfi_misc_harness.sv(98) @ 5001.00000ns: reporter [HFI_EFUSE_MISC_CHECKS] Deliverable : EFUSE_COMPLETE and/or HFI_HW_INIT_COMPLETE not de-asserted when HFI_HRESET_EFUSE asserted",
+        "StartTime": "10/03/2023 04:25:37",
+        "EndTime": "10/03/2023 05:37:57"
+    },
+    {
+        "Phase": "0",
+        "JobId": 108,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_dinit_cport_rom_ready_timeout_test+no_pcie_phy+no_vc_phy+cov:519574085",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_dinit_cport_rom_ready_timeout_test...KMS8LX8ulY8o5CLY6MwbKHHHKkM:519574085",
+        "Status": "FAIL",
+        "ErrorSignature": "UVM_ERROR /nfs/shares/asic/regression/opa400/nightly-ci-2023-10-03/jkr_a0/verif/envs/hfi_misc/hfi_misc_harness.sv(98) @ 5001.00000ns: reporter [HFI_EFUSE_MISC_CHECKS] Deliverable : EFUSE_COMPLETE and/or HFI_HW_INIT_COMPLETE not de-asserted when HFI_HRESET_EFUSE asserted",
+        "StartTime": "10/03/2023 04:24:49",
+        "EndTime": "10/03/2023 05:38:11"
+    },
+    {
+        "Phase": "0",
+        "JobId": 109,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+hfi_fc_boot_i2c_test+boot_i2c_test_cfg+has_i2c+has_uart+master_vip_cfg+time6h+no_pcie_phy+no_vc_phy+cov:2629291428",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_boot_i2c_test...YwVlDXAxHrrO8uUGb65M8EWDWvz:2629291428",
+        "Status": "FAIL",
+        "ErrorSignature": "UVM_ERROR /nfs/shares/asic/regression/opa400/nightly-ci-2023-10-03/jkr_a0/verif/envs/hfi_misc/hfi_misc_harness.sv(98) @ 5001.00000ns: reporter [HFI_EFUSE_MISC_CHECKS] Deliverable : EFUSE_COMPLETE and/or HFI_HW_INIT_COMPLETE not de-asserted when HFI_HRESET_EFUSE asserted",
+        "StartTime": "10/03/2023 04:26:48",
+        "EndTime": "10/03/2023 05:39:07"
+    },
+    {
+        "Phase": "0",
+        "JobId": 110,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+hfi_fc_boot_spi_test+boot_spi_test_cfg+has_spi+has_uart+time6h+no_pcie_phy+no_vc_phy+cov:1114397815",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_boot_spi_test...BZLnv328x6lOZvKUxI4SL2AcqOk:1114397815",
+        "Status": "FAIL",
+        "ErrorSignature": "UVM_ERROR /nfs/shares/asic/regression/opa400/nightly-ci-2023-10-03/jkr_a0/verif/envs/hfi_misc/hfi_misc_harness.sv(98) @ 5001.00000ns: reporter [HFI_EFUSE_MISC_CHECKS] Deliverable : EFUSE_COMPLETE and/or HFI_HW_INIT_COMPLETE not de-asserted when HFI_HRESET_EFUSE asserted",
+        "StartTime": "10/03/2023 04:27:22",
+        "EndTime": "10/03/2023 05:39:11"
+    },
+    {
+        "Phase": "0",
+        "JobId": 111,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_dinit_efuse_timeout_test+no_pcie_phy+no_vc_phy+cov:0",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_dinit_efuse_timeout_test...QsLfiaQ14zlZ5S2gmofwCNHMhLm:0",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 04:25:10",
+        "EndTime": "10/03/2023 05:40:44"
+    },
+    {
+        "Phase": "0",
+        "JobId": 112,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_serdes_bringup_no_phy_test+has_vc+no_pcie_phy+no_vc_phy+time3h+cov:1807741749",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_serdes_bringup_no_phy_test...RHmHKB8HnNBysfjSX3ZBcCmChqX:1807741749",
+        "Status": "FAIL",
+        "ErrorSignature": "UVM_ERROR /nfs/shares/asic/regression/opa400/nightly-ci-2023-10-03/jkr_a0/verif/envs/hfi_misc/hfi_misc_harness.sv(98) @ 5001.00000ns: reporter [HFI_EFUSE_MISC_CHECKS] Deliverable : EFUSE_COMPLETE and/or HFI_HW_INIT_COMPLETE not de-asserted when HFI_HRESET_EFUSE asserted",
+        "StartTime": "10/03/2023 04:29:54",
+        "EndTime": "10/03/2023 05:40:56"
+    },
+    {
+        "Phase": "0",
+        "JobId": 113,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_dinit_cport_rom_ready_timeout_test+no_pcie_phy+no_vc_phy+cov:257915777",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_dinit_cport_rom_ready_timeout_test...KMS8LX8ulY8o5CLY6MwbKHHHKkM:257915777",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 04:22:19",
+        "EndTime": "10/03/2023 05:42:43"
+    },
+    {
+        "Phase": "0",
+        "JobId": 114,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_hfi_gpio_test+no_pcie_phy+no_vc_phy+cov:3793426445",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_hfi_gpio_test+no_pcie_phy+no_vc_phy+cov:3793426445",
+        "Status": "FAIL",
+        "ErrorSignature": "UVM_ERROR /nfs/shares/asic/regression/opa400/nightly-ci-2023-10-03/jkr_a0/verif/envs/hfi_top/seq/hfi_top_hfi_gpio_vseq.sv(54) @ 65432.83614ns: uvm_test_top.jkr_top.vseqr@@hfi_gpio_vseq [hfi_top_hfi_gpio_vseq] Unexpected value in GPIO_IN field of MISC_GPIO_IN register. Expected = 0xca0, Observed = 0x0",
+        "StartTime": "10/03/2023 04:23:28",
+        "EndTime": "10/03/2023 05:43:00"
+    },
+    {
+        "Phase": "0",
+        "JobId": 115,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_dinit_efuse_timeout_test+no_pcie_phy+no_vc_phy+cov:3883255167",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_dinit_efuse_timeout_test...QsLfiaQ14zlZ5S2gmofwCNHMhLm:3883255167",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 04:28:58",
+        "EndTime": "10/03/2023 05:43:20"
+    },
+    {
+        "Phase": "0",
+        "JobId": 116,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_dinit_breakpoints_test+no_pcie_phy+no_vc_phy+cov:2443325095",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_dinit_breakpoints_test...TLllgMTYEX7tqVPvkWIWXu6rAsj:2443325095",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 04:24:40",
+        "EndTime": "10/03/2023 05:44:07"
+    },
+    {
+        "Phase": "0",
+        "JobId": 117,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_basic_ral_test+no_pcie_phy+no_vc_phy+cov:0",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_basic_ral_test+no_pcie_phy+no_vc_phy+cov:0",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 04:33:05",
+        "EndTime": "10/03/2023 05:44:57"
+    },
+    {
+        "Phase": "0",
+        "JobId": 118,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_board_id_test+no_pcie_phy+no_vc_phy+cov:0",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_board_id_test+no_pcie_phy+no_vc_phy+cov:0",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 04:25:27",
+        "EndTime": "10/03/2023 05:45:11"
+    },
+    {
+        "Phase": "0",
+        "JobId": 119,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+cport_proc_stub+hfi_fc_bringup_test+no_pcie_phy+no_vc_phy+A383+A2103+A2157+A2557+A2590+A2616+A2913+cov:518256211",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+cport_proc_stub+hfi_fc_bringup_test+no_pcie_phy+no_vc_phy+A383+A2103+A2157+A2557+A2590+A2616+A2913+cov:518256211",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 04:26:32",
+        "EndTime": "10/03/2023 05:45:38"
+    },
+    {
+        "Phase": "0",
+        "JobId": 120,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_dinit_disable_pll_timeout_test+no_pcie_phy+no_vc_phy+cov:2704272520",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_dinit_disable_pll_timeout_test...MqV86aJgHAYXFjmrxH0vVQtuR9T:2704272520",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 04:25:20",
+        "EndTime": "10/03/2023 05:46:13"
+    },
+    {
+        "Phase": "0",
+        "JobId": 121,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_cport_gpio_test+no_pcie_phy+no_vc_phy+cov:0",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_cport_gpio_test+no_pcie_phy+no_vc_phy+cov:0",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 04:26:48",
+        "EndTime": "10/03/2023 05:46:19"
+    },
+    {
+        "Phase": "0",
+        "JobId": 122,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_csr_chain_target_chain_reset_test+no_pcie_phy+no_vc_phy+cov:2162386163",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_csr_chain_target_chain_reset_test...HIFklFswvU9fn79w351wcx7c4nq:2162386163",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 04:28:38",
+        "EndTime": "10/03/2023 05:47:00"
+    },
+    {
+        "Phase": "0",
+        "JobId": 123,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_clk_config_check_serdes_refclk_test+no_pcie_phy+no_vc_phy+cov:1505738667",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_clk_config_check_serdes_refclk_test...BkJPmRXywsY4YRpxkvKOsYAr8i3:1505738667",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 04:29:34",
+        "EndTime": "10/03/2023 05:47:18"
+    },
+    {
+        "Phase": "0",
+        "JobId": 124,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_board_id_test+no_pcie_phy+no_vc_phy+cov:273103107",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_board_id_test+no_pcie_phy+no_vc_phy+cov:273103107",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 04:28:44",
+        "EndTime": "10/03/2023 05:47:27"
+    },
+    {
+        "Phase": "0",
+        "JobId": 125,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_i2c_master_read_test+has_i2c+slave_vip_cfg+time3h+no_pcie_phy+no_vc_phy+time6h+cov:146928409",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_i2c_master_read_test...8MBLq1Rg2dKjyt9vZl8wqgutq77:146928409",
+        "Status": "FAIL",
+        "ErrorSignature": "UVM_ERROR /nfs/shares/asic/regression/opa400/nightly-ci-2023-10-03/jkr_a0/verif/envs/hfi_misc/hfi_misc_harness.sv(98) @ 5001.00000ns: reporter [HFI_EFUSE_MISC_CHECKS] Deliverable : EFUSE_COMPLETE and/or HFI_HW_INIT_COMPLETE not de-asserted when HFI_HRESET_EFUSE asserted",
+        "StartTime": "10/03/2023 04:33:05",
+        "EndTime": "10/03/2023 05:47:37"
+    },
+    {
+        "Phase": "0",
+        "JobId": 126,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_pvt_access_test+no_pcie_phy+no_vc_phy+cov:0",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_pvt_access_test+no_pcie_phy+no_vc_phy+cov:0",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 04:26:21",
+        "EndTime": "10/03/2023 05:47:52"
+    },
+    {
+        "Phase": "0",
+        "JobId": 127,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_pcie_option_rom_test+has_pcie+has_vc+no_pcie_phy+cport_pcie_init_speedup+has_spi+no_vc_phy+cov:1156512029",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_pcie_option_rom_test...WsufdbSS6pfU0EachNOIDrS2A7R:1156512029",
+        "Status": "FAIL",
+        "ErrorSignature": "UVM_ERROR /nfs/shares/asic/regression/opa400/nightly-ci-2023-10-03/jkr_a0/verif/envs/hfi_misc/hfi_misc_harness.sv(98) @ 5001.00000ns: reporter [HFI_EFUSE_MISC_CHECKS] Deliverable : EFUSE_COMPLETE and/or HFI_HW_INIT_COMPLETE not de-asserted when HFI_HRESET_EFUSE asserted",
+        "StartTime": "10/03/2023 04:30:24",
+        "EndTime": "10/03/2023 05:48:59"
+    },
+    {
+        "Phase": "0",
+        "JobId": 128,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_spi_arb_contention_test+has_spi+no_pcie_phy+no_vc_phy+cov:2105185492",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_spi_arb_contention_test...XCP1jb8OOjowm8USMV0cpWTyHuQ:2105185492",
+        "Status": "FAIL",
+        "ErrorSignature": "UVM_ERROR /nfs/shares/asic/regression/opa400/nightly-ci-2023-10-03/cport_a0_full_chip_release/verif/op4/tb/env/spi/cp_spi_scoreboard_base.svh(147) @ 69536.59570ns: uvm_test_top.jkr_top.spi_pif_scoreboard [spi_pif_scoreboard] Comparator SPI Type transaction (Tx or Rx) mismatch",
+        "StartTime": "10/03/2023 04:29:03",
+        "EndTime": "10/03/2023 05:49:14"
+    },
+    {
+        "Phase": "0",
+        "JobId": 129,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_cport_gpio_test+no_pcie_phy+no_vc_phy+cov:456900474",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_cport_gpio_test+no_pcie_phy+no_vc_phy+cov:456900474",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 04:29:54",
+        "EndTime": "10/03/2023 05:49:15"
+    },
+    {
+        "Phase": "0",
+        "JobId": 130,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_serdes_ingress_pkts_no_phy_test+has_vc+no_pcie_phy+no_vc_phy+time3h+cov:2394692436",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_serdes_ingress_pkts_no_phy_test...H2jeSkO4EoSZuauadkaVbcmh5Aq:2394692436",
+        "Status": "FAIL",
+        "ErrorSignature": "UVM_FATAL /nfs/shares/asic/regression/opa400/nightly-ci-2023-10-03/vcrk_a0_branch_20230925_vc_final/verif/dev/vc_core/seq/vc_core_start_lni_seq.sv(155) @ 89663.03809ns: reporter@@m_cores_drive_external_vc_pwrup_vseq[0].drive_pwrup_seq[0].start_lni [STARTUP] ",
+        "StartTime": "10/03/2023 04:26:32",
+        "EndTime": "10/03/2023 05:49:25"
+    },
+    {
+        "Phase": "0",
+        "JobId": 131,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_dinit_efuse_timeout_test+no_pcie_phy+no_vc_phy+cov:2494427440",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_dinit_efuse_timeout_test...QsLfiaQ14zlZ5S2gmofwCNHMhLm:2494427440",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 04:33:39",
+        "EndTime": "10/03/2023 05:49:41"
+    },
+    {
+        "Phase": "0",
+        "JobId": 132,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_uart_test+has_uart+no_pcie_phy+no_vc_phy+cov:3117077503",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_uart_test+has_uart+no_pcie_phy+no_vc_phy+cov:3117077503",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 04:28:58",
+        "EndTime": "10/03/2023 05:50:49"
+    },
+    {
+        "Phase": "0",
+        "JobId": 133,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_spi_arb_contention_test+has_spi+no_pcie_phy+no_vc_phy+cov:2788688554",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_spi_arb_contention_test...XCP1jb8OOjowm8USMV0cpWTyHuQ:2788688554",
+        "Status": "FAIL",
+        "ErrorSignature": "UVM_ERROR /nfs/shares/asic/regression/opa400/nightly-ci-2023-10-03/cport_a0_full_chip_release/verif/op4/tb/env/spi/cp_spi_scoreboard_base.svh(147) @ 75691.13366ns: uvm_test_top.jkr_top.spi_pif_scoreboard [spi_pif_scoreboard] Comparator SPI Type transaction (Tx or Rx) mismatch",
+        "StartTime": "10/03/2023 04:30:50",
+        "EndTime": "10/03/2023 05:50:53"
+    },
+    {
+        "Phase": "0",
+        "JobId": 134,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_csr_chain_endpoint_test+no_pcie_phy+no_vc_phy+cov:3484608933",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_csr_chain_endpoint_test...Ej5qKrjZpl7556HcV4v1m7pY3OG:3484608933",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 04:31:30",
+        "EndTime": "10/03/2023 05:51:20"
+    },
+    {
+        "Phase": "0",
+        "JobId": 135,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_dinit_breakpoints_test+no_pcie_phy+no_vc_phy+cov:2309618559",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_dinit_breakpoints_test...TLllgMTYEX7tqVPvkWIWXu6rAsj:2309618559",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 04:31:00",
+        "EndTime": "10/03/2023 05:51:32"
+    },
+    {
+        "Phase": "0",
+        "JobId": 136,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_serdes_bringup_no_phy_test+has_vc+no_pcie_phy+no_vc_phy+time3h+cov:463194013",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_serdes_bringup_no_phy_test...RHmHKB8HnNBysfjSX3ZBcCmChqX:463194013",
+        "Status": "FAIL",
+        "ErrorSignature": "UVM_FATAL /nfs/shares/asic/regression/opa400/nightly-ci-2023-10-03/vcrk_a0_branch_20230925_vc_final/verif/dev/vc_core/seq/vc_core_start_lni_seq.sv(155) @ 89291.41453ns: reporter@@m_cores_drive_external_vc_pwrup_vseq[0].drive_pwrup_seq[0].start_lni [STARTUP] ",
+        "StartTime": "10/03/2023 04:29:34",
+        "EndTime": "10/03/2023 05:52:20"
+    },
+    {
+        "Phase": "0",
+        "JobId": 137,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_boot_strap_test+no_pcie_phy+no_vc_phy+cov:1859463135",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_boot_strap_test+no_pcie_phy+no_vc_phy+cov:1859463135",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 04:32:20",
+        "EndTime": "10/03/2023 05:53:02"
+    },
+    {
+        "Phase": "0",
+        "JobId": 138,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+hfi_fc_boot_spi_test+boot_spi_test_cfg+has_spi+has_uart+time6h+no_pcie_phy+no_vc_phy+cov:1667983820",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_boot_spi_test...BZLnv328x6lOZvKUxI4SL2AcqOk:1667983820",
+        "Status": "FAIL",
+        "ErrorSignature": "UVM_ERROR /nfs/shares/asic/regression/opa400/nightly-ci-2023-10-03/cport_a0_full_chip_release/verif/op4/tb/env/spi/cp_spi_scoreboard_base.svh(147) @ 113174.99822ns: uvm_test_top.jkr_top.spi_pif_scoreboard [spi_pif_scoreboard] Comparator SPI Type transaction (Tx or Rx) mismatch",
+        "StartTime": "10/03/2023 04:30:44",
+        "EndTime": "10/03/2023 05:55:40"
+    },
+    {
+        "Phase": "0",
+        "JobId": 139,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_uart_test+has_uart+no_pcie_phy+no_vc_phy+cov:12737938",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_uart_test+has_uart+no_pcie_phy+no_vc_phy+cov:12737938",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 04:32:50",
+        "EndTime": "10/03/2023 05:57:24"
+    },
+    {
+        "Phase": "0",
+        "JobId": 140,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_bringup_pipe_gen5_test+has_pcie+no_pcie_phy+no_vc_phy+cov:2740775214",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_bringup_pipe_gen5_test...2lXBipInf8E3zwfPon6csMNT9I4:2740775214",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 04:24:22",
+        "EndTime": "10/03/2023 05:58:42"
+    },
+    {
+        "Phase": "0",
+        "JobId": 141,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_basic_ral_test+no_pcie_phy+no_vc_phy+cov:1599992330",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_basic_ral_test+no_pcie_phy+no_vc_phy+cov:1599992330",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 04:36:27",
+        "EndTime": "10/03/2023 05:59:06"
+    },
+    {
+        "Phase": "0",
+        "JobId": 142,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_i2c_master_write_test+has_i2c+slave_vip_cfg+time3h+no_pcie_phy+no_vc_phy+time6h+cov:3911088293",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_i2c_master_write_test...aKcaxmSm4T8V7c8pNun5csoUYtE:3911088293",
+        "Status": "FAIL",
+        "ErrorSignature": "UVM_ERROR /nfs/shares/asic/tools/cadence/vipcat_11.30.088-28_Feb_2023_10_04_54/tools.lnx86/denali_64bit/ddvapi/sv/uvm/i3c/cdnI3cUvmMonitor.sv(681) @ 151064.72724ns: uvm_test_top.jkr_top.inst_jkr_misc.inst_jkr_cport_top.i2c_sve.env.i2c_passive_master[1].monitor [DENALI_I3C_ERR_1000_TRANSMISSION_TO_UNKNOWN_DEVICE] Detected[uvm_test_top.jkr_top.inst_jkr_misc.inst_jkr_cport_top.i2c_sve.env.i2c_passive_master[1]] [I3CNone] ERR_1000_TRANSMISSION_TO_UNKNOWN_DEVICE  Transmission to unknown Device ID detected. Device ID = 0x70",
+        "StartTime": "10/03/2023 04:27:01",
+        "EndTime": "10/03/2023 05:59:36"
+    },
+    {
+        "Phase": "0",
+        "JobId": 143,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_bringup_pipe_gen4_test+has_pcie+no_pcie_phy+time6h+no_vc_phy+cov:1744345966",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_bringup_pipe_gen4_test...FeKPVI4X5hS051XCRnpjLWLpuYS:1744345966",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 04:23:18",
+        "EndTime": "10/03/2023 06:00:15"
+    },
+    {
+        "Phase": "0",
+        "JobId": 144,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+cport_proc_stub+hfi_fc_null_test+no_pcie_phy+no_vc_phy+A383+A2103+A2157+A2557+A2590+A2616+A2913+cov:2559432865",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+cport_proc_stub+hfi_fc_null_test+no_pcie_phy+no_vc_phy+A383+A2103+A2157+A2557+A2590+A2616+A2913+cov:2559432865",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 04:38:06",
+        "EndTime": "10/03/2023 06:00:18"
+    },
+    {
+        "Phase": "0",
+        "JobId": 145,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_bringup_pipe_gen3_test+has_pcie+no_pcie_phy+time6h+no_vc_phy+cov:3867541439",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_bringup_pipe_gen3_test...7G7ME18yVqggMxTYn60teEuvvim:3867541439",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 04:25:55",
+        "EndTime": "10/03/2023 06:01:43"
+    },
+    {
+        "Phase": "0",
+        "JobId": 146,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_efuse_reg_access_host_pcie_test+has_pcie+no_pcie_phy+no_vc_phy+cov:3931980385",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_efuse_reg_access_host_pcie_test...2mT2ON5dEubE39XkSOuWV5mLlBm:3931980385",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 04:24:49",
+        "EndTime": "10/03/2023 06:01:47"
+    },
+    {
+        "Phase": "0",
+        "JobId": 147,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_dinit_cport_rom_ready_timeout_test+no_pcie_phy+no_vc_phy+cov:4213377255",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_dinit_cport_rom_ready_timeout_test...KMS8LX8ulY8o5CLY6MwbKHHHKkM:4213377255",
+        "Status": "FAIL",
+        "ErrorSignature": "UVM_ERROR /nfs/shares/asic/regression/opa400/nightly-ci-2023-10-03/jkr_a0/verif/envs/hfi_misc/hfi_misc_harness.sv(98) @ 5001.00000ns: reporter [HFI_EFUSE_MISC_CHECKS] Deliverable : EFUSE_COMPLETE and/or HFI_HW_INIT_COMPLETE not de-asserted when HFI_HRESET_EFUSE asserted",
+        "StartTime": "10/03/2023 04:37:51",
+        "EndTime": "10/03/2023 06:01:47"
+    },
+    {
+        "Phase": "0",
+        "JobId": 148,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_dinit_rei_timeout_test+no_pcie_phy+no_vc_phy+cov:549329228",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_dinit_rei_timeout_test...1GhpTyYNv4nzM4YuRxO9HlYs0ke:549329228",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 04:34:30",
+        "EndTime": "10/03/2023 06:02:47"
+    },
+    {
+        "Phase": "0",
+        "JobId": 149,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_efuse_reg_access_host_pcie_test+has_pcie+no_pcie_phy+no_vc_phy+cov:0",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_efuse_reg_access_host_pcie_test...2mT2ON5dEubE39XkSOuWV5mLlBm:0",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 04:29:48",
+        "EndTime": "10/03/2023 06:03:14"
+    },
+    {
+        "Phase": "0",
+        "JobId": 150,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_dinit_disable_pll_timeout_test+no_pcie_phy+no_vc_phy+cov:2941579344",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_dinit_disable_pll_timeout_test...MqV86aJgHAYXFjmrxH0vVQtuR9T:2941579344",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 04:35:36",
+        "EndTime": "10/03/2023 06:04:09"
+    },
+    {
+        "Phase": "0",
+        "JobId": 151,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_serdes_ingress_pkts_no_phy_test+has_vc+no_pcie_phy+no_vc_phy+time3h+cov:701330004",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_serdes_ingress_pkts_no_phy_test...H2jeSkO4EoSZuauadkaVbcmh5Aq:701330004",
+        "Status": "FAIL",
+        "ErrorSignature": "UVM_FATAL /nfs/shares/asic/regression/opa400/nightly-ci-2023-10-03/vcrk_a0_branch_20230925_vc_final/verif/dev/vc_core/seq/vc_core_start_lni_seq.sv(155) @ 89879.01217ns: reporter@@m_cores_drive_external_vc_pwrup_vseq[0].drive_pwrup_seq[0].start_lni [STARTUP] ",
+        "StartTime": "10/03/2023 04:34:56",
+        "EndTime": "10/03/2023 06:04:23"
+    },
+    {
+        "Phase": "0",
+        "JobId": 152,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_dinit_rei_timeout_test+no_pcie_phy+no_vc_phy+cov:0",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_dinit_rei_timeout_test...1GhpTyYNv4nzM4YuRxO9HlYs0ke:0",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 04:34:56",
+        "EndTime": "10/03/2023 06:05:10"
+    },
+    {
+        "Phase": "0",
+        "JobId": 153,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_bringup_pipe_gen5_test+has_pcie+no_pcie_phy+no_vc_phy+cov:1079824758",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_bringup_pipe_gen5_test...2lXBipInf8E3zwfPon6csMNT9I4:1079824758",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 04:30:54",
+        "EndTime": "10/03/2023 06:05:44"
+    },
+    {
+        "Phase": "0",
+        "JobId": 154,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_bringup_pipe_gen5_test+has_pcie+no_pcie_phy+no_vc_phy+cov:589134659",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_bringup_pipe_gen5_test...2lXBipInf8E3zwfPon6csMNT9I4:589134659",
+        "Status": "FAIL",
+        "ErrorSignature": "UVM_ERROR /nfs/shares/asic/regression/opa400/nightly-ci-2023-10-03/jkr_a0/verif/envs/hfi_misc/hfi_misc_harness.sv(98) @ 5001.00000ns: reporter [HFI_EFUSE_MISC_CHECKS] Deliverable : EFUSE_COMPLETE and/or HFI_HW_INIT_COMPLETE not de-asserted when HFI_HRESET_EFUSE asserted",
+        "StartTime": "10/03/2023 04:41:38",
+        "EndTime": "10/03/2023 06:07:01"
+    },
+    {
+        "Phase": "0",
+        "JobId": 155,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_bringup_pipe_gen4_test+has_pcie+no_pcie_phy+time6h+no_vc_phy+cov:2408563023",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_bringup_pipe_gen4_test...FeKPVI4X5hS051XCRnpjLWLpuYS:2408563023",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 04:29:54",
+        "EndTime": "10/03/2023 06:07:23"
+    },
+    {
+        "Phase": "0",
+        "JobId": 156,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+cport_proc_stub+hfi_fc_bringup_test+no_pcie_phy+no_vc_phy+A383+A2103+A2157+A2557+A2590+A2616+A2913+cov:3467438784",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+cport_proc_stub+hfi_fc_bringup_test+no_pcie_phy+no_vc_phy+A383+A2103+A2157+A2557+A2590+A2616+A2913+cov:3467438784",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 04:38:01",
+        "EndTime": "10/03/2023 06:07:35"
+    },
+    {
+        "Phase": "0",
+        "JobId": 157,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_spi_pif_elbi_rom_read_test+has_spi+no_pcie_phy+no_vc_phy+cov:2242911031",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_spi_pif_elbi_rom_read_test...HvV1ODqg3Tkhdy2CUoPsS5Cn4LI:2242911031",
+        "Status": "FAIL",
+        "ErrorSignature": "UVM_ERROR /nfs/shares/asic/regression/opa400/nightly-ci-2023-10-03/cport_a0_full_chip_release/verif/op4/tb/env/spi/cp_spi_scoreboard_base.svh(147) @ 71746.24103ns: uvm_test_top.jkr_top.spi_pif_scoreboard [spi_pif_scoreboard] Comparator SPI Type transaction (Tx or Rx) mismatch",
+        "StartTime": "10/03/2023 04:37:27",
+        "EndTime": "10/03/2023 06:07:55"
+    },
+    {
+        "Phase": "0",
+        "JobId": 158,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_clk_config_check_serdes_refclk_test+no_pcie_phy+no_vc_phy+cov:2300530771",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_clk_config_check_serdes_refclk_test...BkJPmRXywsY4YRpxkvKOsYAr8i3:2300530771",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 04:36:46",
+        "EndTime": "10/03/2023 06:08:10"
+    },
+    {
+        "Phase": "0",
+        "JobId": 159,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_csr_chain_target_chain_reset_test+no_pcie_phy+no_vc_phy+cov:1977622698",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_csr_chain_target_chain_reset_test...HIFklFswvU9fn79w351wcx7c4nq:1977622698",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 04:37:10",
+        "EndTime": "10/03/2023 06:08:18"
+    },
+    {
+        "Phase": "0",
+        "JobId": 160,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_spi_pif_elbi_rom_read_test+has_spi+no_pcie_phy+no_vc_phy+cov:0",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_spi_pif_elbi_rom_read_test...HvV1ODqg3Tkhdy2CUoPsS5Cn4LI:0",
+        "Status": "FAIL",
+        "ErrorSignature": "UVM_ERROR /nfs/shares/asic/regression/opa400/nightly-ci-2023-10-03/cport_a0_full_chip_release/verif/op4/tb/env/spi/cp_spi_scoreboard_base.svh(147) @ 72398.97679ns: uvm_test_top.jkr_top.spi_pif_scoreboard [spi_pif_scoreboard] Comparator SPI Type transaction (Tx or Rx) mismatch",
+        "StartTime": "10/03/2023 04:36:37",
+        "EndTime": "10/03/2023 06:08:54"
+    },
+    {
+        "Phase": "0",
+        "JobId": 161,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+cport_proc_stub+hfi_fc_null_test+no_pcie_phy+no_vc_phy+A383+A2103+A2157+A2557+A2590+A2616+A2913+cov:2439668461",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+cport_proc_stub+hfi_fc_null_test+no_pcie_phy+no_vc_phy+A383+A2103+A2157+A2557+A2590+A2616+A2913+cov:2439668461",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 04:47:53",
+        "EndTime": "10/03/2023 06:10:29"
+    },
+    {
+        "Phase": "0",
+        "JobId": 162,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_uart_test+has_uart+no_pcie_phy+no_vc_phy+cov:0",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_uart_test+has_uart+no_pcie_phy+no_vc_phy+cov:0",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 04:37:30",
+        "EndTime": "10/03/2023 06:10:58"
+    },
+    {
+        "Phase": "0",
+        "JobId": 163,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+hfi_fc_boot_spi_test+boot_spi_test_cfg+has_spi+has_uart+time6h+no_pcie_phy+no_vc_phy+cov:3189859646",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_boot_spi_test...BZLnv328x6lOZvKUxI4SL2AcqOk:3189859646",
+        "Status": "FAIL",
+        "ErrorSignature": "UVM_ERROR /nfs/shares/asic/regression/opa400/nightly-ci-2023-10-03/cport_a0_full_chip_release/verif/op4/tb/env/spi/cp_spi_scoreboard_base.svh(147) @ 112715.77944ns: uvm_test_top.jkr_top.spi_pif_scoreboard [spi_pif_scoreboard] Comparator SPI Type transaction (Tx or Rx) mismatch",
+        "StartTime": "10/03/2023 04:35:26",
+        "EndTime": "10/03/2023 06:12:24"
+    },
+    {
+        "Phase": "0",
+        "JobId": 164,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_bringup_pipe_gen5_test+has_pcie+no_pcie_phy+no_vc_phy+cov:983186041",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_bringup_pipe_gen5_test...2lXBipInf8E3zwfPon6csMNT9I4:983186041",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 04:32:35",
+        "EndTime": "10/03/2023 06:13:15"
+    },
+    {
+        "Phase": "0",
+        "JobId": 165,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_spi_pif_elbi_rom_read_test+has_spi+no_pcie_phy+no_vc_phy+cov:799889199",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_spi_pif_elbi_rom_read_test...HvV1ODqg3Tkhdy2CUoPsS5Cn4LI:799889199",
+        "Status": "FAIL",
+        "ErrorSignature": "UVM_ERROR /nfs/shares/asic/regression/opa400/nightly-ci-2023-10-03/cport_a0_full_chip_release/verif/op4/tb/env/spi/cp_spi_scoreboard_base.svh(147) @ 73940.17034ns: uvm_test_top.jkr_top.spi_pif_scoreboard [spi_pif_scoreboard] Comparator SPI Type transaction (Tx or Rx) mismatch",
+        "StartTime": "10/03/2023 04:41:46",
+        "EndTime": "10/03/2023 06:13:31"
+    },
+    {
+        "Phase": "0",
+        "JobId": 166,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+hfi_fc_boot_spi_test+boot_spi_test_cfg+has_spi+has_uart+time6h+no_pcie_phy+no_vc_phy+cov:0",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_boot_spi_test...BZLnv328x6lOZvKUxI4SL2AcqOk:0",
+        "Status": "FAIL",
+        "ErrorSignature": "UVM_ERROR /nfs/shares/asic/regression/opa400/nightly-ci-2023-10-03/cport_a0_full_chip_release/verif/op4/tb/env/spi/cp_spi_scoreboard_base.svh(147) @ 111790.61743ns: uvm_test_top.jkr_top.spi_pif_scoreboard [spi_pif_scoreboard] Comparator SPI Type transaction (Tx or Rx) mismatch",
+        "StartTime": "10/03/2023 04:37:41",
+        "EndTime": "10/03/2023 06:15:41"
+    },
+    {
+        "Phase": "0",
+        "JobId": 167,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_cport_gpio_test+no_pcie_phy+no_vc_phy+cov:2487295672",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_cport_gpio_test+no_pcie_phy+no_vc_phy+cov:2487295672",
+        "Status": "FAIL",
+        "ErrorSignature": "UVM_ERROR /nfs/shares/asic/regression/opa400/nightly-ci-2023-10-03/jkr_a0/verif/envs/hfi_misc/hfi_misc_harness.sv(98) @ 5001.00000ns: reporter [HFI_EFUSE_MISC_CHECKS] Deliverable : EFUSE_COMPLETE and/or HFI_HW_INIT_COMPLETE not de-asserted when HFI_HRESET_EFUSE asserted",
+        "StartTime": "10/03/2023 04:52:15",
+        "EndTime": "10/03/2023 06:16:11"
+    },
+    {
+        "Phase": "0",
+        "JobId": 168,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_spi_arb_contention_test+has_spi+no_pcie_phy+no_vc_phy+cov:0",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_spi_arb_contention_test...XCP1jb8OOjowm8USMV0cpWTyHuQ:0",
+        "Status": "FAIL",
+        "ErrorSignature": "UVM_ERROR /nfs/shares/asic/regression/opa400/nightly-ci-2023-10-03/cport_a0_full_chip_release/verif/op4/tb/env/spi/cp_spi_scoreboard_base.svh(147) @ 72018.59465ns: uvm_test_top.jkr_top.spi_pif_scoreboard [spi_pif_scoreboard] Comparator SPI Type transaction (Tx or Rx) mismatch",
+        "StartTime": "10/03/2023 04:44:22",
+        "EndTime": "10/03/2023 06:16:21"
+    },
+    {
+        "Phase": "0",
+        "JobId": 169,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_uart_test+has_uart+no_pcie_phy+no_vc_phy+cov:2923344426",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_uart_test+has_uart+no_pcie_phy+no_vc_phy+cov:2923344426",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 04:40:38",
+        "EndTime": "10/03/2023 06:16:33"
+    },
+    {
+        "Phase": "0",
+        "JobId": 170,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_csr_chain_target_chain_reset_test+no_pcie_phy+no_vc_phy+cov:382826352",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_csr_chain_target_chain_reset_test...HIFklFswvU9fn79w351wcx7c4nq:382826352",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 04:46:59",
+        "EndTime": "10/03/2023 06:18:27"
+    },
+    {
+        "Phase": "0",
+        "JobId": 171,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+hfi_fc_boot_i2c_test+boot_i2c_test_cfg+has_i2c+has_uart+master_vip_cfg+time6h+no_pcie_phy+no_vc_phy+cov:2468922040",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_boot_i2c_test...YwVlDXAxHrrO8uUGb65M8EWDWvz:2468922040",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 04:20:49",
+        "EndTime": "10/03/2023 06:19:45"
+    },
+    {
+        "Phase": "0",
+        "JobId": 172,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_boot_strap_test+no_pcie_phy+no_vc_phy+cov:512660689",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_boot_strap_test+no_pcie_phy+no_vc_phy+cov:512660689",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 04:47:46",
+        "EndTime": "10/03/2023 06:20:03"
+    },
+    {
+        "Phase": "0",
+        "JobId": 173,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_csr_chain_endpoint_test+no_pcie_phy+no_vc_phy+cov:1513480230",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_csr_chain_endpoint_test...Ej5qKrjZpl7556HcV4v1m7pY3OG:1513480230",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 04:50:04",
+        "EndTime": "10/03/2023 06:21:13"
+    },
+    {
+        "Phase": "0",
+        "JobId": 174,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+cport_proc_stub+hfi_fc_bringup_test+no_pcie_phy+no_vc_phy+A383+A2103+A2157+A2557+A2590+A2616+A2913+cov:2364957747",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+cport_proc_stub+hfi_fc_bringup_test+no_pcie_phy+no_vc_phy+A383+A2103+A2157+A2557+A2590+A2616+A2913+cov:2364957747",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 04:49:09",
+        "EndTime": "10/03/2023 06:21:24"
+    },
+    {
+        "Phase": "0",
+        "JobId": 175,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+hfi_fc_jtag_idcode_test+has_jtag+no_pcie_phy+no_vc_phy+cov:0",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+hfi_fc_jtag_idcode_test+has_jtag+no_pcie_phy+no_vc_phy+cov:0",
+        "Status": "FAIL",
+        "ErrorSignature": "UVM_ERROR /nfs/shares/asic/regression/opa400/nightly-ci-2023-10-03/jkr_a0/verif/envs/hfi_misc/hfi_misc_harness.sv(98) @ 5001.00000ns: reporter [HFI_EFUSE_MISC_CHECKS] Deliverable : EFUSE_COMPLETE and/or HFI_HW_INIT_COMPLETE not de-asserted when HFI_HRESET_EFUSE asserted",
+        "StartTime": "10/03/2023 04:58:21",
+        "EndTime": "10/03/2023 06:22:34"
+    },
+    {
+        "Phase": "0",
+        "JobId": 176,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_bringup_pipe_gen1_test+has_pcie+no_pcie_phy+time6h+no_vc_phy+cov:2702103835",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_bringup_pipe_gen1_test...JsbmSUo0Zh30fUWVTmaimrE8Mci:2702103835",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 04:33:09",
+        "EndTime": "10/03/2023 06:22:38"
+    },
+    {
+        "Phase": "0",
+        "JobId": 177,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+hfi_fc_boot_i2c_test+boot_i2c_test_cfg+has_i2c+has_uart+master_vip_cfg+time6h+no_pcie_phy+no_vc_phy+cov:0",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_boot_i2c_test...YwVlDXAxHrrO8uUGb65M8EWDWvz:0",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 04:21:02",
+        "EndTime": "10/03/2023 06:23:11"
+    },
+    {
+        "Phase": "0",
+        "JobId": 178,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_bringup_pipe_gen1_test+has_pcie+no_pcie_phy+time6h+no_vc_phy+cov:4039661026",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_bringup_pipe_gen1_test...JsbmSUo0Zh30fUWVTmaimrE8Mci:4039661026",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 04:35:24",
+        "EndTime": "10/03/2023 06:24:54"
+    },
+    {
+        "Phase": "0",
+        "JobId": 179,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_serdes_ingress_pkts_no_phy_test+has_vc+no_pcie_phy+no_vc_phy+time3h+cov:2310991316",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_serdes_ingress_pkts_no_phy_test...H2jeSkO4EoSZuauadkaVbcmh5Aq:2310991316",
+        "Status": "FAIL",
+        "ErrorSignature": "UVM_FATAL /nfs/shares/asic/regression/opa400/nightly-ci-2023-10-03/vcrk_a0_branch_20230925_vc_final/verif/dev/vc_core/seq/vc_core_start_lni_seq.sv(155) @ 88990.34385ns: reporter@@m_cores_drive_external_vc_pwrup_vseq[0].drive_pwrup_seq[0].start_lni [STARTUP] ",
+        "StartTime": "10/03/2023 04:50:41",
+        "EndTime": "10/03/2023 06:25:35"
+    },
+    {
+        "Phase": "0",
+        "JobId": 180,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+hfi_fc_boot_spi_test+boot_spi_test_cfg+has_spi+has_uart+time6h+no_pcie_phy+no_vc_phy+cov:2011380624",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_boot_spi_test...BZLnv328x6lOZvKUxI4SL2AcqOk:2011380624",
+        "Status": "FAIL",
+        "ErrorSignature": "UVM_ERROR /nfs/shares/asic/regression/opa400/nightly-ci-2023-10-03/cport_a0_full_chip_release/verif/op4/tb/env/spi/cp_spi_scoreboard_base.svh(147) @ 113589.19822ns: uvm_test_top.jkr_top.spi_pif_scoreboard [spi_pif_scoreboard] Comparator SPI Type transaction (Tx or Rx) mismatch",
+        "StartTime": "10/03/2023 04:46:36",
+        "EndTime": "10/03/2023 06:25:54"
+    },
+    {
+        "Phase": "0",
+        "JobId": 181,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_bringup_pipe_gen4_test+has_pcie+no_pcie_phy+time6h+no_vc_phy+cov:4113464265",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_bringup_pipe_gen4_test...FeKPVI4X5hS051XCRnpjLWLpuYS:4113464265",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 04:32:43",
+        "EndTime": "10/03/2023 06:26:05"
+    },
+    {
+        "Phase": "0",
+        "JobId": 182,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_bringup_pipe_gen2_test+has_pcie+no_pcie_phy+time6h+no_vc_phy+cov:207564957",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_bringup_pipe_gen2_test...LPBu2wuczaWXJvlP37SzBUq45KJ:207564957",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 04:36:49",
+        "EndTime": "10/03/2023 06:29:40"
+    },
+    {
+        "Phase": "0",
+        "JobId": 183,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_board_id_test+no_pcie_phy+no_vc_phy+cov:1023519091",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_board_id_test+no_pcie_phy+no_vc_phy+cov:1023519091",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 04:59:56",
+        "EndTime": "10/03/2023 06:31:03"
+    },
+    {
+        "Phase": "0",
+        "JobId": 184,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_dinit_breakpoints_test+no_pcie_phy+no_vc_phy+cov:0",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_dinit_breakpoints_test...TLllgMTYEX7tqVPvkWIWXu6rAsj:0",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 05:07:12",
+        "EndTime": "10/03/2023 06:36:34"
+    },
+    {
+        "Phase": "0",
+        "JobId": 185,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_boot_strap_test+no_pcie_phy+no_vc_phy+cov:1664777579",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_boot_strap_test+no_pcie_phy+no_vc_phy+cov:1664777579",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 05:11:56",
+        "EndTime": "10/03/2023 06:38:50"
+    },
+    {
+        "Phase": "0",
+        "JobId": 186,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+hfi_fc_boot_i2c_test+boot_i2c_test_cfg+has_i2c+has_uart+master_vip_cfg+time6h+no_pcie_phy+no_vc_phy+cov:1842588258",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_boot_i2c_test...YwVlDXAxHrrO8uUGb65M8EWDWvz:1842588258",
+        "Status": "FAIL",
+        "ErrorSignature": "UVM_ERROR /nfs/shares/asic/regression/opa400/nightly-ci-2023-10-03/jkr_a0/verif/envs/hfi_misc/hfi_misc_harness.sv(98) @ 5001.00000ns: reporter [HFI_EFUSE_MISC_CHECKS] Deliverable : EFUSE_COMPLETE and/or HFI_HW_INIT_COMPLETE not de-asserted when HFI_HRESET_EFUSE asserted",
+        "StartTime": "10/03/2023 05:23:22",
+        "EndTime": "10/03/2023 06:38:51"
+    },
+    {
+        "Phase": "0",
+        "JobId": 187,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_clk_config_check_board_test+no_pcie_phy+no_vc_phy+cov:1339885585",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_clk_config_check_board_test...JjhgmwO9PluIkQ9fU7sSRgHY17H:1339885585",
+        "Status": "FAIL",
+        "ErrorSignature": "UVM_ERROR /nfs/shares/asic/regression/opa400/nightly-ci-2023-10-03/jkr_a0/verif/envs/hfi_misc/hfi_misc_harness.sv(98) @ 5001.00000ns: reporter [HFI_EFUSE_MISC_CHECKS] Deliverable : EFUSE_COMPLETE and/or HFI_HW_INIT_COMPLETE not de-asserted when HFI_HRESET_EFUSE asserted",
+        "StartTime": "10/03/2023 05:26:24",
+        "EndTime": "10/03/2023 06:39:49"
+    },
+    {
+        "Phase": "0",
+        "JobId": 188,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_dinit_pll_timeout_test+no_pcie_phy+no_vc_phy+cov:1603470995",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_dinit_pll_timeout_test...FuTaxjfe3AxrBZBelrmlWS4d0kg:1603470995",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 05:03:58",
+        "EndTime": "10/03/2023 06:43:45"
+    },
+    {
+        "Phase": "0",
+        "JobId": 189,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+hfi_fc_boot_spi_test+boot_spi_test_cfg+has_spi+has_uart+time6h+no_pcie_phy+no_vc_phy+cov:2868644392",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_boot_spi_test...BZLnv328x6lOZvKUxI4SL2AcqOk:2868644392",
+        "Status": "FAIL",
+        "ErrorSignature": "UVM_ERROR /nfs/shares/asic/regression/opa400/nightly-ci-2023-10-03/cport_a0_full_chip_release/verif/op4/tb/env/spi/cp_spi_scoreboard_base.svh(147) @ 111655.16209ns: uvm_test_top.jkr_top.spi_pif_scoreboard [spi_pif_scoreboard] Comparator SPI Type transaction (Tx or Rx) mismatch",
+        "StartTime": "10/03/2023 05:09:07",
+        "EndTime": "10/03/2023 06:44:13"
+    },
+    {
+        "Phase": "0",
+        "JobId": 190,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_basic_ral_test+no_pcie_phy+no_vc_phy+cov:1258395140",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_basic_ral_test+no_pcie_phy+no_vc_phy+cov:1258395140",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 05:39:08",
+        "EndTime": "10/03/2023 06:44:30"
+    },
+    {
+        "Phase": "0",
+        "JobId": 191,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_pvt_rmwv_test+no_pcie_phy+no_vc_phy+cov:485342234",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_pvt_rmwv_test+no_pcie_phy+no_vc_phy+cov:485342234",
+        "Status": "FAIL",
+        "ErrorSignature": "UVM_ERROR /nfs/shares/asic/regression/opa400/nightly-ci-2023-10-03/jkr_a0/verif/envs/hfi_misc/hfi_misc_harness.sv(98) @ 5001.00000ns: reporter [HFI_EFUSE_MISC_CHECKS] Deliverable : EFUSE_COMPLETE and/or HFI_HW_INIT_COMPLETE not de-asserted when HFI_HRESET_EFUSE asserted",
+        "StartTime": "10/03/2023 05:39:11",
+        "EndTime": "10/03/2023 06:45:00"
+    },
+    {
+        "Phase": "0",
+        "JobId": 192,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_basic_ral_test+no_pcie_phy+no_vc_phy+cov:3584008797",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_basic_ral_test+no_pcie_phy+no_vc_phy+cov:3584008797",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 05:40:56",
+        "EndTime": "10/03/2023 06:45:17"
+    },
+    {
+        "Phase": "0",
+        "JobId": 193,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_csr_chain_endpoint_test+no_pcie_phy+no_vc_phy+cov:0",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_csr_chain_endpoint_test...Ej5qKrjZpl7556HcV4v1m7pY3OG:0",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 05:24:40",
+        "EndTime": "10/03/2023 06:46:22"
+    },
+    {
+        "Phase": "0",
+        "JobId": 194,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_dinit_rei_timeout_test+no_pcie_phy+no_vc_phy+cov:3310424163",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_dinit_rei_timeout_test...1GhpTyYNv4nzM4YuRxO9HlYs0ke:3310424163",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 05:27:15",
+        "EndTime": "10/03/2023 06:47:38"
+    },
+    {
+        "Phase": "0",
+        "JobId": 195,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_ral_access_test+has_pcie+no_pcie_phy+no_vc_phy+cov:1642827951",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_ral_access_test...JAAFkyKGtmjO1SysrCHiXOq519D:1642827951",
+        "Status": "FAIL",
+        "ErrorSignature": "UVM_ERROR /nfs/shares/asic/regression/opa400/nightly-ci-2023-10-03/jkr_a0/verif/envs/hfi_misc/hfi_misc_harness.sv(98) @ 5001.00000ns: reporter [HFI_EFUSE_MISC_CHECKS] Deliverable : EFUSE_COMPLETE and/or HFI_HW_INIT_COMPLETE not de-asserted when HFI_HRESET_EFUSE asserted",
+        "StartTime": "10/03/2023 05:44:08",
+        "EndTime": "10/03/2023 06:47:58"
+    },
+    {
+        "Phase": "0",
+        "JobId": 196,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_pvt_access_test+no_pcie_phy+no_vc_phy+cov:4087487029",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_pvt_access_test+no_pcie_phy+no_vc_phy+cov:4087487029",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 05:26:38",
+        "EndTime": "10/03/2023 06:48:21"
+    },
+    {
+        "Phase": "0",
+        "JobId": 197,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+hfi_fc_jtag_idcode_test+has_jtag+no_pcie_phy+no_vc_phy+cov:3657359249",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+hfi_fc_jtag_idcode_test+has_jtag+no_pcie_phy+no_vc_phy+cov:3657359249",
+        "Status": "FAIL",
+        "ErrorSignature": "\tOffending '(this.error_cnt == 0)'",
+        "StartTime": "10/03/2023 05:28:14",
+        "EndTime": "10/03/2023 06:49:05"
+    },
+    {
+        "Phase": "0",
+        "JobId": 198,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_clk_config_check_board_test+no_pcie_phy+no_vc_phy+cov:0",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_clk_config_check_board_test...JjhgmwO9PluIkQ9fU7sSRgHY17H:0",
+        "Status": "FAIL",
+        "ErrorSignature": "UVM_ERROR /nfs/shares/asic/regression/opa400/nightly-ci-2023-10-03/jkr_a0/verif/envs/hfi_misc/hfi_misc_harness.sv(98) @ 5001.00000ns: reporter [HFI_EFUSE_MISC_CHECKS] Deliverable : EFUSE_COMPLETE and/or HFI_HW_INIT_COMPLETE not de-asserted when HFI_HRESET_EFUSE asserted",
+        "StartTime": "10/03/2023 05:44:58",
+        "EndTime": "10/03/2023 06:50:29"
+    },
+    {
+        "Phase": "0",
+        "JobId": 199,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_clk_config_check_serdes_refclk_test+no_pcie_phy+no_vc_phy+cov:2132911340",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_clk_config_check_serdes_refclk_test...BkJPmRXywsY4YRpxkvKOsYAr8i3:2132911340",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 05:38:12",
+        "EndTime": "10/03/2023 06:50:43"
+    },
+    {
+        "Phase": "0",
+        "JobId": 200,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_pvt_rmwv_test+no_pcie_phy+no_vc_phy+cov:1127926763",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_pvt_rmwv_test+no_pcie_phy+no_vc_phy+cov:1127926763",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 05:37:58",
+        "EndTime": "10/03/2023 06:52:02"
+    },
+    {
+        "Phase": "0",
+        "JobId": 201,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_bringup_pipe_gen5_test+has_pcie+no_pcie_phy+no_vc_phy+cov:1308446370",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_bringup_pipe_gen5_test...2lXBipInf8E3zwfPon6csMNT9I4:1308446370",
+        "Status": "FAIL",
+        "ErrorSignature": "UVM_ERROR /nfs/shares/asic/regression/opa400/nightly-ci-2023-10-03/jkr_a0/verif/envs/hfi_misc/hfi_misc_harness.sv(98) @ 5001.00000ns: reporter [HFI_EFUSE_MISC_CHECKS] Deliverable : EFUSE_COMPLETE and/or HFI_HW_INIT_COMPLETE not de-asserted when HFI_HRESET_EFUSE asserted",
+        "StartTime": "10/03/2023 05:48:59",
+        "EndTime": "10/03/2023 06:53:06"
+    },
+    {
+        "Phase": "0",
+        "JobId": 202,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+cport_proc_stub+hfi_fc_bringup_test+no_pcie_phy+no_vc_phy+A383+A2103+A2157+A2557+A2590+A2616+A2913+cov:3604370937",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+cport_proc_stub+hfi_fc_bringup_test+no_pcie_phy+no_vc_phy+A383+A2103+A2157+A2557+A2590+A2616+A2913+cov:3604370937",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 05:42:44",
+        "EndTime": "10/03/2023 06:53:44"
+    },
+    {
+        "Phase": "0",
+        "JobId": 203,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_ral_access_test+has_pcie+no_pcie_phy+no_vc_phy+cov:2713672288",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_ral_access_test...JAAFkyKGtmjO1SysrCHiXOq519D:2713672288",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 05:03:37",
+        "EndTime": "10/03/2023 06:54:16"
+    },
+    {
+        "Phase": "0",
+        "JobId": 204,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_boot_strap_test+no_pcie_phy+no_vc_phy+cov:0",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_boot_strap_test+no_pcie_phy+no_vc_phy+cov:0",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 05:43:21",
+        "EndTime": "10/03/2023 06:55:02"
+    },
+    {
+        "Phase": "0",
+        "JobId": 205,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_smbus_master_test+has_smbus+slave_vip_cfg+time3h+no_pcie_phy+no_vc_phy+time6h+cov:2284175260",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_smbus_master_test...CZKayL7ADovztwluYaDfCSdZeUE:2284175260",
+        "Status": "FAIL",
+        "ErrorSignature": "UVM_ERROR /nfs/shares/asic/regression/opa400/nightly-ci-2023-10-03/jkr_a0/verif/envs/hfi_misc/hfi_misc_harness.sv(98) @ 5001.00000ns: reporter [HFI_EFUSE_MISC_CHECKS] Deliverable : EFUSE_COMPLETE and/or HFI_HW_INIT_COMPLETE not de-asserted when HFI_HRESET_EFUSE asserted",
+        "StartTime": "10/03/2023 05:51:21",
+        "EndTime": "10/03/2023 06:55:40"
+    },
+    {
+        "Phase": "0",
+        "JobId": 206,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+cport_proc_stub+hfi_fc_null_test+no_pcie_phy+no_vc_phy+A383+A2103+A2157+A2557+A2590+A2616+A2913+cov:2273151310",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+cport_proc_stub+hfi_fc_null_test+no_pcie_phy+no_vc_phy+A383+A2103+A2157+A2557+A2590+A2616+A2913+cov:2273151310",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 05:52:20",
+        "EndTime": "10/03/2023 06:55:46"
+    },
+    {
+        "Phase": "0",
+        "JobId": 207,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+hfi_fc_jtag_idcode_test+has_jtag+no_pcie_phy+no_vc_phy+cov:1585702466",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+hfi_fc_jtag_idcode_test+has_jtag+no_pcie_phy+no_vc_phy+cov:1585702466",
+        "Status": "FAIL",
+        "ErrorSignature": "\tOffending '(this.error_cnt == 0)'",
+        "StartTime": "10/03/2023 05:45:39",
+        "EndTime": "10/03/2023 06:56:48"
+    },
+    {
+        "Phase": "0",
+        "JobId": 208,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_dinit_disable_pll_timeout_test+no_pcie_phy+no_vc_phy+cov:2898956531",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_dinit_disable_pll_timeout_test...MqV86aJgHAYXFjmrxH0vVQtuR9T:2898956531",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 05:47:53",
+        "EndTime": "10/03/2023 06:58:24"
+    },
+    {
+        "Phase": "0",
+        "JobId": 209,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_dinit_breakpoints_test+no_pcie_phy+no_vc_phy+cov:2686464176",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_dinit_breakpoints_test...TLllgMTYEX7tqVPvkWIWXu6rAsj:2686464176",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 05:47:38",
+        "EndTime": "10/03/2023 06:58:35"
+    },
+    {
+        "Phase": "0",
+        "JobId": 210,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+cport_proc_stub+hfi_fc_bringup_test+no_pcie_phy+no_vc_phy+A383+A2103+A2157+A2557+A2590+A2616+A2913+cov:0",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+cport_proc_stub+hfi_fc_bringup_test+no_pcie_phy+no_vc_phy+A383+A2103+A2157+A2557+A2590+A2616+A2913+cov:0",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 05:47:28",
+        "EndTime": "10/03/2023 06:58:56"
+    },
+    {
+        "Phase": "0",
+        "JobId": 211,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_efuse_reg_access_host_pcie_test+has_pcie+no_pcie_phy+no_vc_phy+cov:2563766719",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_efuse_reg_access_host_pcie_test...2mT2ON5dEubE39XkSOuWV5mLlBm:2563766719",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 05:19:01",
+        "EndTime": "10/03/2023 06:59:29"
+    },
+    {
+        "Phase": "0",
+        "JobId": 212,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_efuse_reg_access_cport_test+no_pcie_phy+no_vc_phy+cov:3524289570",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_efuse_reg_access_cport_test...O4MyYRiBZ8oWMFWn31eXA1VRTSD:3524289570",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 05:47:19",
+        "EndTime": "10/03/2023 06:59:41"
+    },
+    {
+        "Phase": "0",
+        "JobId": 213,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_dinit_pll_timeout_test+no_pcie_phy+no_vc_phy+cov:4289334992",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_dinit_pll_timeout_test...FuTaxjfe3AxrBZBelrmlWS4d0kg:4289334992",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 05:37:05",
+        "EndTime": "10/03/2023 06:59:57"
+    },
+    {
+        "Phase": "0",
+        "JobId": 214,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_clk_config_check_serdes_refclk_test+no_pcie_phy+no_vc_phy+cov:0",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_clk_config_check_serdes_refclk_test...BkJPmRXywsY4YRpxkvKOsYAr8i3:0",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 05:49:15",
+        "EndTime": "10/03/2023 07:00:06"
+    },
+    {
+        "Phase": "0",
+        "JobId": 215,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+hfi_fc_boot_i2c_test+boot_i2c_test_cfg+has_i2c+has_uart+master_vip_cfg+time6h+no_pcie_phy+no_vc_phy+cov:1382285088",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_boot_i2c_test...YwVlDXAxHrrO8uUGb65M8EWDWvz:1382285088",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 04:37:31",
+        "EndTime": "10/03/2023 07:01:05"
+    },
+    {
+        "Phase": "0",
+        "JobId": 216,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+hfi_fc_jtag_idcode_test+has_jtag+no_pcie_phy+no_vc_phy+cov:2489840550",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+hfi_fc_jtag_idcode_test+has_jtag+no_pcie_phy+no_vc_phy+cov:2489840550",
+        "Status": "FAIL",
+        "ErrorSignature": "\tOffending '(this.error_cnt == 0)'",
+        "StartTime": "10/03/2023 05:49:25",
+        "EndTime": "10/03/2023 07:01:06"
+    },
+    {
+        "Phase": "0",
+        "JobId": 217,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_serdes_bringup_no_phy_test+has_vc+no_pcie_phy+no_vc_phy+time3h+cov:3183468696",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_serdes_bringup_no_phy_test...RHmHKB8HnNBysfjSX3ZBcCmChqX:3183468696",
+        "Status": "FAIL",
+        "ErrorSignature": "UVM_FATAL /nfs/shares/asic/regression/opa400/nightly-ci-2023-10-03/vcrk_a0_branch_20230925_vc_final/verif/dev/vc_core/seq/vc_core_start_lni_seq.sv(155) @ 89958.59803ns: reporter@@m_cores_drive_external_vc_pwrup_vseq[0].drive_pwrup_seq[0].start_lni [STARTUP] ",
+        "StartTime": "10/03/2023 05:47:01",
+        "EndTime": "10/03/2023 07:01:33"
+    },
+    {
+        "Phase": "0",
+        "JobId": 218,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_dinit_pll_timeout_test+no_pcie_phy+no_vc_phy+cov:1624368945",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_dinit_pll_timeout_test...FuTaxjfe3AxrBZBelrmlWS4d0kg:1624368945",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 05:40:44",
+        "EndTime": "10/03/2023 07:01:36"
+    },
+    {
+        "Phase": "0",
+        "JobId": 219,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_pvt_rmwv_test+no_pcie_phy+no_vc_phy+cov:0",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_pvt_rmwv_test+no_pcie_phy+no_vc_phy+cov:0",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 05:49:42",
+        "EndTime": "10/03/2023 07:02:05"
+    },
+    {
+        "Phase": "0",
+        "JobId": 220,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+hfi_fc_jtag_idcode_test+has_jtag+no_pcie_phy+no_vc_phy+cov:1071042415",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+hfi_fc_jtag_idcode_test+has_jtag+no_pcie_phy+no_vc_phy+cov:1071042415",
+        "Status": "FAIL",
+        "ErrorSignature": "UVM_FATAL /nfs/shares/asic/tools/cadence/vipcat_11.30.088-28_Feb_2023_10_04_54/tools.lnx86/denali_64bit/ddvapi/sv/uvm/jtag/cdnJtagUvmMonitor.sv(748) @ 437.00000ns: uvm_test_top.jkr_top.jkr_jtag_sve.env.passiveSlave.monitor [DENALI_JTAG_FATAL_ERR_CDN_JTAG_11_BAD_TMS_ON_RST_RISE] : [JTAG Spec version IEEE Std 1149.1 2001 Section 4.6.1] : [Tx] : ERR_CDN_JTAG_11_BAD_TMS_ON_RST_RISE: TMS has been driven to '0' across nTRST rise. TMS initialization shall occur at test logic reset state. Action: Drive TMS to '1' during logic reset state. In JTAG Spec version: IEEE Std 1149.1-2001  Section(s): 4.6.1 ",
+        "StartTime": "10/03/2023 05:59:07",
+        "EndTime": "10/03/2023 07:02:25"
+    },
+    {
+        "Phase": "0",
+        "JobId": 221,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_ral_access_test+has_pcie+no_pcie_phy+no_vc_phy+cov:2621771334",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_ral_access_test...JAAFkyKGtmjO1SysrCHiXOq519D:2621771334",
+        "Status": "FAIL",
+        "ErrorSignature": "UVM_ERROR /nfs/shares/asic/regression/opa400/nightly-ci-2023-10-03/jkr_a0/verif/envs/hfi_misc/hfi_misc_harness.sv(98) @ 5001.00000ns: reporter [HFI_EFUSE_MISC_CHECKS] Deliverable : EFUSE_COMPLETE and/or HFI_HW_INIT_COMPLETE not de-asserted when HFI_HRESET_EFUSE asserted",
+        "StartTime": "10/03/2023 06:01:47",
+        "EndTime": "10/03/2023 07:03:34"
+    },
+    {
+        "Phase": "0",
+        "JobId": 222,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_dinit_pll_timeout_test+no_pcie_phy+no_vc_phy+cov:153604504",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_dinit_pll_timeout_test...FuTaxjfe3AxrBZBelrmlWS4d0kg:153604504",
+        "Status": "FAIL",
+        "ErrorSignature": "UVM_ERROR /nfs/shares/asic/regression/opa400/nightly-ci-2023-10-03/jkr_a0/verif/envs/hfi_misc/hfi_misc_harness.sv(98) @ 5001.00000ns: reporter [HFI_EFUSE_MISC_CHECKS] Deliverable : EFUSE_COMPLETE and/or HFI_HW_INIT_COMPLETE not de-asserted when HFI_HRESET_EFUSE asserted",
+        "StartTime": "10/03/2023 06:01:47",
+        "EndTime": "10/03/2023 07:03:55"
+    },
+    {
+        "Phase": "0",
+        "JobId": 223,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_pvt_access_test+no_pcie_phy+no_vc_phy+cov:4050776412",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_pvt_access_test+no_pcie_phy+no_vc_phy+cov:4050776412",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 05:51:32",
+        "EndTime": "10/03/2023 07:04:32"
+    },
+    {
+        "Phase": "0",
+        "JobId": 224,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_serdes_ingress_pkts_no_phy_test+has_vc+no_pcie_phy+no_vc_phy+time3h+cov:0",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_serdes_ingress_pkts_no_phy_test...H2jeSkO4EoSZuauadkaVbcmh5Aq:0",
+        "Status": "FAIL",
+        "ErrorSignature": "UVM_FATAL /nfs/shares/asic/regression/opa400/nightly-ci-2023-10-03/vcrk_a0_branch_20230925_vc_final/verif/dev/vc_core/seq/vc_core_start_lni_seq.sv(155) @ 89971.74385ns: reporter@@m_cores_drive_external_vc_pwrup_vseq[0].drive_pwrup_seq[0].start_lni [STARTUP] ",
+        "StartTime": "10/03/2023 05:49:15",
+        "EndTime": "10/03/2023 07:05:57"
+    },
+    {
+        "Phase": "0",
+        "JobId": 225,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_boot_strap_test+no_pcie_phy+no_vc_phy+cov:670901799",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_boot_strap_test+no_pcie_phy+no_vc_phy+cov:670901799",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 05:55:41",
+        "EndTime": "10/03/2023 07:06:50"
+    },
+    {
+        "Phase": "0",
+        "JobId": 226,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_serdes_ingress_pkts_no_phy_test+has_vc+no_pcie_phy+no_vc_phy+time3h+cov:18245683",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_serdes_ingress_pkts_no_phy_test...H2jeSkO4EoSZuauadkaVbcmh5Aq:18245683",
+        "Status": "FAIL",
+        "ErrorSignature": "UVM_FATAL /nfs/shares/asic/regression/opa400/nightly-ci-2023-10-03/vcrk_a0_branch_20230925_vc_final/verif/dev/vc_core/seq/vc_core_start_lni_seq.sv(155) @ 89452.61688ns: reporter@@m_cores_drive_external_vc_pwrup_vseq[0].drive_pwrup_seq[0].start_lni [STARTUP] ",
+        "StartTime": "10/03/2023 05:50:53",
+        "EndTime": "10/03/2023 07:07:06"
+    },
+    {
+        "Phase": "0",
+        "JobId": 227,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_pvt_rmwv_test+no_pcie_phy+no_vc_phy+cov:518517660",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_pvt_rmwv_test+no_pcie_phy+no_vc_phy+cov:518517660",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 05:57:25",
+        "EndTime": "10/03/2023 07:10:17"
+    },
+    {
+        "Phase": "0",
+        "JobId": 228,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_dinit_disable_pll_timeout_test+no_pcie_phy+no_vc_phy+cov:3560606796",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_dinit_disable_pll_timeout_test...MqV86aJgHAYXFjmrxH0vVQtuR9T:3560606796",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 06:00:15",
+        "EndTime": "10/03/2023 07:10:57"
+    },
+    {
+        "Phase": "0",
+        "JobId": 229,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_cport_gpio_test+no_pcie_phy+no_vc_phy+cov:2086665678",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_cport_gpio_test+no_pcie_phy+no_vc_phy+cov:2086665678",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 06:01:43",
+        "EndTime": "10/03/2023 07:11:41"
+    },
+    {
+        "Phase": "0",
+        "JobId": 230,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_i2c_master_write_test+has_i2c+slave_vip_cfg+time3h+no_pcie_phy+no_vc_phy+time6h+cov:0",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_i2c_master_write_test...aKcaxmSm4T8V7c8pNun5csoUYtE:0",
+        "Status": "FAIL",
+        "ErrorSignature": "UVM_ERROR /nfs/shares/asic/tools/cadence/vipcat_11.30.088-28_Feb_2023_10_04_54/tools.lnx86/denali_64bit/ddvapi/sv/uvm/i3c/cdnI3cUvmMonitor.sv(681) @ 151140.56112ns: uvm_test_top.jkr_top.inst_jkr_misc.inst_jkr_cport_top.i2c_sve.env.i2c_passive_master[0].monitor [DENALI_I3C_ERR_1000_TRANSMISSION_TO_UNKNOWN_DEVICE] Detected[uvm_test_top.jkr_top.inst_jkr_misc.inst_jkr_cport_top.i2c_sve.env.i2c_passive_master[0]] [I3CNone] ERR_1000_TRANSMISSION_TO_UNKNOWN_DEVICE  Transmission to unknown Device ID detected. Device ID = 0x1C",
+        "StartTime": "10/03/2023 05:46:20",
+        "EndTime": "10/03/2023 07:11:44"
+    },
+    {
+        "Phase": "0",
+        "JobId": 231,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_efuse_reg_access_host_pcie_test+has_pcie+no_pcie_phy+no_vc_phy+cov:2743621261",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_efuse_reg_access_host_pcie_test...2mT2ON5dEubE39XkSOuWV5mLlBm:2743621261",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 05:43:01",
+        "EndTime": "10/03/2023 07:11:57"
+    },
+    {
+        "Phase": "0",
+        "JobId": 232,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_ral_access_test+has_pcie+no_pcie_phy+no_vc_phy+cov:2309840840",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_ral_access_test...JAAFkyKGtmjO1SysrCHiXOq519D:2309840840",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 05:45:12",
+        "EndTime": "10/03/2023 07:13:36"
+    },
+    {
+        "Phase": "0",
+        "JobId": 233,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_bringup_pipe_gen3_test+has_pcie+no_pcie_phy+time6h+no_vc_phy+cov:1128152822",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_bringup_pipe_gen3_test...7G7ME18yVqggMxTYn60teEuvvim:1128152822",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 05:46:14",
+        "EndTime": "10/03/2023 07:13:49"
+    },
+    {
+        "Phase": "0",
+        "JobId": 234,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_bringup_pipe_gen3_test+has_pcie+no_pcie_phy+time6h+no_vc_phy+cov:2021483040",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_bringup_pipe_gen3_test...7G7ME18yVqggMxTYn60teEuvvim:2021483040",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 05:50:50",
+        "EndTime": "10/03/2023 07:18:46"
+    },
+    {
+        "Phase": "0",
+        "JobId": 235,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_bringup_pipe_gen2_test+has_pcie+no_pcie_phy+time6h+no_vc_phy+cov:3891806972",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_bringup_pipe_gen2_test...LPBu2wuczaWXJvlP37SzBUq45KJ:3891806972",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 05:53:02",
+        "EndTime": "10/03/2023 07:18:50"
+    },
+    {
+        "Phase": "0",
+        "JobId": 236,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_bringup_pipe_gen3_test+has_pcie+no_pcie_phy+time6h+no_vc_phy+cov:563600569",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_bringup_pipe_gen3_test...7G7ME18yVqggMxTYn60teEuvvim:563600569",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 05:58:42",
+        "EndTime": "10/03/2023 07:23:59"
+    },
+    {
+        "Phase": "0",
+        "JobId": 237,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_bringup_pipe_gen2_test+has_pcie+no_pcie_phy+time6h+no_vc_phy+cov:3586290878",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_bringup_pipe_gen2_test...LPBu2wuczaWXJvlP37SzBUq45KJ:3586290878",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 06:02:48",
+        "EndTime": "10/03/2023 07:27:32"
+    },
+    {
+        "Phase": "0",
+        "JobId": 238,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_bringup_pipe_gen5_test+has_pcie+no_pcie_phy+no_vc_phy+cov:1518437253",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_bringup_pipe_gen5_test...2lXBipInf8E3zwfPon6csMNT9I4:1518437253",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 06:00:19",
+        "EndTime": "10/03/2023 07:28:43"
+    },
+    {
+        "Phase": "0",
+        "JobId": 239,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+hfi_fc_boot_i2c_test+boot_i2c_test_cfg+has_i2c+has_uart+master_vip_cfg+time6h+no_pcie_phy+no_vc_phy+cov:4086431529",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_boot_i2c_test...YwVlDXAxHrrO8uUGb65M8EWDWvz:4086431529",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 05:59:37",
+        "EndTime": "10/03/2023 08:01:31"
+    },
+    {
+        "Phase": "0",
+        "JobId": 240,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_smbus_slave_test+has_smbus+master_vip_cfg+time3h+no_pcie_phy+no_vc_phy+time6h+cov:3511220584",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_smbus_slave_test...8ciygy8POIkmaz4d7hWVmcNRO3C:3511220584",
+        "Status": "FAIL",
+        "ErrorSignature": "Job has run out of time (360 minutes). Sending SIGTERM to it before SLURM cancels the job. ",
+        "StartTime": "10/03/2023 03:42:26",
+        "EndTime": "10/03/2023 10:17:17"
+    },
+    {
+        "Phase": "0",
+        "JobId": 241,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_smbus_slave_test+has_smbus+master_vip_cfg+time3h+no_pcie_phy+no_vc_phy+time6h+cov:16488285",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_smbus_slave_test...8ciygy8POIkmaz4d7hWVmcNRO3C:16488285",
+        "Status": "FAIL",
+        "ErrorSignature": "Job has run out of time (360 minutes). Sending SIGTERM to it before SLURM cancels the job. ",
+        "StartTime": "10/03/2023 03:42:25",
+        "EndTime": "10/03/2023 10:22:20"
+    },
+    {
+        "Phase": "0",
+        "JobId": 242,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_smbus_slave_test+has_smbus+master_vip_cfg+time3h+no_pcie_phy+no_vc_phy+time6h+cov:4092011075",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_smbus_slave_test...8ciygy8POIkmaz4d7hWVmcNRO3C:4092011075",
+        "Status": "FAIL",
+        "ErrorSignature": "Job has run out of time (360 minutes). Sending SIGTERM to it before SLURM cancels the job. ",
+        "StartTime": "10/03/2023 03:42:26",
+        "EndTime": "10/03/2023 10:25:10"
+    },
+    {
+        "Phase": "0",
+        "JobId": 243,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_smbus_master_test+has_smbus+slave_vip_cfg+time3h+no_pcie_phy+no_vc_phy+time6h+cov:0",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_smbus_master_test...CZKayL7ADovztwluYaDfCSdZeUE:0",
+        "Status": "FAIL",
+        "ErrorSignature": "Job has run out of time (360 minutes). Sending SIGTERM to it before SLURM cancels the job. ",
+        "StartTime": "10/03/2023 03:42:25",
+        "EndTime": "10/03/2023 10:25:21"
+    },
+    {
+        "Phase": "0",
+        "JobId": 244,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_smbus_slave_test+has_smbus+master_vip_cfg+time3h+no_pcie_phy+no_vc_phy+time6h+cov:0",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_smbus_slave_test...8ciygy8POIkmaz4d7hWVmcNRO3C:0",
+        "Status": "FAIL",
+        "ErrorSignature": "Job has run out of time (360 minutes). Sending SIGTERM to it before SLURM cancels the job. ",
+        "StartTime": "10/03/2023 04:31:45",
+        "EndTime": "10/03/2023 11:43:08"
+    },
+    {
+        "Phase": "0",
+        "JobId": 245,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_smbus_master_test+has_smbus+slave_vip_cfg+time3h+no_pcie_phy+no_vc_phy+time6h+cov:139359689",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_smbus_master_test...CZKayL7ADovztwluYaDfCSdZeUE:139359689",
+        "Status": "FAIL",
+        "ErrorSignature": "Job has run out of time (360 minutes). Sending SIGTERM to it before SLURM cancels the job. ",
+        "StartTime": "10/03/2023 04:35:59",
+        "EndTime": "10/03/2023 11:57:54"
+    },
+    {
+        "Phase": "0",
+        "JobId": 246,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_smbus_master_test+has_smbus+slave_vip_cfg+time3h+no_pcie_phy+no_vc_phy+time6h+cov:356558179",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_smbus_master_test...CZKayL7ADovztwluYaDfCSdZeUE:356558179",
+        "Status": "FAIL",
+        "ErrorSignature": "Job has run out of time (360 minutes). Sending SIGTERM to it before SLURM cancels the job. ",
+        "StartTime": "10/03/2023 04:36:57",
+        "EndTime": "10/03/2023 11:58:44"
+    },
+    {
+        "Phase": "0",
+        "JobId": 247,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_smbus_slave_test+has_smbus+master_vip_cfg+time3h+no_pcie_phy+no_vc_phy+time6h+cov:4108270330",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_smbus_slave_test...8ciygy8POIkmaz4d7hWVmcNRO3C:4108270330",
+        "Status": "FAIL",
+        "ErrorSignature": "Job has run out of time (360 minutes). Sending SIGTERM to it before SLURM cancels the job. ",
+        "StartTime": "10/03/2023 04:52:12",
+        "EndTime": "10/03/2023 12:16:22"
+    },
+    {
+        "Phase": "0",
+        "JobId": 248,
+        "CompleteJobName": "vcs_sim.hfi_fc.hfi_fc_uvm_tb+ignore_warnings+vc_lni_speedup+pcie_phy_fw_transfer_backdoor+A383+A2103+A2157+A2557+A2590+A2616+A2913+cport_proc_stub+hfi_fc_smbus_master_test+has_smbus+slave_vip_cfg+time3h+no_pcie_phy+no_vc_phy+time6h+cov:1255182265",
+        "JobName": "vcs_sim.hfi_fc.hfi_fc_smbus_master_test...CZKayL7ADovztwluYaDfCSdZeUE:1255182265",
+        "Status": "FAIL",
+        "ErrorSignature": "Job has run out of time (360 minutes). Sending SIGTERM to it before SLURM cancels the job. ",
+        "StartTime": "10/03/2023 05:25:49",
+        "EndTime": "10/03/2023 12:39:03"
+    },
+    {
+        "Phase": "0",
+        "JobId": 249,
+        "CompleteJobName": "post_script.hfi_fc",
+        "JobName": "post_script.hfi_fc",
+        "Status": "PASS",
+        "ErrorSignature": "",
+        "StartTime": "10/03/2023 12:39:04",
+        "EndTime": "10/03/2023 13:00:31"
+    }
+]

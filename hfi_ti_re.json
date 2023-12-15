@@ -1,0 +1,6 @@
+[
+    ["external", "re_file"],
+    ["thusly", "thee"],
+    ["mass", "volume"],
+    ["(Channel )(\\d+)", "\\1*"]
+]
